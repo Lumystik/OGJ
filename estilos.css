@@ -1,1 +1,864 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600');
+
+@font-face {
+    font-family: 'ttsupermolot';
+    src: url("../fonts/tt_supermolot_black-webfont.woff") format('woff'), 
+      url(../fonts/tt_supermolot_black-webfont.woff2);
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archiveregular';
+    src: url('../fonts/archive-webfont.woff2') format('woff2'),
+         url('../fonts/archive-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sequel Neue';
+    src: url('../fonts/Sequel-Neue.woff2') format('woff2'),
+        url('../fonts/Sequel-Neue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Sequel';
+    src: url('../fonts/Sequel-Light.woff2') format('woff2'),
+        url('../fonts/Sequel-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+/*aquí terminan las fonts*/
+*{font-family: 'Barlow Semi Condensed', sans-serif; }
+body>div{ max-width: 1920px;  margin: 0 auto;   color: #fff;text-align: center;}
+body{background-color: #2E2E2C;}
+.col-sm-2{margin: 0 auto;}
+.row{width: 100%;}
+#header_div{margin: 0 auto;background-color: black;}
+#header_div>p:nth-child(1){ font-size: 25px;}
+header h1{  margin: 0 auto;font-family: 'ttsupermolot'; font-size: 3em; font-style: normal;}
+header h1 span{width: 60%; height: 180px; background: url(../images/logo_h1.png) 30% 50%/150px no-repeat; text-indent: -99999px; 
+display: inline-block;} 
+h3{font-family: 'Sequel Neue';}
+#navContribuir, #navAprender{border: 1px solid white;}
+#arriba > div.row{margin: 0 auto;}
+#aprender> h2, #contribuir >h2, #ayudar > h2{font-family: 'archiveregular';font-size: 3em;}
+#inicio > h2{font-family: 'archiveregular';}
+#header_div > h2{font-size: 1.5em;}
+ul li{list-style: none;}
+nav{width: 100%; height: 55px; position: fixed; z-index: 3;}
+#logo-NAV{ float: left; }
+#myTopnav > a:nth-child(5){border-left: 1px white solid;}
+.topnav  {
+  overflow: hidden;  background-color: rgba(0, 0, 0, 0.5); }
+#myTopnav > a.icon{color: white;}
+.topnav a {
+  margin-top: 5px;
+  float:left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #000000;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.active {
+  color: white;
+}
+.topnav .icon {
+  display: none;}
+#regresar > p > a{color: white;}
+#icono1{width: 100%;height: 100px; background: url(../images/header_logos1.png) -34%/230% no-repeat;}
+#icono2{width: 100%;height: 60px; background: url(../images/header_logos1.png)15%/230% no-repeat;}
+
+#glosario > div > div:nth-child(2) > h3{margin-top: -30px;}
+ul a:before, ul a:after
+{
+    position: absolute;
+    opacity: 0.5;
+    
+    width: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+
+ul a:before
+{
+    left: 0px;
+    top: 0px;
+}
+
+ul a:after
+{
+    right: 0px;
+    bottom: 0px;
+}
+
+ul a:hover:before,  ul a:hover:after
+{
+    opacity: 1;
+    height: 2px;
+    width: 100%;
+}
+button > a{color:white;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(1){margin: 0 auto; }
+#icono3{width: 100%;height: 60px; background: url(../images/header_logos1.png)70%/230% no-repeat;}
+ #icono4{width: 100%;height: 60px; background: url(../images/header_logos1.png)135%/200% no-repeat;}
+body > div:nth-child(1) > footer > div:nth-child(2) {
+    margin: 0 auto;}
+#regresar{margin: 0 auto;}
+body > div > header > div.row > div:nth-child(1){background-color: #411414}
+body > div > header > div.row > div:nth-child(2){background-color: #411414}
+body > div > header > div.row > div:nth-child(3){background-color: #421E46}
+body > div > header > div.row > div {width: 90%; }
+#arriba > div.row > div:nth-child(1) > p:nth-child(2) > a, #arriba > div.row > div:nth-child(2) > p:nth-child(2) > a, #arriba > div.row > div:nth-child(3) > p:nth-child(2) > a{font-size: 1em;}
+#logo_act{width: 100%; height: 100px; background: url(../images/logo_header_2.png) -84%/ 150% no-repeat;}
+#logo_calendar{width: 100%; height: 100px; background: url(../images/logo_header_2.png) 41%/ 150% no-repeat;}
+#logo_contacto{width: 100%; height: 100px; background: url(../images/logo_header_2.png) 170%/ 150% no-repeat;}
+body > div:nth-child(1) > header > div.row{margin: 36px auto;}
+#header_div > p:nth-child(5){ font-family: 'archiveregular';font-size: 18px;font-weight: 600;}
+#inicio{ width: 100%; }
+#inicio h3{text-align: center;} 
+.form-group{padding: 8px;}
+form{font-family: barlow;}
+input.invalid {
+  background-color: #ffdddd;
+}
+.vi{border-bottom: 2px solid white !important;color:white !important;font-family: 'sequel';text-align: center;}
+.tab>h3{
+    margin-top: 3%;text-align: center;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.tab h3+p{
+    margin-top:5%;text-align: center;margin-bottom: 10%;
+}
+input.invalid{background-color: #ffffdd;}
+#prevBtn {
+  background-color: #91CE6F;color: white;
+}
+button:hover {
+  opacity: 0.8;
+}
+.descargar{
+text-indent: -99999999px;
+width: 50px;
+background:url("../images/download.png") no-repeat center #2D2E2C;;}
+.tab{display: none;}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #6C7CF3;
+  border: none;  
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+.step.finish {
+  background-color: #6C7CF3;
+}
+.iframe-container { padding-bottom: 60%; padding-top: 30px; height: 0; overflow: hidden;}
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.participar{background-color: #666666;color: white;border: 2px solid #666666;margin-bottom: 10px;}
+#imagen{height: 125px; text-indent: -999999px; background: url(../images/personas.png) center center no-repeat;}
+p#pagina_cues{text-align: center;}
+#articulos,#cuestionario,#tests{	background-color: #2D2E2C;}
+#test1a{background-color: #333;}
+#pagina_cues{ color: #20dbb0;    font-family: 'archiveregular';}
+.opciones1{
+    color: white;background-color: darksalmon;}
+.botonArt{
+background-color: #292A29;	color:#FFFFFF;	border-color: #292A29;}.close{color: white!important;}
+.datos{width :80%;margin :0 auto;}
+.form-control{background-color:black !important;border-radius: 0 !important;color: white !important;}
+fieldset{margin: 0 auto !important;}
+.nombre_art{
+	color: #FFFFFF;
+	border-bottom: 2px solid #ffff;}
+legend{color :white;}
+.modal-title{color: #20dbb0; text-align: center;}
+modal-header{color: #2D2E2C;}
+h6{color: white !important;}
+.siguiente{background-color:  #FF485E;color: white;}
+.empezar{background-color: #ff485e;color: #FFFFFF; border: 2px solid #ff485e;position: relative;top: -120px;left: 70%;}
+p+p+p+p#cuestionario{
+	text-align: center;}
+.test1{width: 100px;height: 13%;margin-left: 40%; text-align: center;margin-bottom: 10px;background-color: white;color: black !important;}
+form label,legend{color: #FFFFFF !important; padding: 3px;}
+.test{	background-color: #91CE6F; margin-left: 10px; margin-bottom: 20px;}
+.pagina_test{color: #91CE6F;}
+.modal-body,.modal-header,.modal-footer{background-color: black; }
+.continuar1{background-color: #FF485E;color: white;border: 2px solid #FF485E;position: relative;top: -120px;left: 57%;}
+#nextBtn{ color: white; background-color:darkseagreen;}
+.modal{background-color: rgba(255,255,255,0.12);}
+.logo_aprender{width: 100%; height: 50px; background:url(../images/logos_aprender_contribuir_dar_recibir.png) -86%/150% no-repeat;}
+.logo_contribuir{width: 100%; height: 57px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/150% no-repeat;}
+.logo_dar{width: 100%; height: 50px; background:url(../images/logos_aprender_contribuir_dar_recibir.png) 160%/170% no-repeat;}
+#aprender_del_tema > p > a:hover,#contribuir_al_tema > p > a:hover,#dar_recibir_ayuda > p > a:hover{text-shadow:1px 1px white; }
+#intro{width: 100%;margin: 0 auto;  text-align: left;}
+#aprender_del_tema{ margin: 0px 6px; padding: 20px 20px;   background-color: #F857A8;}
+#contribuir_al_tema{ margin: 0px 6px;padding: 20px 20px;  background-color: #F2526E;}
+#dar_recibir_ayuda{  margin: 0px  6px;padding: 20px 20px; background-color: #F16262;}
+#aprender>h2{color: #91CE6F; font-family: 'archiveregular';} 
+#aprender h3{margin-top: -42px;margin-left: -30px;font-weight: 100;}
+#contribuir > ul > div > li > a, #ayudar > ul > div > li > a{color: white;}
+#glosario > div > div:nth-child(1) > p:nth-child(3) > strong{background-color: #6c6c6d; }
+#arriba > div.row > div:nth-child(1){margin-left: -2px;}
+#arriba > div.row > div> p > a{box-shadow: 1px 1px black;}
+button{color: white;background-color: #6c6c6d;}
+footer{ margin: 0 auto; background: url(../images/TEXTURA.png) 100% no-repeat;}
+footer > div{background-color: black}
+#footerh2>h2{font-family: 'Barlow Semi Condensed';}
+#myTopnav > a.btn.btn-info.btn-lg{height: 28px;line-height: 20px;}
+#regresar{margin-top: 50px;}
+#regresar > span{ width: 100%; height: 79px; background: url(../images/logo_NAV.png) 50%/50% no-repeat; text-indent: -9999px; display: inline-block;}
+body > div > footer > div.row{margin: 0 auto;}
+ body > div:nth-child(1) > footer > div.row > div:nth-child(1){ border: 2px solid #F857A8;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2){ border: 2px solid #f2526e;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(3){border: 2px solid #f2526e;}
+#regresar > p { width: 50%;  height: 50px; margin: 0 auto; background-color:  rgba(92, 34, 58, 0.87); line-height: 50px;}
+#regresar{ background-color:  rgba(0, 0, 0, 0);}
+#regresar > p > span{width: 10%; text-indent: -9999px; display: inline-block; background: url(../images/arrow_up.png) 100%/100% no-repeat;}
+body > div > footer > div.row > div:nth-child(1) > h3 > span{ width: 100%;height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png)90px/360px no-repeat; display: inline-block;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{width: 100%; height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) -60px/360px no-repeat;display: inline-block;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{width: 100%; height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) -230px/360px no-repeat;display: inline-block;}
+#glosario > div > div:nth-child(4) > h3, #estadisticos > div > div:nth-child(4) > h3, #contribuye > div > div:nth-child(4) > h3{margin-top: 60px; font-size: 1.5em; font-family: 'Sequel';}
+#parrafos p{    width: 285px; font-size: 12px;text-align: left; border: 1px solid white;}
+#historias > div > div:nth-child(1) > h3 >span{width: 20%; height: 40px; display: inline-block; background: url(../images/ayudar_suma.png) 100%/50px no-repeat; }
+#historias > div > div:nth-child(2) > h3 > span{width: 20%; height: 45px; display: inline-block; background: url(../images/ayudar_recurre.png) 100%/40px no-repeat;}
+#historias > div > div:nth-child(1) > button > span,#historias > div > div:nth-child(2) > button > span{width: 20%; height: 15px; display: inline-block; background: url(../images/arrow-point-to-right.png) 100%/20px no-repeat;}
+#historias > div > div:nth-child(1) > button{width: 100px;}
+#historias > div > div:nth-child(2) > button{width: 120px;}
+#actividades > div > div:nth-child(1) > h3, #actividades > div > div:nth-child(2) > h3{margin-top: 20px; font-size: 15px;}
+#actividades > div > div:nth-child(1) > h3 > span{width: 20%; height: 24px; background: url(../images/logo_tests.png) 30px / 30px no-repeat;display: inline-block;}
+#arriba > div.row > div{margin: 0 auto}
+#actividades > div > div:nth-child(2) > h3 > span{width: 20%; height: 24px; background: url(../images/logo_eventos.png) 30px / 30px no-repeat;display: inline-block;}
+#actividades > div > div:nth-child(1) > div > p{ width: 280px; font-size: 12px; border: 1px white solid;line-height: 45px; }
+#actividades > div > div:nth-child(1) > div > p > span{height: 40px;display: inline-block;font-size: 12px; background-color: #6C6C6D;}
+#actividades > div > div:nth-child(1) > div > p > span:nth-child(2){ width: 15px; height: 40px;position: relative; top:13px; background: url(../images/keyboard-right-arrow-button.png)  -10px / 35px no-repeat; display:inline-block; background-color: #6C6C6D;}
+#actividades > div > div:nth-child(2) > p{font-size: 12px;}
+#actividades > div > div:nth-child(2) > div > div> div > h4{ width: 117px; font-size: 17px; border: 1px solid white;}
+#actividades > div > div:nth-child(2) > div > div > div> p{width: 100px;  font-size: 10px; display:inline-block;}
+#actividades > div > div:nth-child(2) > div > div:nth-child(2) > p{font-size: 11px;display: inline-block; width: 100px; text-align: left;margin-left: -13px;}
+#actividades > div > div:nth-child(2) > div > div:nth-child(2) > button{ width: 100px; margin-top: -10px; margin-left: -13px; font-size: 0.5em;}
+#cuestionarios > div > div:nth-child(1) > p:nth-child(4){font-size: 11px; display: inline-block; width: 200px;}
+#cuestionarios > div > div:nth-child(1) > button{font-size: 0.8em; }
+#cuestionarios > div > div:nth-child(1) > p:nth-child(2){font-size: 14px;display: inline-block; width: 200px;}
+@media screen and (min-width: 360px){
+   header  h1{font-size: 2em;}
+    h1 span{margin-top: 60px; height: 111px;}
+#header_div > p:nth-child(1) {  width: 80%;    margin-top: 40px; display: inline-block;font-size: 20px;}
+header, nav { width: 100%; background: url(../images/TEXTURA_movil.png) 100%/160% no-repeat;}
+    #arriba > div.row {
+    margin: 50px auto;
+}
+   nav{height: auto;}
+    .topnav .icon{margin-right: 20px;}
+    #myTopnav {height:auto;}
+    #logo-NAV{height: 44px; margin-top: 3px; position: relative; left: 5%;};
+    #inicio > h2{margin-top: 20px;}
+#icono1 {
+        background: url(../images/header_logos1.png) 133px/900px no-repeat;
+}
+    #cajas_principales_ayudar > div > div:nth-child(2) > h3{margin-top: 91px;}    
+    #icono2 {
+background: url(../images/header_logos1.png)-110px/886px no-repeat;
+}
+ #icono3 {
+background: url(../images/header_logos1.png)-385px/880px no-repeat;
+}
+    #icono4 {
+    background: url(../images/header_logos1.png)-630px/850px no-repeat;
+}
+    #header_div > div > div > p {margin: 0 auto;text-align: center;}
+  aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda {margin-top: 3px}
+ #aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda > p{text-align:left;}
+    #logo_calendar {
+    background: url(../images/logo_header_2.png) 47%/ 310% no-repeat;
+}
+  #logo_act {
+    background: url(../images/logo_header_2.png) 78px/ 774px no-repeat;
+}
+    /*ul{ margin: 0 auto; border: 1px solid white;}  */  
+  #aprender>h2{margin-top: 50px; font-size: 3em;}
+#aprender > ul > div > li > a{color: white; }
+  #aprender > div > div:nth-child(1), #contribuir > div > div:nth-child(1),  #ayudar > div > div:nth-child(1){width: 87%;}
+#aprender > ul > div:nth-child(1){border-bottom: none;}
+#aprender > ul > div:nth-child(2){border-bottom: none; border-top: none;}
+#aprender > ul > div:nth-child(3){border-bottom: none; border-top: none;}
+#aprender > ul > div:nth-child(4){border-top: none;}
+  body > div > header > div.row > div{margin-bottom: 2px;}
+  #glosario > div > div:nth-child(2) > div{margin: 0 auto;}
+  #aprender > ul, #contribuir >ul, #ayudar>ul{border: 1px solid white;    list-style: none;
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;}
+  #aprender > ul > div > li{text-align: center; margin-right: 30px;}
+
+  #footerh2{  border:1px solid white; margin: 0 auto;font-size: 1em;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(1) {
+    width: 255px; margin-top: 20px; margin-bottom: 17px;
+}
+ body > div:nth-child(1) > footer > div.row > div:nth-child(2) {
+    width: 255px;margin-bottom: 17px;
+} 
+  body > div:nth-child(1) > footer > div.row > div:nth-child(3) {
+    width: 255px;margin-bottom: 17px;
+}
+  #aprender h3 { margin-top: 0px;}
+  #regresar > p{margin-bottom: 20px;}
+    #foros > div > input{    margin-left: 30px;}
+    .carousel-item {
+    left: 14px;
+}
+    #demo{margin-top: 10px;}
+   #suma>div, #recursos>div {margin-top: 10px;background-color: #0b0b0b;}
+  #centros{ height: 200px;margin-top: 20px;}
+  #centros h3{margin-top: 40px;}
+    #aprender_del_tema:hover, #contribuir_al_tema:hover, #dar_recibir_ayuda:hover{text-shadow: 1px 1px white;}
+    #arriba > div.row > div:nth-child(1){margin: 0 auto;}
+    #header_div{height: 882px;}
+}
+@media screen and (min-width: 480px){#intro{padding-left: 0px;}}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+      display: block;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+
+ .topnav.responsive {position: relative; }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+     background-color: #0b0b0b;
+  }  
+ body > div:nth-child(1) > header > div.row {
+    margin: 31px auto;
+    width: 96%;
+    height: 477px;
+    position: relative;
+    top: -17px;
+}
+#logo_act {
+    background: url(../images/logo_header_2.png) -18%/ 274% no-repeat;
+}
+#logo_calendar {
+    background: url(../images/logo_header_2.png) 48%/ 316% no-repeat;
+}
+#logo_contacto {
+    width: 100%;
+    height: 100px;
+    background: url(../images/logo_header_2.png) 109%/ 315% no-repeat;
+}
+#intro {
+    width: 89%;
+}
+   
+   
+}
+@media screen and (min-width: 640px){ 
+ #intro{padding-left: 0px;}}
+@media screen and (min-width: 768px)  and (max-width: 959px){
+    #cajas_principales_ayudar > div > div:nth-child(2) > h3{margin: 0 auto;}
+    #header_div{background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000;}
+    .topnav a:before, .topnav a:after
+{
+    position: absolute;
+    opacity: 0;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #FFF;
+    transition: all 0.3s;
+}
+.topnav a:hover:before, div.borderXwidth .topnav a:hover:after
+{
+    opacity: 1;
+    width: 100%;
+}
+    #arriba > div.row{margin-top: 15px;}
+  h1{    width: 50%; font-size: 3em;  }
+  header h1 span{width: 60%; height: 180px; background: url(../images/logo_h1.png) 50%/150px no-repeat; text-indent: -99999px; 
+display: inline-block;} 
+    header{ height: 1078px;}
+    header,nav{
+    width: 100%;
+    background: url(../images/TEXTURA.png) 0%/130% no-repeat;
+}
+    #header_div{width: 709px;
+    height: 544px;}
+    nav {
+    width: 100%;
+}
+   
+  #myTopnav > a{position:relative; left: 8%;}
+    .topnav a, #logo_NAV{padding-left: 0px;}
+    #header_div > div{ width: 86%; margin: 0 30px;}
+    #header_div > div > div > p:nth-child(2){width: 140%;
+    display: inline-block;}
+    #header_div > p:nth-child(5){margin-top: 26px;position: relative;
+    right: 20%; font-size: 20px;}
+    #header_div > p:nth-child(6){position: relative;right: 19%; font-size: 14px;}
+    .topnav{ width: 100%; }
+    .topnav a{margin-top: 10px; padding: 4px 15px;border-right: 1px solid white;}
+    #myTopnav > a:nth-child(7){border: none;}
+    #header_div > div{background: url(../images/raya.png) 160px no-repeat, url(../images/raya2.png) 290px no-repeat, url(../images/raya3.png) 440px no-repeat;}
+    #icono1 {height: 60px;background: url(../images/header_logos1.png) -7%/673% no-repeat; }
+#icono2 {background: url(../images/header_logos1.png)25%/618% no-repeat;}
+#icono3 {background: url(../images/header_logos1.png)66%/669% no-repeat;}
+#icono4 {width: 100%;height: 60px;background: url(../images/header_logos1.png)103%/688% no-repeat;}
+body > div > header > div.row {
+    width: 700px;
+    margin: 0 auto;
+}
+    #arriba > div.row > div:nth-child(2) > p:nth-child(2) > a{font-size: 1.1em;}
+    body > div:nth-child(1) > header > div.row > div:nth-child(1){margin-left: -4px;}
+    #logo_act {background: url(../images/logo_header_2.png) -25%/ 236% no-repeat;}
+    #logo_calendar {background: url(../images/logo_header_2.png) 46%/ 297% no-repeat;}
+    #logo_contacto {background: url(../images/logo_header_2.png) 110%/ 311% no-repeat;}
+    #inicio{margin-top: 42px;}
+    #intro {
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;}
+    #inicio > h2 {
+    margin-top: 120px;
+    font-family: 'archiveregular';}
+    #aprender>h2 {
+    margin-top: 130px;
+    font-size: 3em;
+}
+    #contribuir > h2 {
+    margin-top: 45px;
+    color: #20dbb0;
+}
+#aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda{ margin: 0;     padding: 0px 10px;     border: 5px solid #2E2E2C;}
+    .logo_aprender {margin-top: 10px;background: url(../images/logos_aprender_contribuir_dar_recibir.png) -28%/234% no-repeat;
+}
+    #aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda > p:nth-child(3){text-align: left;}
+;    .logo_contribuir {margin-top: 10px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/234% no-repeat}
+    .logo_dar {margin-top: 10px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 128%/234% no-repeat;}  
+  ul div{ height: 50px; font-size: 1.2em;line-height: 50px;}
+  aprender>ul{    width: 83%}
+#aprender > ul > div:nth-child(1),#contribuir > ul > div:nth-child(1), #ayudar > ul > div:nth-child(1){  border-bottom: 1px solid white;border-right: none; }
+#aprender > ul > div:nth-child(2),#contribuir > ul > div:nth-child(2), #ayudar> ul > div:nth-child(2){border-bottom:1px solid white; border-top: 1px solid white; border-left: none; border-right: none;}
+#aprender > ul > div:nth-child(3){border-bottom: 1px white solid; border-top: 1px white solid; border-left: none; border-right: none;}
+#aprender > ul > div:nth-child(4){border-top: 1px white solid; border-bottom: 1px white solid; border-left: none;}
+#footerh2 h2{font-size: 1.2em; line-height: 50px;}
+  #regresar  { width: 60%;height: 150px; border-bottom: 4px solid white;  }
+  #regresar > span {margin-top: 60px; position: relative; right: 150px; background: url(../images/logo_NAV.png) 163px/222px no-repeat;}
+  #regresar > p{width: 230px; position: relative; left: 150px; top:-60px;}
+  body > div:nth-child(1) > footer > div.row{width: 90%;}
+  body > div:nth-child(1) > footer > div.row > div:nth-child(1){margin-top: 0px;}
+  body > div:nth-child(1) > footer > div:nth-child(2){width: 90%;  margin-top: 30px;padding: 20px 0px; }
+  #footerh2{width: 90%; padding: 0px; height: 50px;   }
+#aprender > ul, #contribuir >ul, #ayudar>ul {width: 94%;font-size: 0.8em;}
+#cuestionarios{margin-top: 30px;}
+#cuestionarios > div > div:nth-child(2) > h3{font-family: 'Sequel'; margin-top: 20px; font-size: 1.5em;}
+#cuestionarios > div > div:nth-child(1) > h3:nth-child(3){font-family: 'Sequel';margin-top: 10px;}}
+@media screen and  (min-width: 959px){
+h1{width: 490px; font-size: 3em;  margin-bottom: 36px; }
+h1 span{width: 135px;margin-top: 0px; height: 130px;top:118px;position: relative; right:301px;}
+header{height: 1078px;}
+header,nav{width: 100%;background: url(../images/TEXTURA.png) 0%/130% no-repeat;}
+#header_div > div {background: url(../images/raya.png) 180px no-repeat, url(../images/raya2.png) 370px no-repeat, url(../images/raya3.png) 560px no-repeat;}
+#header_div > p{margin-top: 20px;}
+#header_div > p:nth-child(6){font-size: 1em;}
+#header_div > div{background: url(../images/raya.png) 160px no-repeat, url(../images/raya2.png) 290px no-repeat, url(../images/raya3.png) 440px no-repeat;}
+#icono1 {height: 60px;background: url(../images/header_logos1.png) -7%/673% no-repeat; }
+#icono1 {background: url(../images/header_logos1.png)133px/900px no-repeat;}
+#icono2 {background: url(../images/header_logos1.png)-110px/886px no-repeat;}
+ #icono3 {
+background: url(../images/header_logos1.png)-385px/880px no-repeat;}
+#icono4 {background: url(../images/header_logos1.png)-630px/850px no-repeat;
+}
+}
+
+@media screen and (min-width: 960px) { 
+    header h1{width: 60%; font-size: 3em;}
+ header h1 span {
+    width: 40%;
+    height: 180px;
+    background: url(../images/logo_h1.png) 50% 70%/140px no-repeat;
+    text-indent: -99999px;
+    display: inline-block;
+}
+    header{height: 1200px;}
+    header,nav{
+    width: 100%;
+    background: url(../images/TEXTURA.png) 0%/103% no-repeat;}
+    #header_div{width: 800px;
+    height: 544px;background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000; }
+    nav {
+    width: 100%;     line-height: 20px;}
+  #myTopnav > a{position:relative; left: 20%;     font-size: 1.2em;s}
+.topnav a, #logo_NAV{padding-left: 0px;}
+    #seccion_contribuir_inicio #aprender_h2_uno{font-size: 3em;}
+ #header_div > div{ width: 86%; margin: 0 30px;}
+#header_div > div > div > p:nth-child(2){width: 140%;display: inline-block;}
+#header_div > p:nth-child(5){margin-top: 26px;position: relative;right: 20%; font-size: 20px;}
+#header_div > p:nth-child(6){position: relative;right: 19%; font-size: 0.8em;}
+.topnav{ width: 100%; height: 55px;}
+.topnav a{margin-top: 10px; padding: 4px 15px;border-right: 1px solid white;}
+#inicio > h2 { margin-top: 120px;font-family: 'archiveregular';}
+#aprender>h2 {margin-top: 130px;font-size: 3em;}
+#contribuir > h2 {margin-top: 45px;color: #20dbb0;}
+#myTopnav > a:nth-child(7){border: none;}
+#header_div > div{background: url(../images/raya.png) 160px no-repeat, url(../images/raya2.png) 270px no-repeat, url(../images/raya3.png) 440px no-repeat;}
+#icono1 {height: 60px;background: url(../images/header_logos1.png) -7%/673% no-repeat; }
+#icono2 {background: url(../images/header_logos1.png)25%/618% no-repeat;}
+#icono3 {background: url(../images/header_logos1.png)66%/669% no-repeat;}
+#icono4 {width: 100%;height: 60px;background: url(../images/header_logos1.png)103%/688% no-repeat;}
+body > div > header > div.row{width: 800px; margin: 0 auto;}
+#monos { width: 30%; height: 149px; position: relative;    top: -100px; left: 60%;background: url(../images/monos_del_header.png) 53%  / 90% no-repeat;} 
+body > div:nth-child(1) > header > div.row > div:nth-child(1){margin-left: -4px;}
+#logo_act{background:url(../images/logo_header_2.png) -25%/ 236% no-repeat;}
+#logo_calendar {background: url(../images/logo_header_2.png) 46%/ 297% no-repeat;}
+#logo_contacto {background: url(../images/logo_header_2.png) 110%/ 311% no-repeat;}
+#inicio{margin-top: 42px;margin-bottom: 100px;}
+#intro {width: 800px;height:auto;
+ margin: 0 auto;text-align: left;}
+#aprender_del_tema > p, #contribuir_al_tema>p,#dar_recibir_ayuda>p{margin-top: 20px;}
+#aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda{ margin: 0;     padding: 0px 10px;     border: 7px solid #2E2E2C;}
+.logo_aprender {margin-top: 10px;background: url(../images/logos_aprender_contribuir_dar_recibir.png) -28%/234% no-repeat;}
+#aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda > p:nth-child(3){text-align: left;}
+.logo_contribuir {margin-top: 10px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/234% no-repeat}
+.logo_dar {margin-top: 10px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 128%/234% no-repeat;}  
+ul div{ height: 50px; font-size: 1.2em;line-height: 50px;}
+aprender>ul{    width: 83%}
+#aprender > ul > div:nth-child(1){  border-bottom: 1px solid white;border-right: none; }
+#aprender > ul > div:nth-child(2){border-bottom:1px solid white; border-top: 1px solid white; border-left: none; border-right: none;}
+#aprender > ul > div:nth-child(3){border-bottom: 1px white solid; border-top: 1px white solid; border-left: none; border-right: none;}
+#aprender > ul > div:nth-child(4){border-top: 1px white solid; border-bottom: 1px white solid; border-left: none;}
+#footerh2 h2{font-size: 1.2em; line-height: 50px;}
+#regresar  { width: 60%;border-bottom: 4px solid white;  }
+#regresar > span {margin-top: 60px; position: relative; right: 150px;background: url(../images/logo_NAV.png) 144px/257px no-repeat;}
+#regresar > p{width: 30%; position: relative; left: 150px; top:-60px;}
+body > div:nth-child(1) > footer > div.row{width: 90%;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(1){margin-top: 0px;}
+body > div:nth-child(1) > footer > div:nth-child(2){width: 90%;  margin-top: 30px;padding: 20px 0px; }
+  #footerh2{width: 90%; padding: 0px; height: 50px;   }
+    #aprender > ul, #contribuir >ul, #ayudar>ul {
+      width: 800px;font-size: 0.8em;}
+  #header_div > div{background: url(../images/raya.png) 170px no-repeat, url(../images/raya2.png) 330px no-repeat, url(../images/raya3.png) 510px no-repeat;}
+    #icono1 {height: 60px;background: url(../images/header_logos1.png) -7%/673% no-repeat; }
+body > div > footer > div.row > div:nth-child(1) > h3 > span {
+background:url(../images/logos_aprender_contribuir_dar_recibir.png)120px/460px no-repeat}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -60px/446px no-repeat} 
+body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -273px/436px no-repeat}
+  #cuestionarios{margin-top: 64px;}
+}
+
+@media screen and (min-width: 1024px) {
+    h2{margin-top: 20px;}
+ header h1{width: 50%; font-size: 3em;}
+ header h1 span {
+    width: 40%;
+    height: 180px;
+    background: url(../images/logo_h1.png) 50% 70%/140px no-repeat;
+    text-indent: -99999px;
+    display: inline-block;
+}
+    #header_div{background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000;}
+body > div > footer > div.row > div:nth-child(1) > h3 > span {
+background:url(../images/logos_aprender_contribuir_dar_recibir.png)120px/460px no-repeat}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -60px/446px no-repeat} 
+body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -273px/436px no-repeat}
+
+}
+@media screen and (min-width:1080px){ 
+header h1{width: 604px; margin: 0 auto;font-family: 'ttsupermolot';     font-size: 49px;font-style: normal;}
+header h1 span {
+    width: 260px;
+    height: 180px;
+    background: url(../images/logo_h1.png) 40% 90%/140px no-repeat;
+    text-indent: -99999px;
+}
+  #header_div {
+       width: 800px;
+    height: 544px;
+      background: url(../images/monos_del_header.png)80% 86%/200px no-repeat #000;
+}
+    #seccion_aprender_inicio > p{font-size: 1.4em;}
+body > div > footer > div.row > div:nth-child(1) > h3 > span { margin-top: 20px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -45%/196% no-repeat}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{margin-top: 20px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) 45%/196% no-repeat} 
+body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{margin-top: 20px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) 140%/196% no-repeat}
+    #inicio > h2 {
+    margin-top: 120px;
+    font-size: 3em;
+    font-family: 'archiveregular';
+}
+    #aprender>h2 {
+    margin-top: 130px;
+    font-size: 3em;
+}
+    #contribuir > h2 {
+    margin-top: 45px;
+    color: #20dbb0;
+}
+    #ayudar > h2 {
+    margin-top: 170px;
+    font-size: 5em;
+}
+    #cajas_principales_recursos > h3, #cajas_principales_testimonios > h3{position: relative;
+    top: 20%;}
+    #cajas_principales_recursos > p, #cajas_principales_testimonios > p{position: relative;
+    top: 20%;
+}
+    #boton_ver_mas_mapa_aprender{    position: relative;
+    top: 57px;}
+    #cajas_principales_testimonios > button{  position: relative;
+    top: 87px;}
+}
+@media screen and (min-width:1280px) and (min-width:1580px){
+    nav {
+    height: 66px;
+    width: 100%;
+}
+    #logo-NAV {
+    height: 44px;
+    margin-top: 8px;
+    position: relative;
+    left: 260px;
+    float: left;
+}
+    .topnav{    height: 75px; }
+    .topnav a{margin-top: 16px;  position: relative;left: 24%;}
+
+    header, nav {
+    width: 100%;
+    background: url(../images/TEXTURA.png) 0%/102% no-repeat;
+}
+    #header_div {
+    width: 800px;
+    height: 544px;
+        background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000;
+}
+    #header_div > p:nth-child(5) {font-size: 22px;}
+    #header_div > p:nth-child(6){font-size: 15px;}
+    #logo_calendar, #logo_contacto, #logo_act{height: 60px;margin-top: 20px;}
+    #inicio {
+    margin-top: 101px;
+    }
+    #seccion_aprender_inicio > p{font-size: 1em;}
+#aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda{ margin: 0;     padding: 0px 10px;     border: 3px solid #2E2E2C;}   .logo_contribuir {background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/214% no-repeat;} 
+#inicio > h2 {
+    margin-top: 120px;
+    font-family: 'archiveregular';
+}
+    #aprender>h2 {
+    margin-top: 130px;
+    font-size: 3em;
+}
+    #contribuir > h2 {
+    margin-top: 45px;
+    color: #20dbb0;
+}
+    #header_div > p:nth-child(6){font-size: 15px;}
+    #header_div > p:nth-child(6){font-size: 1em;}
+  #actividades > div > div:nth-child(1) > div{margin-left: 0px;}
+  body > div > footer > div.row > div:nth-child(1) > h3 > span { height: 100px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png)145px/760px no-repeat}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{ margin-top: 20px; margin-bottom: 10px; height: 80px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -190px/760px no-repeat} 
+body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{margin-top: 20px; margin-bottom: 10px; 
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -553px/760px no-repeat} 
+  #actividades > div > div:nth-child(2) > h3, #actividades > div > div:nth-child(1) > h3{margin-top: 60px;}
+#actividades > div > div:nth-child(1) > div> p{margin-left: 30px;}
+
+    #arriba > div.row > div:nth-child(3) > p> a{font-size: 1em;}
+}
+@media screen and (min-width:1920px){
+header h1{width: 604px; margin: 0 auto;font-family: 'ttsupermolot';     font-size: 49px;font-style: normal; }
+header h1 span {
+    width: 260px;
+    height: 180px;
+    background: url(../images/logo_h1.png) 40% 90%/140px no-repeat;
+    text-indent: -99999px;
+}
+
+  #aprender >h2{margin-top: 140px; font-size:  6em;}
+   #contribuir >h2{ margin-top: 70px; font-size:  6em;}
+  #ayudar>h2{margin-top: 70px;font-size: 6em;}
+  #aprender > p, #ayudar>p, #contribuir>p{font-size: 2.5em;}
+    #header_div {
+    width: 1020px;
+    height: 687px;
+      margin-top: 0px;
+        background: url(../images/monos_del_header.png)85% 88%/230px no-repeat #000;
+}
+    #header_div > div {
+    background: url(../images/raya.png) 238px no-repeat, url(../images/raya2.png) 693px no-repeat, url(../images/raya3.png) 430px no-repeat;
+}
+
+    header {
+    height: 1350px;
+}
+#header_div > p:nth-child(1) {
+    width: 80%;
+    margin-top: 40px;
+    display: inline-block;
+    font-size: 32px;
+}
+    #header_div > p:nth-child(5) {
+    margin-top: 26px;
+    position: relative;
+    right: 22%;
+    font-size: 29px;
+}
+    #header_div > p:nth-child(6) {
+    position: relative;
+    right: 19%;
+    font-size: 21px;
+}
+    #icono3 {
+    background: url(../images/header_logos1.png)62%/669% no-repeat;
+}
+    #icono4 {
+    background: url(../images/header_logos1.png)99%/688% no-repeat;
+}
+   
+        
+body > div > header > div.row {
+    width: 1000px;
+    height: 202px;
+}
+
+  #header_div > p:nth-child(6){font-size: 1.3em;}
+    
+    body > div:nth-child(1) > header > div.row{height: 184px;}
+        #logo_calendar, #logo_contacto, #logo_act{height: 80px;margin-top: 30px;}
+    #intro {
+        margin: 0 430px;}
+    #inicio > h2{font-size: 63px;}
+  .logo_aprender {
+    height: 82px;
+    margin-top: 28px;
+    margin-bottom: 17px;
+    background: url(../images/logos_aprender_contribuir_dar_recibir.png) -28%/239% no-repeat;
+}
+    .logo_contribuir {
+    margin-top: 35px;
+    height: 73px;
+    background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/239% no-repeat;
+}
+    .logo_dar {
+    height: 65px;
+    margin-top: 43px;
+    background: url(../images/logos_aprender_contribuir_dar_recibir.png) 125%/249% no-repeat;
+}
+  #header_div > div > div > p:nth-child(2){font-size: 1.5em;}
+  nav{height: 96px;}
+.topnav {
+    height: 108px;
+  
+    
+}
+  .topnav>a{font-size: 1.4em;  line-height: 66px; padding: 0px 30px;}
+    .topnav a {
+  
+    margin-top: 16px;
+    position: relative;
+}
+    #logo-NAV {
+    height: 94px;
+    margin-top: 1px;
+    position: relative;
+    left: 244px;
+    float: left;
+}
+
+  #intro{width: 1100px;
+    height: 414px;}
+  #intro p{font-size: 1.7em;} 
+ 
+  #aprender > ul, #contribuir >ul, #ayudar > ul{width: 1500px; font-size: 1.5em; padding: 10px 10px;}
+
+  #aprender > ul, #contribuir>ul, #ayudar>ul{font-size: 2em;}
+  body > div > footer > div.row > div:nth-child(1) > h3 > span { height: 100px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png)225px/760px no-repeat}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{ margin-top: 20px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -100px/760px no-repeat} 
+body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{margin-top: 20px;
+background:url(../images/logos_aprender_contribuir_dar_recibir.png) -453px/760px no-repeat}
+  #footerh2 > h2{font-size: 2.3em;}
+
+    body > div:nth-child(1) > footer > div.row > div > p{font-size: 2em;}
+#regresar > p {
+    width: 30%;
+ 
+    position: relative;
+    left: 150px;
+    top: -60px;
+  font-size: 2em;
+}
+
+#contribuir_al_tema > h3{font-size: 2em;}#aprender_del_tema > h3{font-size: 2em;}#dar_recibir_ayuda> h3{font-size: 2em;}
+  #aprender_del_tema>p, #contribuir_al_tema>p, #dar_recibir_ayuda>p{font-size: 1.3em;}
+  body > div:nth-child(1) > header > div.row > div > p{font-size: 2.em;}
+  #foros > h3{margin-top: 20px;}
+  #parrafos{width: 100px;}
+  #ayudar{margin-top: 60px;}
+  #parrafos>p{width: 500px; padding: 0px; position: relative; left: -250px;font-size: 0.7em; }
+    #inicio > h2 {
+    margin-top: 120px;
+    font-family: 'archiveregular';
+}
+    #aprender>h2 {
+    margin-top: 130px;
+    font-size: 3em;
+}
+    #contribuir > h2 {
+    margin-top: 45px;
+    color: #20dbb0;
+}
+  
+}
 
