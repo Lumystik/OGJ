@@ -1,0 +1,831 @@
+[12:51, 11/4/2018] +52 1 55 3505 5095: @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600');
+
+@font-face {
+    font-family: 'ttsupermolot';
+    src: url("../fonts/tt_supermolot_black-webfont.woff") format('woff'), 
+      url(..OGJ/fonts/tt_supermolot_black-webfont.woff2);
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archiveregular';
+    src: url('../fonts/archive-webfont.woff2') format('woff2'),
+         url('../fonts/archive-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Sequel Neue';
+    src: url('../fonts/Sequel-Neue.woff2') format('woff2'),
+        url('../fonts/Sequel-Neue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#seccion_aprender_inicio .filterDivAprender, #seccion_contribuir_inicio .filterDivContribuir, #seccion_aprender_inicio    .filterDivAyudar{
+  color: #ffffff;
+  display: none;
+}
+
+#seccion_aprender_inicio .show {
+  display: block;
+}
+
+#seccion_aprender_inicio .container_aprender_inicio, #seccion_contribuir_inicio .container_contribuir_inicio {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+#seccion_aprender_inicio .btn, #seccion_contribuir_inicio .btn {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+#seccion_aprender_inicio .btn:hover, #seccion_contribuir_inicio  .btn:hover{
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#seccion_aprender_inicio .btn.active, #seccion_contribuir_inicio .btn.active{
+  color: white;
+}
+
+#seccion_contribuir_inicio{
+    width: 90%;
+    margin: auto;
+    background-color: #2E2E2E;
+}
+
+#seccion_aprender_inicio #aprender_h2_uno, #seccion_contribuir_inicio #aprender_h2_uno{
+    padding-top: 4%;
+    font-family: 'archiveregular';
+    color: rgb(107, 211, 123);
+    text-align: center;
+}
+
+#seccion_aprender_inicio #navAprender, #seccion_contribuir_inicio #navContribuir, #seccion_aprender_inicio #navAyudar {
+    font-family: 'Sequel Neue';
+    text-align:center;
+}
+#seccion_aprender_inicio #navAprender button,#seccion_contribuir_inicio #navContribuir button, #navContribuir, #seccion_aprender_inicio #navAyudar button{
+    font-size: 0.8rem;
+}
+
+#seccion_aprender_inicio #cajas_principales_aprender, #seccion_contribuir_inicio #cajas_principales_contribuir, #seccion_aprender_inicio #cajas_principales_ayudar{
+    
+    margin: auto;
+     width: 100%;
+    height: auto;
+    font-family: 'Barlow Semi Condensed';
+    margin-bottom: 10%;
+    padding: 9% 9% 22% 9%;
+}
+#cajas_principales_aprender{
+    background:url(images/aprenderg2.png) 0% 0% / 100% 100% no-repeat ;
+}
+#cajas_principales_contribuir{
+   background:url(images/aprenderg3.png) 0% 0% / 100% 100% no-repeat ; 
+}
+#seccion_aprender_inicio .icono_glosario_aprender{
+    text-indent: -99999px;
+    background: url(images/)
+}
+
+#seccion_aprender_inicio h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+#seccion_contribuir_inicio h3 {
+    margin-top: 50px;}
+#seccion_aprender_inicio #cajas_principales_aprender #texto_de_caja, #seccion_contribuir_inicio #cajas_principales_contribuir #texto_de_caja,
+#seccion_aprender_inicio #cajas_principales_ayudar #texto_de_caja
+{
+    margin-top: 3%;
+        font-size: 0.8rem;
+}
+
+#seccion_aprender_inicio #definicion_aprender{
+      border: solid 0.5px white;
+    padding: 3%;
+        font-size: 0.87rem;
+    padding: 4% 3%;
+}
+
+#seccion_aprender_inicio button, #seccion_contribuir_inicio button{
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+#seccion_aprender_inicio .glosario_aprender p:nth-child(2)~div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#seccion_aprender_inicio #pre_preguntas_aprender, #seccion_aprender_inicio #pre_test_aprender{
+    border: solid 1px white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 4%;
+    font-size: 0.8rem;
+    margin-bottom: 6%;
+}
+
+#seccion_aprender_inicio  …
+[14:52, 11/4/2018] +52 1 55 3505 5095: CSS FINAL
+[14:52, 11/4/2018] +52 1 55 3505 5095: @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600');
+
+@font-face {
+    font-family: 'ttsupermolot';
+    src: url("../fonts/tt_supermolot_black-webfont.woff") format('woff'), 
+      url(..OGJ/fonts/tt_supermolot_black-webfont.woff2);
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archiveregular';
+    src: url('../fonts/archive-webfont.woff2') format('woff2'),
+         url('../fonts/archive-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Sequel Neue';
+    src: url('../fonts/Sequel-Neue.woff2') format('woff2'),
+        url('../fonts/Sequel-Neue.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+#seccion_aprender_inicio .filterDivAprender, #seccion_contribuir_inicio .filterDivContribuir, #seccion_aprender_inicio .filterDivAyudar  {
+  color: #ffffff;
+  display: none;
+}
+
+#seccion_aprender_inicio .show, #seccion_contribuir_inicio .show {
+  display: block;
+}
+
+#seccion_aprender_inicio .container_aprender_inicio {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+#seccion_aprender_inicio .btn, #seccion_contribuir_inicio .btn {
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  cursor: pointer;
+}
+
+#seccion_aprender_inicio .btn:hover, #seccion_contribuir_inicio .btn:hover {
+ text-decoration: underline;
+    text-decoration: overline;
+}
+
+#seccion_aprender_inicio .btn.active, #seccion_contribuir_inicio .btn.active {
+  color: white;
+   text-decoration: underline; 
+}
+
+#seccion_aprender_inicio, #seccion_contribuir_inicio{
+    width: 90%;
+    margin: auto;
+    background-color: #2E2E2E;
+}
+
+#seccion_aprender_inicio #aprender_h2_uno, #seccion_contribuir_inicio #aprender_h2_uno{
+    padding-top: 4%;
+    font-family: 'archiveregular';
+    color: rgb(107, 211, 123);
+    text-align: center;
+}
+
+#seccion_aprender_inicio #navAprender, #seccion_contribuir_inicio #navContribuir {
+    font-family: 'Sequel Neue';
+    text-align:center;
+    
+}
+#seccion_aprender_inicio #navAprender button, #seccion_contribuir_inicio #navContribuir button{
+    font-size: 0.8rem;
+}
+
+#seccion_contribuir_inicio #cajas_principales_contribuir, #seccion_aprender_inicio #cajas_principales_ayudar {
+
+outline-offset: 17px;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    width: 99%;
+    font-family: 'Barlow Semi Condensed';
+    margin-bottom: 10%;
+    padding: 9%;
+    z-index: 2;
+    
+}
+
+#seccion_aprender_inicio h3, #seccion_contribuir_inicio h3{
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#seccion_aprender_inicio #cajas_principales_aprender #texto_de_caja, #seccion_contribuir_inicio #cajas_principales_contribuir #texto_de_caja{
+    margin-top: 3%;
+    font-size: 1.1rem;
+
+}
+#pre_articulos_aprender > a{font-size: 17px;}
+#boton_ver_todos_los_eventos_aprender > a, #boton_explorar_mapa_aprender > a, #boton_leer_mas_articulos_aprender > a, #pre_articulos_aprender > a, {font-size: 1.4em;}
+#seccion_aprender_inicio #definicion_aprender{
+      border: solid 0.5px white;
+    padding: 3%;
+        font-size: 0.87rem;
+    padding: 4% 3%;
+}
+#boton_ver_todos_los_test_aprender > a{font-size: 1.4em;}
+#seccion_aprender_inicio button{
+    background-color: gray;
+    color: white;
+    border: none;
+}
+
+#seccion_aprender_inicio .icono_glosario_aprender{
+    text-indent: -9999px;
+    background: url("images/glosario_1.png") top left/ 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+#seccion_aprender_inicio .glosario_aprender p:nth-child(2)~div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#seccion_aprender_inicio .icono_preguntas_frecuentes_aprender{
+    text-indent: -9999px;
+    background: url("images/preguntas.png") top left/ 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+#seccion_aprender_inicio #pre_preguntas_aprender, #seccion_aprender_inicio #pre_test_aprender{
+    border: solid 1px white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 4%;
+    font-size: 0.8rem;
+    margin-bottom: 6%;
+}
+
+#seccion_aprender_inicio  #boton_ver_mas_preguntas_test a{
+    color: white;
+}
+
+#seccion_aprender_inicio  #boton_ver_mas_preguntas_test a:visited{
+    color: white;
+}
+
+#seccion_aprender_inicio #boton_ver_mas_glosario_aprender{
+padding: 3% 10%;
+}
+
+#seccion_aprender_inicio .icono_mapas_aprender{
+    text-indent: -9999px;
+    background: url("images/mapas.png") top left/ 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+#seccion_aprender_inicio .mapas_aprender{
+    padding: 10%;
+}
+
+#seccion_aprender_inicio #boton_explorar_mapa_aprender{
+    margin-top: 28%;
+    padding: 4%;
+}
+
+#seccion_aprender_inicio .mapas_aprender p~div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+#seccion_aprender_inicio .mapas_aprender #texto_de_caja {
+    padding-top: 4%;
+    text-align: center;
+}
+
+#seccion_aprender_inicio .mapas_aprender #texto_de_caja {
+    padding-top: 4%;
+    text-align: center;
+}
+
+#seccion_aprender_inicio .icono_articulos_aprender{
+    text-indent: -9999px;
+    background: url("images/art_invest.png") top left/ 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+
+#seccion_aprender_inicio #pre_articulos_aprender{
+    margin-bottom: 4%;
+    border: solid 1px white;
+    text-align: left;
+    padding: 0% 4%;    
+}
+
+#seccion_aprender_inicio .articulos_aprender a{
+    color: white;
+    font-size: 0.8rem;
+}
+
+#seccion_aprender_inicio .articulos_aprender a:visited{
+    color: white;
+}
+
+#boton_leer_mas_articulos_aprender{
+     padding: 3% 10%;
+}
+#seccion_aprender_inicio #elBoton, #seccion_contribuir_inicio #elBoton{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+
+#seccion_aprender_inicio #elBoton a, #seccion_contribuir_inicio #elBoton a{
+color: white;
+}
+
+#seccion_aprender_inicio #elBoton a:visited, #seccion_contribuir_inicio #elBoton a:visited{
+color: white;
+}
+
+#seccion_aprender_inicio .icono_leer_testimonios_aprender{
+    text-indent: -9999px;
+    background: url("images/lee_testimonios.png") top left/ 100% no-repeat;
+    width: 31px;
+    height: 40px;
+    margin: auto;
+}
+
+    #seccion_aprender_inicio .leer_testimonio_aprender h4 {
+    font-size: 1.2rem;
+    text-align: center;
+}
+#boton_ver_mas_test{
+    padding: 4%;
+}
+  #seccion_aprender_inicio .testimonio_reciente{
+    font-size: 0.8rem;
+    border: solid 1px white;
+    padding: 4%;
+    margin-bottom: 6%;
+}
+#seccion_aprender_inicio #boton_leer_mas_testimonios_aprender{
+    padding: 3% 10%;}
+
+#seccion_aprender_inicio #boton_leer_mas_testimonios_aprender a{
+    color: white;
+}
+
+#seccion_aprender_inicio #boton_leer_mas_testimonios_aprender a:visited{
+    color: white;
+}
+
+#seccion_aprender_inicio #boton_escribir_testimonios_aprender{
+    padding: 3% 10%;}
+
+
+
+#seccion_aprender_inicio .icono_escribir_testimonios_aprender{
+    text-indent: -9999px;
+    background: url("images/escribir_testimonio.png") top left/ 115% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+#seccion_aprender_inicio #boton_escribir_testimonios_aprender a{
+    color: white;
+}
+
+#seccion_aprender_inicio #boton_escribir_testimonios_aprender a:visited{
+    color: white;
+}
+
+#seccion_aprender_inicio .icono_test_aprender{
+    text-indent: -9999px;
+    background: url("images/test.png") top left/ 98% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+#seccion_aprender_inicio .test_aprender #texto_de_caja{
+    margin-bottom: 14%;
+}
+
+#seccion_aprender_inicio .test_aprender #pre_test_aprender:last-child{
+    margin-bottom: 14%;
+}
+
+#seccion_aprender_inicio .icono_eventos_aprender{
+    text-indent: -9999px;
+    background: url("images/eventos.png") top left/ 100% no-repeat;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+}
+
+#seccion_aprender_inicio .eventos_aprender{
+    text-align: center;
+}
+
+#seccion_aprender_inicio .eventos_aprender h3~p{
+    margin-top: 8% !important;
+    margin-bottom: 8% !important;
+    
+}
+
+#seccion_aprender_inicio .evento_proximo_aprender{
+    border: 1px solid white;
+    padding: 3%;
+        width: 77%;
+    margin: auto;
+}
+
+#seccion_aprender_inicio .eventos_aprender h4{
+    font-size: 1rem;
+}
+
+#seccion_aprender_inicio .evento_proximo_aprender h5{
+    font-size: 1.6rem;
+    margin-bottom: 0%
+}
+    
+#seccion_aprender_inicio .evento_proximo_aprender .nom_evento{
+    margin: 0%;
+    margin-top: 0%;
+    margin-bottom: 5%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid white;
+    font-size: 0.98rem !important;
+}
+
+#seccion_aprender_inicio #fecha_evento_aprender{
+    font-size: 1.4rem;
+    margin-bottom: 0%;
+    margin-top: 0% !important;
+}
+
+#seccion_aprender_inicio #horario_evento_aprender{
+    font-size: 1.1rem;
+    margin-bottom: 0%;
+}
+
+#seccion_aprender_inicio .direccion_evento_aprender{
+    margin: 0% !important;
+}
+
+#seccion_aprender_inicio #boton_ver_todos_los_eventos_aprender{
+        margin-top: 11%;
+}
+@media (min-width: 768px){  
+    #cajas_principales_contribuir > p {
+    font-size: 1.2em;
+}
+    #parrafos1 {
+    margin-top: 75px;
+        font-size: 1.2em;}
+    #seccion_aprender_inicio #navAprender, #seccion_contribuir_inicio #navContribuir,  #seccion_aprender_inicio  #navAyudar  {
+    width: 83%;
+    margin: auto;
+        border: 1px solid white;
+        margin: auto;
+}
+
+ #seccion_contribuir_inicio h3 {
+     font-size: 1.3rem;}   
+    #seccion_aprender_inicio #navAprender button,    #seccion_contribuir_inicio #navContribuir button, #seccion_aprender_inicio  #navAyudar button {
+    font-size: 0.9rem;
+}
+
+   #seccion_aprender_inicio #contenedor_interno    {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-column-gap: 2%;
+        grid-template-areas: "izq der";
+        padding: 10%;
+       padding-top: 0%;
+    }
+    #seccion_contribuir_inicio #contenedor_interno{
+        display: grid;
+        grid-template-columns: 49% 49%;
+        grid-column-gap: 2%;
+        grid-template-areas: "izq der";
+        padding: 10%;
+       padding-top: 0%;
+        
+    }
+    #seccion_aprender_inicio #titulo{
+        display: grid;
+        grid-template-columns: 20% 80%;
+        grid-template-areas: "icono titulo_aprender";
+        
+    }
+    #seccion_contribuir_inicio #titulo{    display: grid;
+        grid-template-columns: 30% 30%;
+        grid-template-areas: "icono titulo_aprender";}
+    #seccion_aprender_inicio .icono_glosario_aprender, 
+    #seccion_aprender_inicio .icono_preguntas_frecuentes_aprender, 
+    #seccion_aprender_inicio .icono_mapas_aprender, 
+    #seccion_aprender_inicio .icono_articulos_aprender, 
+    #seccion_aprender_inicio .icono_leer_testimonios_aprender, 
+    #seccion_aprender_inicio .icono_escribir_testimonios_aprender, 
+    #seccion_aprender_inicio .icono_test_aprender, 
+    #seccion_aprender_inicio .icono_eventos_aprender, {
+        grid-area: icono;
+    }
+    
+    #seccion_aprender_inicio .icono_mapas_aprender{
+    margin: 0%;
+    margin-top: 2%;
+}
+    
+       #seccion_aprender_inicio .icono_eventos_aprender{
+    margin: 0%;
+    margin-top: 2%;
+}
+    
+    #seccion_aprender_inicio #titulo_aprender{
+         grid-area: titulo_aprender;
+    }
+    #seccion_aprender_inicio #pre_preguntas_aprender, #seccion_aprender_inicio #pre_test_aprender {
+    line-height: 36px;
+    }
+
+    #seccion_aprender_inicio #cajas_principales_aprender,  #seccion_contribuir_inicio #cajas_principales_contribuir{
+        width: 100%;
+        margin: 0%;
+    }
+    #seccion_aprender_inicio #cajas_principales_ayudar{width: 80%; margin-top: 20px;}
+    #seccion_aprender_inicio #boton_leer_mas_testimonios_aprender {
+    margin-top: 13%;
+}
+    
+     #seccion_aprender_inicio .mapas_aprender h3{
+            margin-bottom: 30%;
+    }
+    
+    #seccion_aprender_inicio .mapas_aprender #texto_de_caja {
+    margin-bottom: 20%;
+    }
+    
+    #seccion_aprender_inicio .glosario_aprender, #seccion_aprender_inicio .mapas_aprender, #seccion_aprender_inicio .leer_testimonio_aprender, #seccion_aprender_inicio .test_aprender {
+       grid-area: izq; 
+    }
+         #seccion_aprender_inicio .preguntas_aprender, #seccion_aprender_inicio .articulos_aprender, #seccion_aprender_inicio .escribir_testimonio_aprender, #seccion_aprender_inicio .eventos_aprender {
+        grid-area: der;
+    }
+    
+    #seccion_aprender_inicio #pre_test_aprender{
+        padding-left: 2%;
+        font-size: 1.2em;
+    }
+    
+    #seccion_aprender_inicio .evento_proximo_aprender .nom_evento {
+    margin-bottom: 2%;
+    }
+ 
+    #seccion_aprender_inicio #boton_ver_todos_los_eventos_aprender{
+        margin-top: 11%;
+    }
+    
+    #seccion_aprender_inicio #boton_ver_todos_los_test_aprender{
+        margin-top: 19%;
+    }
+    
+    #seccion_aprender_inicio #boton_escribir_testimonios_aprender {
+    margin-top: 38%;
+}
+    
+    #seccion_aprender_inicio .leer_testimonio_aprender h4 {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 10%;
+}  
+    
+}
+
+@media (min-width: 1024px){  
+   
+     #seccion_aprender_inicio #navAprender button, #seccion_contribuir_inicio #navContribuir button,   #seccion_aprender_inicio #navAyudar button  {
+    font-size: 1rem;
+}
+    
+  #seccion_aprender_inicio #aprender_h2_uno,  #seccion_contribuir_inicio #aprender_h2_uno{
+        font-size: 3rem;
+    }
+    
+    #seccion_aprender_inicio #pre_articulos_aprender {
+    line-height: 39px;
+}
+    #seccion_aprender_inicio #boton_explorar_mapa_aprender {
+    margin-top: 0%;
+    }
+
+    #seccion_aprender_inicio #boton_escribir_testimonios_aprender {
+    margin-top: 32%;
+}
+    
+        #seccion_aprender_inicio .test_aprender #texto_de_caja {
+    margin-bottom: 5%;
+}
+    #boton_ver_todos_los_test_aprender {
+    margin-top: 3%;
+}
+    
+    #seccion_aprender_inicio .eventos_aprender h3~p {
+    margin-top: 0%; 
+    margin-bottom: 0%;
+}
+    
+    #seccion_aprender_inicio #boton_ver_todos_los_eventos_aprender {
+    margin-top: 4%;
+}
+    #seccion_aprender_inicio .icono_glosario_aprender, 
+    #seccion_aprender_inicio .icono_preguntas_frecuentes_aprender, 
+    #seccion_aprender_inicio .icono_mapas_aprender, 
+    #seccion_aprender_inicio .icono_articulos_aprender, 
+    #seccion_aprender_inicio .icono_leer_testimonios_aprender, 
+    #seccion_aprender_inicio .icono_escribir_testimonios_aprender, 
+    #seccion_aprender_inicio .icono_test_aprender, 
+    #seccion_aprender_inicio .icono_eventos_aprender { 
+    width: 45px;
+    height: 48px;
+    }
+   #seccion_contribuir_inicio h3 {
+    font-size: 1.8rem;
+}
+}
+
+@media (min-width: 1920px){  
+    
+#seccion_aprender_inicio #aprender_h2_uno,     
+#seccion_contribuir_inicio #aprender_h2_uno {
+    font-size: 3.5rem;
+    margin-bottom: 2%;
+    }
+    
+    #seccion_aprender_inicio .icono_glosario_aprender, 
+    #seccion_aprender_inicio .icono_preguntas_frecuentes_aprender, 
+    #seccion_aprender_inicio .icono_mapas_aprender, 
+    #seccion_aprender_inicio .icono_articulos_aprender, 
+    #seccion_aprender_inicio .icono_leer_testimonios_aprender, 
+    #seccion_aprender_inicio .icono_escribir_testimonios_aprender, 
+    #seccion_aprender_inicio .icono_test_aprender, 
+    #seccion_aprender_inicio .icono_eventos_aprender { 
+    width: 55px;
+    height: 55px;
+    }
+    
+    #seccion_aprender_inicio .container_aprender_inicio,  #seccion_contribuir_inicio .container_contribuir_inicio,     #seccion_aprender_inicio .container_ayudar_inicio, {
+    margin-top: 3%;
+    }
+    
+    #seccion_aprender_inicio #navAprender button,   #seccion_contribuir_inicio #navContribuir button,    #seccion_aprender_inicio #navAyudar button  {
+    font-size: 1.4rem;
+    padding: 1.5%;
+}
+    
+    #seccion_aprender_inicio h3, #seccion_contribuir_inicio h3 {
+    font-size: 2rem;
+    }
+    
+    #seccion_aprender_inicio #cajas_principales_aprender #texto_de_caja,     #seccion_contribuir_inicio #cajas_principales_contribuir #texto_de_caja {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.5rem;
+}
+    
+#seccion_aprender_inicio #definicion_aprender, #seccion_contribuir_inicio #definicion_aprender {
+    border: solid 0.5px white;
+    padding: 3%;
+    font-size: 1.4rem;
+    }
+    
+    #seccion_aprender_inicio #elBoton a, #seccion_contribuir_inicio #elBoton a {
+    font-size: 1.4rem;
+}
+    
+    #boton_ver_mas_glosario_aprender {
+    margin-top: 17%;
+}
+    
+    #seccion_aprender_inicio #pre_preguntas_aprender, #seccion_aprender_inicio #pre_test_aprender {
+    line-height: 57px;
+    font-size: 1.4rem;
+}
+    
+    #seccion_aprender_inicio .mapas_aprender h3 {
+    margin-bottom: 17%;
+}
+    
+    #seccion_aprender_inicio #boton_explorar_mapa_aprender {
+    margin-top: 30%;
+}
+    
+    #seccion_aprender_inicio #pre_articulos_aprender {
+    padding: 2% 4%;
+}
+    
+    #seccion_aprender_inicio .articulos_aprender a {
+    font-size: 1.2rem;
+}
+    
+    #seccion_aprender_inicio .leer_testimonio_aprender h4 {
+    font-size: 1.5rem;
+    }
+    
+    #seccion_aprender_inicio .testimonio_reciente {
+    font-size: 1.2rem;
+    }
+    
+    #seccion_aprender_inicio #boton_ver_mas_preguntas_test{
+            padding: 0% 7%;
+    }
+    
+    #seccion_aprender_inicio .eventos_aprender h4 {
+    font-size: 1.7rem;
+}
+    #seccion_aprender_inicio .evento_proximo_aprender h5 {
+    font-size: 2rem;
+    }
+    
+    
+.nom_evento {
+    font-size: 1.6rem !important;
+    margin-top: 0%;
+}
+    
+    #seccion_aprender_inicio #fecha_evento_aprender {
+    font-size: 1.7rem;
+    }
+    
+    #seccion_aprender_inicio #horario_evento_aprender {
+        font-size: 1.5rem;
+    margin-bottom: 4%
+    }
+    
+    #seccion_aprender_inicio .direccion_evento_aprender{
+        font-size: 1.4rem;
+    }
+    
+    #boton_ver_todos_los_test_aprender {
+    margin-top: 11%;
+}
+    #seccion_aprender_inicio #boton_ver_todos_los_eventos_aprender {
+    margin-top: 14%;
+}
+    
+     #seccion_aprender_inicio #boton_ver_todos_los_eventos_aprender, #seccion_aprender_inicio #boton_ver_todos_los_test_aprender
+    {
+    padding: 4%;
+    line-height: 20px;
+    }
+}

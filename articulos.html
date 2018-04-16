@@ -1,0 +1,291 @@
+<!Doctype html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Universidad Iberoamericana, Observatorio de Juventud y Género, Diseño Interactivo">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Observatorio de Género y Juventud</title>
+    <link rel="shortcut icon" href="images/icono-pestaña.jpg" />
+      <link href="css/estilos.css" rel="stylesheet">
+         <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="css/bootstrap-grid.css"></script>
+<style>
+     header{ width: 0%; height: 0px; background:  url(images/logo_h1.png) 0%/0% no-repeat;}
+    .h2articulo{    text-align: center;
+    color: #6d7cf3;
+    font-family: 'archiveregular';
+    line-height: 336px;
+    margin-bottom: -123px; font-size: 4em;}
+    
+    </style>
+     <style>
+.articulos {
+     background-color: #9D8FBC;
+    margin-bottom: 20px;
+    margin-top: 10px;
+ text-align: left;
+	margin-left: 17%;
+	width: 65%;
+    }
+        .nombreArt{
+                border-bottom: 2px solid;
+        }
+        
+		.filterDivArticulos{
+  color: #ffffff;
+  text-align: center;
+  display: none;
+}
+		.row{
+			margin-right: 0;width: 100%;margin-left: 0;
+
+		}
+.show {
+  display: block;
+}
+
+
+		articulos1{
+			margin: 0 auto;
+		}
+        h3{
+            font-family: 'Sequel Neue';
+        }
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #2E2E2C;
+  cursor: pointer;
+}
+        button{margin: 0 auto;}
+
+.btn:hover {
+  background-color: ##2E2E2C;text-decoration: underline;
+}
+       
+.btn.active {
+  background-color:#2E2E2C;
+  color: white;
+}
+		.env2{margin-left: 45%;}
+        #navAyudar{background-color: ##2E2E2C; border: 1px solid white;}
+
+
+</style>
+    
+</head> 
+<header>
+      <nav >
+      <h2 style="display:none;">Navegación del OGJ</h2>
+      <div class="topnav" id="myTopnav"> 
+        <img  id="logo-NAV" src="images/logo_NAV.png"> 
+            <a href=" index.html#acerca"  class="active">INICIO</a>
+            <a href="index.html#inicio">ACERCA</a>
+            <a href="index.html#contacto" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style=";border:none;" >CONTACTO</a>
+            <a href="index.html#aprender">APRENDER</a>
+            <a href="index.html#contribuir" >CONTRIBUIR</a>
+            <a href="index.html#ayudar">AYUDAR</a>  
+             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+    
+    
+    </header>    
+    
+<body style="background-color: #2E2E2C;">
+<div id="seccion_aprender_inicio" style="color: white;">
+    <h2 class="h2articulo" id="aprender_h2_uno" style="text-align: center; color: #6d7cf3;font-family: 'archiveregular';">ARTICULOS</h2>
+    
+<div id="navArticulos" style="border: 2px solid;margin: 32px auto;width: 80%; color: white;">
+  <button class="btn active" onclick="filterSelection('articulos_genero')"> VIOLENCIA DE GÉNERO</button>
+  <button class="btn" onclick="filterSelection('articulos_pareja')">VIOLENCIA DE PAREJA</button>
+  
+    </div>
+
+<div class="container_articulos_inicio" >
+  <div class="filterDivArticulos articulos_genero" style="margin: 0 auto;">
+<div class="row">
+           <div class="articulos">
+	 <h3 class="nombre_art">Análisis de la violencia de género en la vida diaria.</h3>
+							  <p>AUTOR DEL ARTICULO</p>
+            				 <p>En este trabajo, se somete a revisión las habilidades básicas que integran la Inteligencia
+Emocional en relación al maltrato en la pareja</p>	  
+							<div class="env2">         <a class="btn botonArt view-pdf" href="files/NUEVAS_FORMAS_DE_VIOLENCIA_PATRIARCAL.pdf">LEER</a>
+
+            				 <a class="btn botonArt descargar" href="files/Analisis_de_la_inteligencia_emocional_en_la%20violencia_de_ge%CC%81nero.pdf" download>DESCARGAR</a></div>
+	
+	</div></div>    
+       
+			  <div class="col-sm-12 col-lg-12 col-xs-12 articulos"><h3 class="nombre_art">Nuevas Formas de Violencia Patriarcal</h3>
+			    		 <p>Rosa Cobo.Universidad de A Coruña</p>
+             			 <p>Las antiguas instituciones que
+articulaban la sociedad moderna están en crisis, desde el estado-nación
+hasta la familia patriarcal, desde el capitalismo hasta las democracias
+representativas, entre otras muchas.</p>
+							 
+             			 <div class="env2">  <a class="btn botonArt view-pdf" href="files/NUEVAS_FORMAS_DE_VIOLENCIA_PATRIARCAL.pdf">LEER</a>
+            				 <a class="btn botonArt descargar" href="files/NUEVAS_FORMAS_DE_VIOLENCIA_PATRIARCAL.pdf" download>DESCARGAR</a></div></div>  
+			  	 <div  class="col-sm-12 col-lg-12 articulos" ><h3 class="nombre_art">El machismo invisible regresa.</h3>
+			    		 <p>AUTOR DEL ARTICULO</p>
+             			 <p>En este trabajo, se somete a revisión las habilidades basicas que se integran en la inteligencia emocional.</p>
+             			<div class="env2"> <a class="btn botonArt view-pdf" href="files/Violencia_en_el_noviazgo_perpretacion_victimización_y_violencia_mutua.pdf">LEER</a>
+            				<a class="btn botonArt descargar" href="files/El_Machismo_Invisible_Regresa.pdf" download>DESCARGAR</a></div></div>  
+    </div>    
+    
+	
+	
+	
+    
+          
+      </div>
+ 
+  </div>
+   
+    
+    
+  <div class="filterDivArticulos articulos_pareja">
+        <div class="col-sm-12 col-lg-12 col-xs-12 articulos"><h3 class="nombre_art">Factores asociados a la violencia en el noviazgo entre adolescentes</h3>
+					   <p><em>Universidad Nacional de Educación a Distancia (UNED), España</em></p>
+              <p>En este trabajo se realiza una revisión crítica de las variables asociadas a la violencia en las relaciones de
+noviazgo de los adolescentes. </p>
+              <div class="env2">   <a class="btn botonArt view-pdf" href="files/Factores_asociados_a_la_violencia_en_el noviazgo_entre_adolescentes.pdf">LEER</a>
+        
+            				<a class="btn botonArt descargar" href="files/Factores_asociados_a_la_violencia_en_el noviazgo_entre_adolescentes.pdf" download>DESCARGAR</a></div></div>    
+       
+			  <div class="col-sm-12 col-lg-12 articulos"><h3 class="nombre_art">Amarte duele. La violación sexual en las relaciones
+de noviazgo. Un análisis de sus determinantes sociales</h3>
+				  <p>AUTOR DEL ARTICULO</p>
+              <p>En este trabajo, se somete a revisión las habilidades basicas que se integran en la inteligencia emocional.</p>
+        <div class="env2">  <a class="btn botonArt view-pdf" href="files/La_violacion_sexual_en_las_relaciones_de_noviazgo.pdf">LEER</a>
+            
+            				<a class="btn botonArt descargar" href="files/NUEVAS_FORMAS_DE_VIOLENCIA_PATRIARCAL.pdf" download>DESCARGAR</a></div></div>  
+			  	 <div  class="col-sm-12 col-lg-12 articulos" ><h3 class="nombre_art">El machismo invisible regresa.</h3>
+			    		 <p>AUTOR DEL ARTICULO</p>
+             			 <p>En este trabajo, se somete a revisión las habilidades basicas que se integran en la inteligencia emocional.</p>
+             			<div class="env2"> <a class="btn botonArt view-pdf" href="files/Violencia_en_el_noviazgo_perpretacion_victimización_y_violencia_mutua.pdf">LEER</a>
+            				<a class="btn botonArt descargar" href="files/El_Machismo_Invisible_Regresa.pdf" download>DESCARGAR</a></div></div>  
+   
+    </div>
+    
+    <footer >
+        <style> footer{margin-top: 500px;} #footerh { height: 70px; border: none; margin: 0 auto; display: flex; flex-flow: row; flex-direction: row; flex-wrap: wrap; justify-content: space-around;}   
+            h2 a{color: white;margin-top: 60px; }
+             h2 {color: white; line-height: 70px}         
+                     </style>
+  
+  <div id="regresar" ><span>h</span> </div>  
+    <div><div id="footerh"><h2 ><a href="aviso.html">AVISO DE PRIVACIDAD</a></h2><h2>MAPA DEL SITIO</h2><h2>CONTACTO</h2></div></div>
+    </footer>
+ 
+    
+	<script>
+filterSelection("articulos_genero")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDivArticulos");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("navArticulos");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<script> 
+                 (function (a) {
+            a.createModal = function (b) {
+                defaults = {
+                    title: "",
+                    message: "Tu mensaje va aquí!",
+                    closeButton: true,
+                    scrollable: false
+                };
+                var b = a.extend({}, defaults, b);
+                var c = (b.scrollable === true) ? 'style="max-height: 420px;overflow-y: auto;"' : "";
+                html = '<div class="modal fade" id="myModal">';
+                html += '<div class="modal-dialog modal-lg">';
+                html += '<div class="modal-content">';
+                html += '<div class="modal-header">';
+                if (b.title.length > 0) {
+                    html += '<h4 class="modal-title">' + b.title + "</h4>"
+                }
+                html += '<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>';
+                html += "</div>";
+                html += '<div class="modal-body" ' + c + ">";
+                html += b.message;
+                html += "</div>";
+                html += '<div class="modal-footer">';
+                if (b.closeButton === true) {
+                    html += '<button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>'
+                }
+                html += "</div>";
+                html += "</div>";
+                html += "</div>";
+                html += "</div>";
+                a("body").prepend(html);
+                a("#myModal").modal().on("hidden.bs.modal", function () {
+                    a(this).remove()
+                })
+            }
+        })(jQuery);
+
+        /*
+        * Aquí se muestra lo que se coloca en la ventana modal.
+        */
+        $(function () {
+            $('.view-pdf').on('click', function () {
+                var pdf_link = $(this).attr('href');
+                var iframe = '<div class="iframe-container"><iframe src="' + pdf_link + '"></iframe></div>'
+                $.createModal({
+                    title: 'ARTICULOS',
+                    message: iframe,
+                    closeButton: true,
+                    scrollable: false
+                });
+                return false;
+            });
+        })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>OGJ: Mapa de centros de ayuda</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true&language=en"></script>
+    <script src="gmaps.js"></script>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
+      <link href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="examples.css" />
+          <style> .topnav{position: relative; left: 90px;}
+    .topnav a { line-height: 20px; letter-spacing: 2px;
+        margin-top: 10px; border-left: 1px white solid;} 
+              nav{margin-top: -32px;}
+        .topnav a:nth-child(2){ margin-left: 50px;}
+    </style>
+    <script>
+        $(function () {
+          var map = new GMaps({
+          el: "#map",
+          lat: 22.4878769,
+          lng: -105.1994265,
+          zoom: 4.55, 
+          zoomControl : true,
+          zoomControlOpt: {
+            style : "MEDIUM",
+            position: "TOP_LEFT"
+          },
+          panControl : true,
+          streetViewControl : false,
+          mapTypeControl: false,
+          overviewMapControl: false
+        });
+        map.addMarker({
+        lat: 20.6739383,
+        lng: -103.405454,
+        title: 'Jalisco',
+        infoWindow: {
+          content: '<strong>JALISCO</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
+        }
+      });
+        map.addMarker({
+        lat: 21.0152526,
+        lng: -101.2865662,
+        title: 'Guanajuato',
+        infoWindow: {
+          content: '<strong>GUANAJUATO</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
+        }
+      });
+        map.addMarker({
+        lat: 19.320931,
+        lng: -99.1353936,
+        title: 'CDMx',
+        infoWindow: {
+          content: '<strong>CDMX</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
+        }
+      });
+        map.addMarker({
+        lat: 28.6070771,
+        lng: -106.2047053,
+        title: 'Chihuahua',
+        infoWindow: {
+          content: '<strong>CHIHUAHUA</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
+        }
+      });
+        map.addMarker({
+        lat: 17.9926802,
+        lng: -93.0931999,
+        title: 'Tabasco',
+        infoWindow: {
+          content: '<strong>TABASCO</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
+        }
+      });
+        map.addMarker({
+        lat: 19.0509656,
+        lng: -98.1791949,
+        title: 'Puebla',
+        infoWindow: {
+          content: '<strong>PUEBLA</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
+        }
+      });
+        map.addMarker({
+        lat: 18.7324794,
+        lng: -99.6240323,
+        title: 'Morelos',
+        infoWindow: {
+          content: '<strong>MORELOS</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
+        }
+      });
+        map.addMarker({
+        lat: 20.6122835,
+        lng: -100.4802581,
+        title: 'Queretaro',
+        infoWindow: {
+          content: '<strong>QUERETARO</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
+        }
+      });
+        map.addMarker({
+        lat: 20.0547463,
+        lng: -99.376223,
+        title: 'Hidalgo',
+        infoWindow: {
+          content: '<strong>HIDALGO</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
+        }
+      });
+        map.addMarker({
+        lat: 19.3255709,
+        lng: -99.7012544,
+        title: 'Edo. Mexico',
+        infoWindow: {
+          content: '<strong>EDO.MEX</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
+        }
+      });
+        map.addMarker({
+        lat: 25.6490376,
+        lng: -100.4431835,
+        title: 'Nuevo Leon',
+        infoWindow: {
+          content: '<strong>NUEVO LEON</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
+        }
+      });
+        map.addMarker({
+        lat: 18.8820886,
+        lng: -103.7636274,
+        title: 'Colima',
+        infoWindow: {
+          content: '<strong>COLIMA</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
+        }
+      });
+        map.addMarker({
+        lat: 22.1129779,
+        lng: -101.0961572,
+        title: 'San Luis Potosi',
+        infoWindow: {
+          content: '<strong>SAN LUIS POTOSI</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
+        }
+      });
+        map.addMarker({
+        lat: 16.7461501,
+        lng: -93.1996107,
+        title: 'Chiapas',
+        infoWindow: {
+          content: '<strong>CHIAPAS</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
+        }
+      });
+        var styles = [
+            {
+              stylers: [
+                {  },
+     
+              ]
+            }, {
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [
+                    { lightness: 100 },
+                    { visibility: "simplified" }
+              ]
+            }, {
+                featureType: "road",
+                elementType: "labels",
+                stylers: [
+                    { visibility: "off" }
+              ]
+            }
+        ];
+        
+        map.addStyle({
+            styledMapName:"Styled Map",
+            styles: styles,
+            mapTypeId: "map_style"  
+        });
+        
+        map.setStyle("map_style");
+      });
+    </script>
+      <style> p{margin-top: 93px;
+    padding-left: 23px;}
+      button {
+    color: white;
+    background-color: #000000;
+}
+   body > div > div > div.dropdown > ul > li > a{color: white; text-decoration: none;}
+      .dropbtn, .dropbtn1 {
+           width: 300px;
+    background-color: #000200;
+    color: white;
+    padding: 16px;
+    font-size: 22px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    border: 2px solid white;
+    position: relative;
+    left: 71%;
+    top:-700px;
+    display: inline-block;
+}
+.dropdown1 {
+   
+    position: relative;
+    left: 47%;
+    top:-560px;
+    display: inline-block;
+}
+.dropdown-content, .dropdown-content1{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a, .dropdown-content1 a  {
+    margin: 0 auto;
+    color: black;
+    font-size: 22px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover, .dropdown-content1 a:hover {background-color: #f1f1f1; margin: 0 auto;}
+
+.dropdown:hover .dropdown-content, .dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+.dropdown:hover .dropbtn, .dropdown1:hover .dropbtn1 {
+    background-color: #585555;
+}
+        
+      </style>
+  </head>
+  <body>
+ 
+    <nav >
+      <h2 style="display:none;">Navegación del OGJ</h2>
+      <div class="topnav" id="myTopnav"> 
+        <img  id="logo-NAV" src="images/logo_NAV.png"> 
+            <a href="index.html#acerca"  class="active">INICIO</a>
+            <a href="index.html#inicio">ACERCA</a>
+            <a href="index.html#contacto">CONTACTO</a>
+            <a href="index.html#aprender">APRENDER</a>
+            <a href="index.html#contribuir">CONTRIBUIR</a>
+          <a href="index.html#ayudar">AYUDAR</a> 
+             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav> 
+    <h1>MAPA DE DATOS ESTADÍSTICOS</h1>
+      <p>MAPA DE DATOS ESTADÍSTICOS</p>
+    <div class="row">
+      <div class="span11">
+      <div id="map"></div>
+    
+        </div>
+    </div>
+      
+<div class="dropdown">
+  <button class="dropbtn">Grado de escolaridad</button>
+  <div class="dropdown-content">
+    <a href="#">secundaria</a>
+    <a href="#">Preparatoria</a>
+    <a href="#">Universidad</a>
+  </div>
+</div>
+
+<div class="dropdown1">
+  <button class="dropbtn1">Fuente de datos(INEGI)</button>
+  <div class="dropdown-content1">
+    <a href="#">secundaria</a>
+    <a href="#">Preparatoria</a>
+    <a href="#">Universidad</a>
+  </div>
+</div>  
+      <div id="img">j</div>
+  <footer >
+        <style> footer{margin-top: 290px;} #footerh { height: 70px; border: none; margin: 0 auto; display: flex; flex-flow: row; flex-direction: row; flex-wrap: wrap; justify-content: space-around;}   
+            h2 a{color: white;margin-top: 60px; }
+             h2 {color: white; line-height: 40px}         
+                     </style>
+  
+  <div id="regresar" ><span>h</span> </div>  
+    <div><div id="footerh"><h2 ><a href="aviso.html">AVISO DE PRIVACIDAD</a></h2><h2>MAPA DEL SITIO</h2><h2>CONTACTO</h2></div></div>
+    </footer>    
+             
+  </body>
+</html>

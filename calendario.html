@@ -1,0 +1,72 @@
+<!Doctype html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Universidad Iberoamericana, Observatorio de Juventud y Género, Diseño Interactivo">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Observatorio de Género y Juventud</title>
+    <link rel="shortcut icon" href="images/icono-pesta%C3%B1a.jpg" />
+      <link href="css/bootstrap1.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script> <style> header{ width: 0%; height: 0px; background:  url(images/logo_h1.png) 0%/0% no-repeat;}
+        .nav_glosario{
+    margin-top: 0%;
+    background: url(images/header_texture.png) 0% 1% / 103% no-repeat; 
+}
+nav {
+    width: 100%;
+    height: 61px;
+    margin-left: 0px;
+    margin-top: 1px;
+}
+        .topnav{height: 61px;}
+    .tab{background: black;}</style>
+</head>
+<body  >
+ <div class="container">
+<header>
+    <nav>
+      <h2 style="display:none;">Navegación del OGJ</h2>
+      <div class="topnav" id="myTopnav"> 
+        <img  id="logo-NAV" src="../OGJ/images/logo_NAV.png"> 
+            <a href="#inicio"  class="active">INICIO</a>
+            <a href="#acerca">ACERCA</a>
+            <a href="#contacto">CONTACTO</a>
+            <a href="#aprender">APRENDER</a>
+            <a href="#contribuir">CONTRIBUIR</a>
+            <a href="#ayudar">AYUDAR</a>  
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+    
+    
+     </header>
+    <footer>
+     
+      <div id="regresar"><span></span> <p>REGRESAR ARRIBA</p></div>  
+    <div><div class="row" id="footerh2"><h2 class="col-sm-4">AVISO DE PRIVACIDAD</h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4">CONTACTO</h2></div></div>
+    <div class="row">
+    <div class="col-sm-4"> <h3> <span></span>APRENDER</h3><p>Glosario</p><p>Preguntas frecuentes</p><p>Mapa de datos estadísticos</p><p>Artículos informativos</p><p>Testimonios</p><p>Tests</p><p>Eventos</p></div>
+    <div class="col-sm-4"> <h3> <span></span>CONTRIBUIR</h3><p>Foro de Discusión</p><p>Cuestionarios de investigación</p></div>
+    <div class="col-sm-4"> <h3> <span></span>AYUDAR</h3><p>Mapa de Centros de Ayuda</p><p>Recursos a Distancia</p><p>Compartir testimonio</p></div>  
+        </div>
+     </footer>
+    </div>
+    <script> 
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script> 
+    </body>
+</html>

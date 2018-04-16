@@ -1,0 +1,709 @@
+<!doctype html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Universidad Iberoamericana, Observatorio de Juventud y Género, Diseño Interactivo">
+    <meta name="description" content="Página del Observatorio de Género y Juventud con definicones sobre el vocabulario utilizado en la página">
+    <meta name="keywords" content="glosario, definiciones, palabras, vocabulario, OGJ, Observatorio de Género y Juventud, Iberoamericana, Universidad">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Preguntas Frecuentes</title>
+    <link rel="shortcut icon" href="images/icono-pesta%C3%B1a.jpg" />
+      <link href="css/bootstrap1.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+         header{ width: 0%; height: 0px; background:  url(images/logo_h1.png) 0%/0% no-repeat;}
+        .nav_glosario{
+    margin-top: 0%;
+    background: url(images/header_texture.png) 0% 1% / 103% no-repeat; 
+}
+nav {
+    width: 100%;
+    height: 61px;
+    margin-left: 0px;
+    margin-top: 1px;
+}
+        .topnav{height: 61px;}
+    .tab{background: black;}
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+	
+</head>
+
+    
+    <body>
+<header>
+    <nav>
+      <h2 style="display:none;">Navegación del OGJ</h2>
+      <div class="nav_preguntas">
+        <div class="topnav" id="myTopnav"> 
+        <img  id="logo-NAV" src="images/logo_NAV.png"> 
+            <a href="index.html#inicio"  class="active">INICIO</a>
+            <a href="index.html#acerca">ACERCA</a>
+            <a href="index.html#contacto">CONTACTO</a>
+            <a href="index.html#aprender">APRENDER</a>
+            <a href="index.html#contribuir">CONTRIBUIR</a>
+            <a href="index.html#ayudar">AYUDAR</a>  
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </div>
+      </nav>
+</header>
+
+<div id="preguntas_frecuentes">
+	<h1 style="display: none">PREGUNTAS FRECUENTES</h1>
+	<h2>PREGUNTAS FRECUENTES</h2>
+    
+        <input type="text" placeholder="BUSCAR..." id="myInput" onkeyup="filterFunction()">
+    
+<div id="myBtnContainer">
+  <button id="primer_boton" class="btn active" onclick="filterSelection('todas')">TODAS</button>
+  <button class="btn" onclick="filterSelection('vg')">SOBRE VIOLENCIA DE GÉNERO</button>
+  <button class="btn" onclick="filterSelection('pagina')">SOBRE LA PÁGINA</button>
+  <button class="btn" onclick="filterSelection('observatorio')">SOBRE EL OBSERVATORIO</button>
+</div>
+	
+<div class="dropdown">
+  <button onclick="myFunctionpreguntas()" class="dropbtn">PREGUNTAS SOBRE</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a onclick="filterSelection('todas')">TODAS</a>
+    <a onclick="filterSelection('vg')">SOBRE VIOLENCIA DE GÉNERO</a>
+    <a onclick="filterSelection('pagina')">SOBRE LA PÁGINA</a>
+    <a onclick="filterSelection('observatorio')">SOBRE EL OBSERVATORIO</a>
+  </div>
+</div>
+
+
+<div class="preguntas_filter_container">
+    <div id="preguntas">
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#genero">GÉNERO</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#expresion_de_genero">EXPRESIÓN DE GÉNERO</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#hostigamiento_sexual">HOSTIGAMIENTO SEXUAL</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#acoso_sexual">ACOSO SEXUAL</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#identidad_de_genero">IDENTIDAD DE GÉNERO</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#orientacion_sexual">ORIENTACIÓN SEXUAL</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#sexismo">SEXISMO</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#tipos_de_violencia">TIPOS DE VIOLENCIA</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#modalidades_de_violencia">MODALIDADES DE VIOLENCIA</div> 
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_en_la_comunidad">VIOLENCIA EN LA COMUNIDAD</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_contra_las_mujeres">VIOLENCIA CONTRA LAS MUJERES</div>
+        <div class="filterDiv vg todas"class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_de_genero">VIOLENCIA DE GÉNERO</div> 
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_economica">VIOLENCIA ECONÓMICA</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_fisica">VIOLENCIA FÍSICA</div>
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_patrimonial">VIOLENCIA PATRIMONIAL</div> 
+        <div class="filterDiv vg todas"class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_psicologica">VIOLENCIA PSICOLÓGICA</div> 
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_psicoemocional">VIOLENCIA PSICOEMOCIONAL</div> 
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_sexual">VIOLENCIA SEXUAL</div> 
+        <div class="filterDiv vg todas"class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_laboral_y_docente">VIOLENCIA LABORAL Y DOCENTE</div> 
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_laboral">VIOLENCIA LABORAL</div> 
+        <div class="filterDiv vg todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#violencia_docente">VIOLENCIA DOCENTE</div> 
+    </div>
+  </div>
+    
+
+ <!-- Modal GÉNERO-->
+  <div class="modal fade" id="genero" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">GÉNERO</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Categoría que analiza cómo se definen, representan y simbolizan las diferencias sexuales en una determinada sociedad. Así pues, es el conjunto de ideas, creencias y atribuciones sociales, construidas en cada cultura y momento histórico, tomando como base la diferencia sexual; a partir de ello se construyen los conceptos de “masculinidad” y “feminidad”, los cuales determinan el comportamiento, las funciones, oportunidades,valoración y las relaciones entre mujeres y hombres. Son construcciones socioculturales que pueden modificarse, dado que han sido aprendidas. Las aprendemos a partir de la interrelación familiar y social.</p>
+          <br />
+        <p id="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+        
+ <!-- Modal EXPRESIÓN DE GÉNERO-->
+      <div class="modal fade" id="expresion_de_genero" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">EXPRESIÓN DE GÉNERO</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es la forma en la que cada persona expresa expresamos nuestro género, por ejemplo, a través de la vestimenta, el comportamiento, los intereses y las afinidades. Esto trasciende las percepciones estereotipadas o estandarizadas de la sociedad en cuanto a lo femenino, masculino y andrógino (la combinación de ambos).</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+    <!-- Modal HOSTIGAMIENTO SEXUAL-->
+      <div class="modal fade" id="hostigamiento_sexual" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">HOSTIGAMIENTO SEXUAL</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar. Se expresa en conductas verbales, físicas o ambas, relacionadas con la sexualidad de connotación lasciva.</p>
+        <br />
+        <p id="referencia">Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+     <!-- Modal ACOSO SEXUAL-->
+      <div class="modal fade" id="acoso_sexual" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">ACOSO SEXUAL</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Toda actividad con connotación sexual que sucede entre dos personas sin que medie el consentimiento de alguna de ellas. El acoso se puede manifestar entre adultos, de un adulto a un menor o incluso entre menores. El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder que conlleva a un estado de indefensión y de riesgo para la víctima, independientemente de que se realice en uno o varios eventos.</p>
+        <p>Los comportamientos que se califican como acoso sexual pueden ser tanto físicos (violencia física, tocamientos, acercamientos innecesarios) como verbales (comentarios y preguntas sobre el aspecto, el estilo de vida, la orientación sexual; llamadas de teléfono ofensivas, mensajes de texto, correo electrónico, etc.) y no verbales (silbidos, gestos de connotación sexual, presentación de objetos pornográficos).</p>
+        <br />
+        <p id="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES.<br /> Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia. <br />Organización Internacional del Trabajo</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+       <!-- Modal IDENTIDAD DE GÉNERO-->
+      <div class="modal fade" id="identidad_de_genero" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">IDENTIDAD DE GÉNERO</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es la vivencia interna e individual del género tal y como cada persona la experimenta, la cual podría corresponder o no, con su sexo biológico. Por lo tanto, es una construcción personal, social y cultural y no un hecho determinado.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+      <!-- Modal ORIENTACIÓN SEXUAL-->
+      <div class="modal fade" id="orientacion_sexual" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">ORIENTACIÓN SEXUAL</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es la atracción emocional, sexual y erótica que sentimos hacia otras personas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+    
+    
+         <!-- Modal SEXISMO-->
+      <div class="modal fade" id="sexismo" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">SEXISMO</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Se refiere a todas aquellas prácticas y actitudes que promueven el trato diferenciado de las personas en razón de su sexo biológico, del cual se asumen características y comportamientos que se espera, las mujeres y los hombres, actúen cotidianamente. El sexismo puede incluir diferentes creencias o actitudes: La creencia de que un sexo es superior o inferior al otro, la actitud de misoginia o misandria, la actitud de imponer una noción de masculinidad (género) a los hombres (sexo) y una noción de feminidad (género) a las mujeres (sexo), el menosprecio o la ocultación de las mujeres, la burla o la descalificación hacia la apariencia o conducta de las mujeres o de los hombres, referencias que aluden despectivamente a la sexualidad de hombres o mujeres, entre otras.</p>
+        <br />
+        <p id="referencia">Punto Género - INMUJERES. Disponible en: http://puntogenero.inmujeres.gob.mx/Portal/madig/sexismo/</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    
+             <!-- Modal TIPOS DE VIOLENCIA-->
+      <div class="modal fade" id="tipos_de_violencia" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">TIPOS DE VIOLENCIA</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Corresponden a los tipos de violencia definidos en Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, generalizados a las y los integrantes de la Universidad. Los tipos de violencia son: violencia psicológica, violencia física, violencia patrimonial, violencia económica, violencia sexual y cualesquiera otras formas análogas que lesionen o sean susceptibles de dañar la dignidad, integridad o libertad de las personas.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+    
+        <!-- Modal MODALIDADES DE VIOLENCIA-->
+      <div class="modal fade" id="modalidades_de_violencia" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">MODALIDADES DE VIOLENCIA</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Las formas, manifestaciones o los ámbitos de ocurrencia en que se presenta la violencia de género.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Modal VIOLENCIA EN LA COMUNIDAD-->
+      <div class="modal fade" id="violencia_en_la_comunidad" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA EN LA COMUNIDAD</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Son los actos individuales o colectivos que transgreden derechos fundamentales de las personas y propician su denigración, discriminación, marginación o exclusión en el ámbito público.</p>
+         <br />
+         <p id="referencia">Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+        <!-- Modal VIOLENCIA CONTRA LAS MUJERES-->
+      <div class="modal fade" id="violencia_contra_las_mujeres" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA CONTRA LAS MUJERES</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Cualquier acción u omisión, basada en su género, que les cause daño o sufrimiento psicológico, físico, patrimonial, económico, sexual o la muerte tanto en el ámbito privado como en el público.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+            <!-- Modal VIOLENCIA DE GÉNERO-->
+      <div class="modal fade" id="violencia_de_genero" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA DE GÉNERO</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Cualquier acción u omisión contra un (una) integrante de la comunidad universitaria, derivada de su expresión e identidad de género, orientación y/o preferencia sexual y que resulte en daño o sufrimiento psicológico, físico, patrimonial, económico, sexual o la muerte.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+          <!-- Modal VIOLENCIA ECONÓMICA-->
+      <div class="modal fade" id="violencia_economica" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA ECONÓMICA</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas, así como la percepción de un salario menor por igual trabajo, dentro de un mismo centro laboral.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+    
+     <!-- Modal VIOLENCIA FÍSICA-->
+      <div class="modal fade" id="violencia_fisica" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA FÍSICA</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es cualquier acto que inflige daño no accidental, usando la fuerza física o algún tipo de arma u objeto que pueda provocar o no lesiones ya sean internas, externas, o ambas.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+   <!-- Modal VIOLENCIA PATRIMONIAL-->
+      <div class="modal fade" id="violencia_patrimonial" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA PATRIMONIAL</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades y puede abarcar los daños a los bienes comunes o propios de la víctima.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+    <!-- Modal VIOLENCIA PSICOLÓGICA-->
+      <div class="modal fade" id="violencia_psicologica" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA PSICOLÓGICA</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es cualquier acto u omisión que dañe la estabilidad psicológica, que puede consistir en: negligencia, abandono, descuido reiterado, celotipia, insultos, humillaciones, devaluación, marginación, indiferencia, infidelidad, comparaciones destructivas, rechazo, restricción a la autodeterminación y amenazas, las cuales conllevan a la víctima a la depresión, al aislamiento, a la devaluación de su autoestima e incluso al suicidio.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+        <!-- Modal VIOLENCIA PSICOEMOCIONAL-->
+      <div class="modal fade" id="violencia_psicoemocional" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA PSICOEMOCIONAL</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Toda acción u omisión dirigida a desvalorar, intimidar o controlar sus acciones, comportamientos y decisiones, consistente en prohibiciones, coacciones, condicionamientos, intimidaciones, insultos, amenazas, celotipia, desdén, indiferencia, descuido reiterado, chantaje, humillaciones, comparaciones destructivas, abandono o actitudes devaluatorias, o cualquier otra, que provoque en quien la recibe alteración autocognitiva y autovalorativa que integran su autoestima o alteraciones en alguna esfera o área de su estructura psíquica.</p>
+         <br />
+         <p id="referencia">Ley de Acceso de las Mujeres a una Vida Libre de Violencia del Distrito Federal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+        
+        <!-- Modal VIOLENCIA SEXUAL-->
+      <div class="modal fade" id="violencia_sexual" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA SEXUAL</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Es cualquier acto que degrada o daña el cuerpo y/o la sexualidad de la víctima y que por tanto atenta contra su libertad, dignidad e integridad física. Es una expresión de abuso de poder que implica la supremacía masculina sobre la mujer, al denigrarla y concebirla como objeto</p>
+         <br />
+         <p id="referencia">Ley General de Acceso de las Mujeres a una Vida Libre de Violencia</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+            <!-- Modal VIOLENCIA LABORAL Y DOCENTE-->
+      <div class="modal fade" id="violencia_laboral_y_docente" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA LABORAL Y DOCENTE</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>Se ejerce por las personas que tienen un vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica, consistente en un acto o una omisión en abuso de poder que daña la autoestima, salud, integridad, libertad y seguridad de la víctima, e impide su desarrollo y atenta contra la igualdad.<br />
+              Puede consistir en un solo evento dañino o en una serie de eventos cuya suma produce el daño.<br />
+              También incluye el acoso o el hostigamiento sexual.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+            <!-- Modal VIOLENCIA  DOCENTE-->
+      <div class="modal fade" id="violencia_laboral" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA LABORAL</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>SConstituye violencia laboral: la negativa ilegal a contratar a la Víctima o a respetar su permanencia o condiciones generales de trabajo; la descalificación del trabajo realizado, las amenazas, la intimidación, las humillaciones, la explotación y todo tipo de discriminación por condición de género.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+    
+                <!-- Modal VIOLENCIA DOCENTE-->
+      <div class="modal fade" id="violencia_docente" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">VIOLENCIA DOCENTE</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>aquellas conductas que dañen la autoestima de las alumnas con actos de discriminación por su sexo, edad, condición social, académica, limitaciones y/o características físicas, que les infligen maestras o maestros.</p>
+         <br />
+         <p id="referencia">Ibídem.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+    </div>
+  </div> 
+   <footer>
+
+  
+  <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR ARRIBA</a></p></div>  
+    <div><div class="row" id="footerh2"><h2 class="col-sm-4"><a href="aviso.html">AVISO DE PRIVACIDAD</a></h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4">CONTACTO</h2></div></div>
+
+    <div class="row">
+    <div class="col-sm-4"> <h3> <span></span>APRENDER</h3><p>Glosario</p><p>Preguntas frecuentes</p><p>Mapa de datos estadísticos</p><p>Artículos informativos</p><p>Testimonios</p><p>Tests</p><p>Eventos</p></div>
+    <div class="col-sm-4"> <h3> <span></span>CONTRIBUIR</h3><p>Foro de Discusión</p><p>Cuestionarios de investigación</p></div>
+    <div class="col-sm-4"> <h3> <span></span>AYUDAR</h3><p>Mapa de Centros de Ayuda</p><p>Recursos a Distancia</p><p>Compartir testimonio</p></div>  
+  </div>
+   
+    </footer>  
+    <!--FILTRO DE CATEGORIAS -->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+	
+	<!-- SCRIPT DE MENU DESPLEGABLE -->
+<script> 
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+	
+	<!--DESPLEGABLE MOVIL DEFINICIONES-->
+    <script>
+    /* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunctionpreguntas() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function filterFunction() {
+  var input, filter, ul, li, a, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  div = document.getElementById("preguntas");
+  div = div.getElementsByTagName("div");
+  for (i = 0; i < a.length; i++) {
+    if (div[i].innerHTML.toUpperCase().indexOf(filter) > -1) {
+      div[i].style.display = "";
+    } else {
+      div[i].style.display = "none";
+    }
+  }
+}
+    </script>
+    
+    <!--BUSCADOR-->
+    </div>
+</body>
+</html>

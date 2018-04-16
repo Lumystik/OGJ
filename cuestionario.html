@@ -1,0 +1,336 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta name="author" content="Universidad Iberoamericana, Observatorio de Juventud y Género, Diseño Interactivo">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Observatorio de Género y Juventud</title>
+	  <link rel="shortcut icon" href="images/icono-pestaña.jpg" />
+      <link href="css/estilos.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>     header{ width: 0%; height: 142px; background:  url(images/logo_h1.png) 0%/0% no-repeat;}
+       
+        #cuestionario > div > section > div.cont-cues > button{margin-left: -1260px;}
+   .topnav{  height: 42px;}     
+        #pagina_cues{margin-top: 45px;}
+        #cuestionario > div > section > div.cont-cues > div{font-size: 1.5em;}
+nav {
+    width: 100%;
+    height: 105px;
+    margin-left: -78px;
+    margin-top: -40px;
+}
+        .topnav{ line-height: 40px; margin-top: 40px; height: 65px;}
+    </style>
+    
+</head>
+
+<body id="cuestionario">
+	<div class="container">
+<header id="arriba">
+      <nav >
+      <h2 style="display:none;">Navegación del OGJ</h2>
+      <div class="topnav" id="myTopnav"> 
+        <img  id="logo-NAV" src="images/logo_NAV.png"> 
+            <a href="index.html#acerca"  class="active">INICIO</a>
+            <a href="index.html#inicio">ACERCA</a>
+            <a href="index.html#contacto">CONTACTO</a>
+            <a href="index.html#aprender">APRENDER</a>
+            <a href="index.html#contribuir">CONTRIBUIR</a>
+            <a href="index.html#ayudar">AYUDAR</a>  
+             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+        </header>   
+		<section>
+		<div class="cont-cues">
+	<h2 style="text-align: center;margin-top: 5px;" id="pagina_cues">CUESTIONARIO</h2>
+<div style="width: 95%; ">
+	<p style="text-align: center;">Participa en la investigacion del <strong>OGJ</strong>, proporcionando datos confiables
+		sobre tus experiencias .</p>
+	<p style="margin-left: 45%; text-align: center;width: 150px;border: 2px solid;">¿POR QUÉ? </p>
+	<p style="text-align: center;">Frecuentemente pasamos por alto algunas expresiones de este tipo de 
+violencia porque las consideramos normales o inofensivas.</p>
+	<p style="text-align: center;">Algunas de las preguntas que responderás a continuacion podrían ser
+		de tipo sensibles, <em>agradecemos tu participación.</em> </p>
+		<p style="text-align:center";>*Todo lo que respondas, 
+será confidencial.</p><p id="imagen">imagen</p></div>
+			
+		<button type="button" class="btn continuar1" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">EMPEZAR</button>
+</div>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+            <div class="modal-body">
+		  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+<form id="regForm" target="_self" enctype="multipart/form-data" class="form-horizontal">
+	 	
+  <!-- One "tab" for each step in the form: -->
+  <div class="tab">
+	 <fieldset> <legend><span>1.DATOS</span></legend>
+			<p>*Tus datos personales son necesarios para asegurar la confiabilidad de ellos, pero no serán publicados ni compartidos con terceros.</p>
+<div class="datos">
+   <div class="form-group">
+     <label for="exampleFormControlTextarea1">Género:</label>
+	<input type="text" class="form-control" id="Genero" name="Genero" placeholder="M/H/NB/OTRO/-" required>
+    </div>
+	<div class="form-group">
+    <label for="exampleFormControlSelect1">Edad:</label>
+    <input type="number" class="form-control" id="edad" name="edad" required>
+    </div>
+    
+   <label for="exampleFormControlSelect1">Estado:</label>
+		<select class="form-control" id="exampleFormControlSelect2" required>
+
+<option selected disabled>Estado</option>
+
+<option value="Aguascalientes">Aguascalientes</option>
+
+<option value="Baja_c">Baja California</option>
+
+<option value="Baja_c_s">Baja California Sur</option>
+
+<option value="campeche">Campeche</option>
+
+<option value="coahuila">Coahuila de Zaragoza</option>
+
+<option value="Colima">Colima</option>
+
+<option value="chiapas">Chiapas</option>
+
+<option value="chihuahua">Chihuahua</option>
+
+<option value="cdmx">Ciudad de México</option>
+
+<option value="durango">Durango</option>
+
+<option value="guanajuato">Guanajuato</option>
+
+<option value="guerrero">Guerrero</option>
+
+<option value="hidalgo">Hidalgo</option>
+
+<option value="jalisco">Jalisco</option>
+
+<option value="mexico">México</option>
+
+<option value="michoacan">Michoacán de Ocampo</option>
+
+<option value="morelos">Morelos</option>
+
+<option value="nayarit">Nayarit</option>
+
+<option value="nuevo_l">Nuevo León</option>
+
+<option value="oaxaca">Oaxaca</option>
+
+<option value="puebla">Puebla</option>
+
+<option value="queretaro">Querétaro</option>
+
+<option value="quintana_roo">Quintana Roo</option>
+
+<option value="slp">San Luis Potosí</option>
+
+<option value="sinaloa">Sinaloa</option>
+
+<option value="sonora">Sonora</option>
+
+<option value="tabasco">Tabasco</option>
+
+<option value="tamaulipas">Tamaulipas</option>
+
+<option value="tlaxcala">Tlaxcala</option>
+<option value="veracruz">Veracruz de Ignacio de la Llave</option>
+<option value="yucatan">Yucatán</option>
+
+<option value="zacatecas">Zacatecas</option>
+</select>		 
+</div>
+</fieldset>
+  </div>
+  <div class="tab">
+   <fieldset class="form-group"><legend><span class="vi">VIOLENCIA DE PAREJA</span></legend>
+   <label class="control-label" required>1.Si vieses un acto de violencia, ¿Como actuarias?</label>
+		<div class="radio">
+		  <label>
+			<input  type="radio" checked="checked" name="pregunta1" value="A">
+			Es un delito, hay de denunciarlo
+		  </label>
+		</div>
+		<div class="radio">
+		  <label>
+			<input type="radio" name="pregunta1" value="B">
+			Si es alguien cercano lo denunciaria.
+		  </label>
+		</div> 
+	  <div class="radio">
+		  <label>
+			<input type="radio" name="pregunta1" value="C">
+Lo que ocurre en la pareja es algo privado.
+		  </label>
+		</div> 
+	  </fieldset>
+    <label class="label" required>2.¿Por qué se llega a la violencia?</label>
+   <label class="radio-inline"><input type="radio" name="pregunta2" value="A">  Porque la pareja ha hecho algo para provocarle</label>
+      <label class="radio-inline"><input type="radio" name="pregunta2" value="B"> Por una perdida momentanea del control</label>
+      <label class="radio-inline"><input type="radio" name="pregunta2" value="C">Porque tambien fueron maltratados en su infancia.</label>
+       
+	</div>		
+
+	 
+
+ 
+  <div class="tab">
+	  <div class="form-group">
+		  <legend><span class="vi">VIOLENCIA DE PAREJA</span></legend>
+    <label class="label" required>>3.¿Las mujeres estan protegidas por la justicia?</label>
+          <br>
+   <label class="radio-inline"><input type="radio" name="pregunta3" value="A">  Sí</label>
+      <label class="radio-inline"><input type="radio" name="pregunta3" value="B"> No.</label>
+      <label class="radio-inline"><input type="radio" name="pregunta3" value="C">A veces</label>        
+  </div>
+	    <div class="form-group">
+    <label class="label" required>4.¿La 'orden de alejamiento' protege a la victima?</label>
+          <br>
+   <label class="radio-inline"><input type="radio" name="pregunta4" value="A"> Estoy de acuerdo.
+</label>
+      <label class="radio-inline"><input type="radio" name="pregunta4" value="B"> No del todo.</label>
+      <label class="radio-inline"><input type="radio" name="pregunta4" value="C">Totalmente en desacuerdo.</label>        
+  </div>
+  </div>
+	<div class="tab">
+	  <h3>GRACIAS POR CONTRIBUIR </h3>
+           <p>Tu <strong>voz</strong> nos ayuda a conocer más acerca del tema.</p>
+
+	</div>
+      <div style="overflow:auto;">
+    <div style="float:right;">
+      <button type="button" id="prevBtn"  onclick="nextPrev(-1)" class="glyphicon glyphicon-menu-left">Anterior</button>
+      <button type="button" id="nextBtn"  onclick="nextPrev(1)">Siguiente   <span class="glyphicon glyphicon-menu-right"></span></button>
+    </div>
+  </div>
+  <!-- Circles which indicates the steps of the form: -->
+  <div style="text-align:center;margin: 5px; ">
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+    <span class="step"></span>
+  </div>
+</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+		</section>
+<footer>
+
+  
+  <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR ARRIBA</a></p></div>  
+    <div><div class="row" id="footerh2"><h2 class="col-sm-4"><a href="aviso.html">AVISO DE PRIVACIDAD</a></h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4">CONTACTO</h2></div></div>
+
+    <div class="row">
+    <div class="col-sm-4"> <h3> <span></span>APRENDER</h3><p>Glosario</p><p>Preguntas frecuentes</p><p>Mapa de datos estadísticos</p><p>Artículos informativos</p><p>Testimonios</p><p>Tests</p><p>Eventos</p></div>
+    <div class="col-sm-4"> <h3> <span></span>CONTRIBUIR</h3><p>Foro de Discusión</p><p>Cuestionarios de investigación</p></div>
+    <div class="col-sm-4"> <h3> <span></span>AYUDAR</h3><p>Mapa de Centros de Ayuda</p><p>Recursos a Distancia</p><p>Compartir testimonio</p></div>  
+  </div>
+   
+    </footer>    
+		</div>
+
+<script>
+var currentTab = 0; // Current tab is set to be the first tab (0)
+showTab(currentTab); // Display the crurrent tab
+
+function showTab(n) {
+  // This function will display the specified tab of the form...
+  var x = document.getElementsByClassName("tab");
+  x[n].style.display = "block";
+  //... and fix the Previous/Next buttons:
+  if (n == 0) {
+    document.getElementById("prevBtn").style.display = "none";
+  } else {
+    document.getElementById("prevBtn").style.display = "inline";
+  }
+  if (n == (x.length - 1)) {
+    document.getElementById("nextBtn").innerHTML = "ACEPTAR";
+  } else {
+    document.getElementById("nextBtn").innerHTML = "Siguiente" + "<span class='glyphicon glyphicon-menu-right'></span>";
+  }
+  //... and run a function that will display the correct step indicator:
+  fixStepIndicator(n)
+}
+
+function nextPrev(n) {
+  // This function will figure out which tab to display
+  var x = document.getElementsByClassName("tab");
+  // Exit the function if any field in the current tab is invalid:
+  if (n == 1 && !validateForm()) return false;
+  // Hide the current tab:
+  x[currentTab].style.display = "none";
+  // Increase or decrease the current tab by 1:
+  currentTab = currentTab + n;
+  // if you have reached the end of the form...
+  if (currentTab >= x.length) {
+    // ... the form gets submitted:
+    document.getElementById("regForm").submit();
+    return false;
+  }
+  // Otherwise, display the correct tab:
+  showTab(currentTab);
+}
+
+function validateForm() {
+  // This function deals with validation of the form fields
+  var x, y, i, valid = true;
+  x = document.getElementsByClassName("tab");
+  y = x[currentTab].getElementsByTagName("input");
+  // A loop that checks every input field in the current tab:
+  for (i = 0; i < y.length; i++) {
+    // If a field is empty...
+    if (y[i].value == "") {
+      // add an "invalid" class to the field:
+      y[i].className += " invalid";
+      // and set the current valid status to false
+      valid = false;
+    }
+  }
+  // If the valid status is true, mark the step as finished and valid:
+  if (valid) {
+    document.getElementsByClassName("step")[currentTab].className += " finish";
+  }
+  return valid; // return the valid status
+}
+
+function fixStepIndicator(n) {
+  // This function removes the "active" class of all steps...
+  var i, x = document.getElementsByClassName("step");
+  for (i = 0; i < x.length; i++) {
+    x[i].className = x[i].className.replace(" active", "");
+  }
+  //... and adds the "active" class on the current step:
+  x[n].className += " active";
+}
+</script>
+		<script> 
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+	</script>
+
+</body>
+</html>
