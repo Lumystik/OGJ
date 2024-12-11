@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'ttsupermolot';
-    src: url("../fonts/tt_supermolot_black-webfont.woff") format('woff'), 
-      url(../fonts/tt_supermolot_black-webfont.woff2);
+    src: url("fonts/tt_supermolot_black-webfont.woff") format('woff'), 
+      url('fonts/tt_supermolot_black-webfont.woff2');
     font-weight: bold;
     font-style: normal;
 
@@ -12,22 +12,22 @@
 
 @font-face {
     font-family: 'archiveregular';
-    src: url('../fonts/archive-webfont.woff2') format('woff2'),
-         url('../fonts/archive-webfont.woff') format('woff');
+    src: url('fonts/archive-webfont.woff2') format('woff2'),
+         url('fonts/archive-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Sequel Neue';
-    src: url('../fonts/Sequel-Neue.woff2') format('woff2'),
-        url('../fonts/Sequel-Neue.woff') format('woff');
+    src: url('fonts/Sequel-Neue.woff2') format('woff2'),
+        url('fonts/Sequel-Neue.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Sequel';
-    src: url('../fonts/Sequel-Light.woff2') format('woff2'),
-        url('../fonts/Sequel-Light.woff') format('woff');
+    src: url('fonts/Sequel-Light.woff2') format('woff2'),
+        url('fonts/Sequel-Light.woff') format('woff');
     font-weight: 300;
     font-style: normal;
 }
