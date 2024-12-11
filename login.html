@@ -1,0 +1,75 @@
+<?php
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+
+// Con esta función se puede utilizar $_SESSION
+session_start();
+
+include "conexion.php";
+
+$autenticado = true;
+
+if( isset( $_POST['usr'] ) && isset( $_POST['pwd'] ) ) {
+      $usr = $_POST['usr'];
+      $pwd = $_POST['pwd'];
+      
+      $q = "select * from equipo03_usuarios where usuario = '$usuario' and pwd = password('$pwd')";
+      
+      // rs viene de Record Set.
+      $rs = ejecutar($q);
+      if( $r = mysqli_fetch_array($rs) ) {
+        $autenticado = true;
+        $_SESSION['user'] = $usr;
+        $_SESSION['user_name'] = $r['nombre'];
+        echo "Usuario autenticado correctamente!";
+        header("Location: admin.php");
+      } else {
+        $autenticado = false;
+        unset($_SESSION['user']);
+        unset($_SESSION['usr_name']);
+        //echo "Verifica tu usuario y contraseña";
+      }
+}
+?>
+
+<!Doctype html>
+<!--Doctype para indicar el tipo de documento-->
+<html lang="es-mx" dir="ltr">
+<!--HTML con idioma español mexicano y dirección de izquierda a derecha-->
+<!--Inserción de metas charset, author, description, keywords, viewport, y los scripts decompatibilidad--> 
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="author" content="Mauricio Castro, Loris Karam, Alejandro López Navarrete,  Montserrat Suaste">
+        <meta name="description" content="El Observatorio de Género y Juventud es un espacio autónomo, plural, transdiciplinario, con capacidad investigativa y de análisis crítico, que genera información clara y precisa, sobre las prácticas y percepción en torno a la igualdad, equidad y violencia de género en la población juvenil, así como sobre las causas, la naturaleza e impacto de la violencia de género en la pareja, a edades tempranas. Busca sensibilizar y concienciar a la comunidad en general sobre este fenómeno social mediante el análisis de información generada y el desarrollo nuevas propuestas que permitan hacer propuestas de políticas públicas y potenciar las acciones de prevención y eliminación de la violencia.">
+        <meta name="keywords" content="Violencia de género, Violencia de parejas, juventud, Observatorio De Género Y Juventud, agresión, violencia, relación, prevención, igualdad,">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <link href="css/estilos_backend.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+        <link href="webfontkit-20180405-195230/stylesheet.css" rel="stylesheet">
+        <link rel="icon" href="Images/favicon_color.png">
+        <title>Observatorio De Género Y Juventud</title>
+</head>
+<body id="login">
+  <div class="container">
+      <div id="margin">
+    <h1 id="inicio">Observatorio De Género Y Juventud</h1>
+          <form action="enviar.php" method="post">
+              <label>Usuario: </label>
+            <p>
+              <input name="login" type="text" placeholder="Usuario">
+            </p>
+              <label>Contraseña: </label>
+            <p>
+              <input name="password" type="password" placeholder="Contraseña">
+            </p>
+              
+            <button type="submit">Ingresar</button>
+              
+        </form>
+        </div>  
+  </div>
+</body>
+  

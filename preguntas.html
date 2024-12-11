@@ -8,27 +8,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Preguntas Frecuentes</title>
-    <link rel="shortcut icon" href="images/icono-pesta%C3%B1a.jpg" />
+    <link rel="shortcut icon" href="images/asset11.png" />
       <link href="css/bootstrap1.css" rel="stylesheet">
+     <link href="css/estilosinternas.css" rel="stylesheet">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+            .close{color: black !important;}
+ 
+            #footerh2 > h2:nth-child(2){height: 76px;}
+		.table{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 3px;
+	background-color: white;color: black;
+            } #regresar > p > span {margin-right: 10px;}
+             #preguntas_frecuentes .preguntas_filter_container div {
+    height: 70px !important;
+            margin-top: 2%;  !important ; line-height: 4 !important;}
+            #footerh2 > h2:nth-child(2){font-size: 25px; line-height: 2 !important;}
+            #myBtnContainer > button:nth-child(2){color:#00a99d; text-decoration: underline;; }
+           #preguntas_frecuentes #preguntas {
+               font-size: 20px;}
+            #preguntas > div:hover{color: black;box-shadow: 2px 2px 2px black; font-weight: 900;}
+            #preguntas_frecuentes h2 {
+    grid-area: h2;
+    font-size: 35px;
+
+}
+            #preguntas_frecuentes > footer{margin-top: 106px;}
+            #regresar{margin-bottom: 52px;}
+.caption{
+  display: table-caption;
+  text-align: center;
+  font-weight: bold;
+}
+
+.thead{
+  display: table-header-group;
+  font-weight: bold;
+}
+
+.tbody{
+  display: table-row-group;
+}
+
+.tr{
+  display: table-row;
+}
+
+
+
+
+
+.th,
+.td{
+  display: table-cell;
+}
+
+.td{
+  padding: 10px 0;
+}
+
+.label{
+  display: none;
+}
+
+@media all and (max-width: 600px){
+  .thead{
+    display: none;
+  }
+  .tr{
+    display: block;
+    margin-bottom: 1.5em;
+    padding: 10px;
+  }
+  .td{
+    display: inherit;
+    padding: 0;
+  }
+  .label{
+    font-weight: bold;
+    display: inline-block;
+    min-width: 120px;
+  }  
+}
+    
+    
+    </style>
 	<style>
-         header{ width: 0%; height: 0px; background:  url(images/logo_h1.png) 0%/0% no-repeat;}
-        .nav_glosario{
-    margin-top: 0%;
-    background: url(images/header_texture.png) 0% 1% / 103% no-repeat; 
-}
-nav {
-    width: 100%;
-    height: 61px;
-    margin-left: 0px;
-    margin-top: 1px;
-}
-        .topnav{height: 61px;}
-    .tab{background: black;}
+        a{color: white !important;}   
 .filterDiv {
   float: left;
   background-color: #2196F3;
@@ -45,7 +118,6 @@ nav {
 }
 
 .container {
-  margin-top: 20px;
   overflow: hidden;
 }
 
@@ -72,31 +144,171 @@ nav {
 
     
     <body>
-<header>
-    <nav>
-      <h2 style="display:none;">Navegación del OGJ</h2>
-      <div class="nav_preguntas">
-        <div class="topnav" id="myTopnav"> 
-        <img  id="logo-NAV" src="images/logo_NAV.png"> 
-            <a href="index.html#inicio"  class="active">INICIO</a>
-            <a href="index.html#acerca">ACERCA</a>
-            <a href="index.html#contacto">CONTACTO</a>
-            <a href="index.html#aprender">APRENDER</a>
-            <a href="index.html#contribuir">CONTRIBUIR</a>
-            <a href="index.html#ayudar">AYUDAR</a>  
-            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-            </div>
-        </div>
-      </nav>
-</header>
+		<div>
+		<div class="topnav" id="myTopnav">
+	     <style>
+body {color: white !important; margin:0;background-color: #2E2E2C !important;}
+	h1{ height: 60px;margin-top: 5px; width: 40%; text-indent: -99999999px;background: url(images/logo_NAV.png) 40%/30% no-repeat;float: left;}
+.dropdown, .dropup {
+    position: unset;
+}
+.topnav {
+  overflow: hidden;
+  background:url(images/nav_bar.png) repeat-x;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	background-color: #181719;
+	border-right: 1px solid;
+	font-family: 'barlow semi condensed';
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left ;
+    overflow: hidden ;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white !important;
+    padding: 14px 16px !important;
+    background-color: #181719;
+    font-family: 'barlow semi condensed';
+    margin: 0;border-right: 1px solid;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute ;
+    background-color: white;
+	color: white !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+     border-right: 4px solid rgb(42, 131, 125);
+    float: none !important;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+        
+	
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+</style>
+<h1 >OBSERVATORIO DE GÉNERO Y JUVENTUD</h1>
+	<div style="margin-left: 25%;margin-top: 10px;">
+<h2 style="display: none;">Menu de navegación</h2>
+  <a href="index.html" class="active">INICIO</a>
+  <a href="index.html">ACERCA</a>
+  <a data-toggle="modal" data-target="#myModal2">CONTACTO</a>
+  <div class="dropdown">
+    <button class="dropbtn">APRENDER 
+    </button>
+    <div class="dropdown-content">
+      <a href="glosario.html">GLOSARIO</a>
+      <a href="articulos.html">ARTICULOS</a>
+      <a href="mapa_estadistico.html">MAPAS</a>
+	<a href="tests.php">TESTS</a>
+
+
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">CONTRIBUYE 
+    </button>
+    <div class="dropdown-content">
+      <a href="foros.php">FOROS</a>
+      <a href="cuestionario.php">CUESTIONARIO</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">AYUDA
+    </button>
+    <div class="dropdown-content">
+      <a href="#">CENTROS DE AYUDA</a>
+      <a href="#">TESTIMONIOS</a>
+      <a href="#">RECURSOS A DISTANCIA</a>
+    </div>
+  </div> 
+	
+</div>
+	
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 
 <div id="preguntas_frecuentes">
 	<h1 style="display: none">PREGUNTAS FRECUENTES</h1>
-	<h2>PREGUNTAS FRECUENTES</h2>
+	<h2 style="font-family: 'archiveregular'">PREGUNTAS FRECUENTES</h2>
     
         <input type="text" placeholder="BUSCAR..." id="myInput" onkeyup="filterFunction()">
     
-<div id="myBtnContainer">
+<div id="myBtnContainer" style="border: 2px solid white;width: 80%; margin: 0 auto;">
   <button id="primer_boton" class="btn active" onclick="filterSelection('todas')">TODAS</button>
   <button class="btn" onclick="filterSelection('vg')">SOBRE VIOLENCIA DE GÉNERO</button>
   <button class="btn" onclick="filterSelection('pagina')">SOBRE LA PÁGINA</button>
@@ -140,7 +352,12 @@ nav {
     </div>
   </div>
     
-
+<div class="preguntas_filter_container">
+    <div id="preguntas">
+        <div class="filterDiv observatorio todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#observatorio">OBSERVATORIO</div>
+       <div class="filterDiv observatorio todas" class="btn btn-info btn-lg" data-toggle="modal" data-target="#objetivos">OBJETIVOS DEL OGJ</div>
+    </div>
+  </div>
  <!-- Modal GÉNERO-->
   <div class="modal fade" id="genero" role="dialog">
     <div class="modal-dialog">
@@ -152,9 +369,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Categoría que analiza cómo se definen, representan y simbolizan las diferencias sexuales en una determinada sociedad. Así pues, es el conjunto de ideas, creencias y atribuciones sociales, construidas en cada cultura y momento histórico, tomando como base la diferencia sexual; a partir de ello se construyen los conceptos de “masculinidad” y “feminidad”, los cuales determinan el comportamiento, las funciones, oportunidades,valoración y las relaciones entre mujeres y hombres. Son construcciones socioculturales que pueden modificarse, dado que han sido aprendidas. Las aprendemos a partir de la interrelación familiar y social.</p>
+          <p>Categoría que analiza cómo se definen, representan y simbolizan las diferencias sexuales en una determinada sociedad. Así pues, es el conjunto de ideas, creencias y atribuciones sociales, construidas en cada cultura y momento histórico, tomando como base la diferencia sexual; a partir de ello se construyen los conceptos de “masculinidad” y “feminidad”, los cuales determinan el comportamiento, las funciones, oportunidades,valoración y las relaciones entre mujeres y hombres. Son construcciones socioculturales que pueden modificarse, dado que han sido aprendidas. Las aprendemos a partir de la interrelación familiar y social.</p>
           <br />
-        <p id="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES</p>
+        <p id="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -164,7 +381,62 @@ nav {
     </div>
   </div>
     
-        
+        <div class="modal fade" id="observatorio" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">¿QUÉ ES UN OBSERVATORIO?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+			Un observatorio es un conjunto de personas y organizaciones que se encargan de vigilar, estudiar y analizar fenómenos y prácticas relacionadas con un tema especifico.</p>
+          <br />
+        <p class="referencia">Oficina de Género, Diversidad y Derechos Humanos de la Organización Panamericana de la Salud y el Observatorio de Salud de la Mujer, del Ministerio de Sanidad y
+Política Social de España. (2012) “Panorama de Observatorios de Género y Salud en América Latina” En
+http://www.paho.org/hq/dmdocuments/gdr-mapeo-de-observatorios-v-jan-2012.pdf</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+	
+	
+	 <div class="modal fade" id="objetivos" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">OBJETIVOS DEL OGJ</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <p>
+			<li>Analizar la percepción de violencia de género en grupos y comunidades
+				juveniles mexicanas.</li>
+			<li>Estudiar dinámicas de violencia en relaciones afectivas de jóvenes de distintos
+				puntos de la Ciudad de México y otras ciudades del país.</li>
+<li>Divulgar información que permita sensibilizar sobre la detección de violencia
+en relaciones afectivas en poblaciones juveniles, con el fin de prevenir
+violencia de género en futuras parejas en la edad adulta y familias.</li></p>
+          <br />
+        <p class="referencia">Oficina de Género, Diversidad y Derechos Humanos de la Organización Panamericana de la Salud y el Observatorio de Salud de la Mujer, del Ministerio de Sanidad y
+Política Social de España. (2012) “Panorama de Observatorios de Género y Salud en América Latina” En
+http://www.paho.org/hq/dmdocuments/gdr-mapeo-de-observatorios-v-jan-2012.pdf</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
  <!-- Modal EXPRESIÓN DE GÉNERO-->
       <div class="modal fade" id="expresion_de_genero" role="dialog">
     <div class="modal-dialog">
@@ -176,7 +448,7 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es la forma en la que cada persona expresa expresamos nuestro género, por ejemplo, a través de la vestimenta, el comportamiento, los intereses y las afinidades. Esto trasciende las percepciones estereotipadas o estandarizadas de la sociedad en cuanto a lo femenino, masculino y andrógino (la combinación de ambos).</p>
+          <p>Es la forma en la que cada persona expresa expresamos nuestro género, por ejemplo, a través de la vestimenta, el comportamiento, los intereses y las afinidades. Esto trasciende las percepciones estereotipadas o estandarizadas de la sociedad en cuanto a lo femenino, masculino y andrógino (la combinación de ambos).</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -197,9 +469,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar. Se expresa en conductas verbales, físicas o ambas, relacionadas con la sexualidad de connotación lasciva.</p>
+          <p>Es el ejercicio del poder, en una relación de subordinación real de la víctima frente al agresor en los ámbitos laboral y/o escolar. Se expresa en conductas verbales, físicas o ambas, relacionadas con la sexualidad de connotación lasciva.</p>
         <br />
-        <p id="referencia">Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia.</p>
+        <p class="referencia">Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -220,10 +492,10 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Toda actividad con connotación sexual que sucede entre dos personas sin que medie el consentimiento de alguna de ellas. El acoso se puede manifestar entre adultos, de un adulto a un menor o incluso entre menores. El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder que conlleva a un estado de indefensión y de riesgo para la víctima, independientemente de que se realice en uno o varios eventos.</p>
-        <p>Los comportamientos que se califican como acoso sexual pueden ser tanto físicos (violencia física, tocamientos, acercamientos innecesarios) como verbales (comentarios y preguntas sobre el aspecto, el estilo de vida, la orientación sexual; llamadas de teléfono ofensivas, mensajes de texto, correo electrónico, etc.) y no verbales (silbidos, gestos de connotación sexual, presentación de objetos pornográficos).</p>
+          <p>Toda actividad con connotación sexual que sucede entre dos personas sin que medie el consentimiento de alguna de ellas. El acoso se puede manifestar entre adultos, de un adulto a un menor o incluso entre menores. El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder que conlleva a un estado de indefensión y de riesgo para la víctima, independientemente de que se realice en uno o varios eventos.</p>
+        <p>Los comportamientos que se califican como acoso sexual pueden ser tanto físicos (violencia física, tocamientos, acercamientos innecesarios) como verbales (comentarios y preguntas sobre el aspecto, el estilo de vida, la orientación sexual; llamadas de teléfono ofensivas, mensajes de texto, correo electrónico, etc.) y no verbales (silbidos, gestos de connotación sexual, presentación de objetos pornográficos).</p>
         <br />
-        <p id="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES.<br /> Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia. <br />Organización Internacional del Trabajo</p>
+        <p class="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES.<br /> Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia. <br />Organización Internacional del Trabajo</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -244,7 +516,7 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es la vivencia interna e individual del género tal y como cada persona la experimenta, la cual podría corresponder o no, con su sexo biológico. Por lo tanto, es una construcción personal, social y cultural y no un hecho determinado.</p>
+          <p>Es la vivencia interna e individual del género tal y como cada persona la experimenta, la cual podría corresponder o no, con su sexo biológico. Por lo tanto, es una construcción personal, social y cultural y no un hecho determinado.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -265,7 +537,7 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es la atracción emocional, sexual y erótica que sentimos hacia otras personas.</p>
+          <p>Es la atracción emocional, sexual y erótica que sentimos hacia otras personas.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -287,9 +559,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Se refiere a todas aquellas prácticas y actitudes que promueven el trato diferenciado de las personas en razón de su sexo biológico, del cual se asumen características y comportamientos que se espera, las mujeres y los hombres, actúen cotidianamente. El sexismo puede incluir diferentes creencias o actitudes: La creencia de que un sexo es superior o inferior al otro, la actitud de misoginia o misandria, la actitud de imponer una noción de masculinidad (género) a los hombres (sexo) y una noción de feminidad (género) a las mujeres (sexo), el menosprecio o la ocultación de las mujeres, la burla o la descalificación hacia la apariencia o conducta de las mujeres o de los hombres, referencias que aluden despectivamente a la sexualidad de hombres o mujeres, entre otras.</p>
+          <p>Se refiere a todas aquellas prácticas y actitudes que promueven el trato diferenciado de las personas en razón de su sexo biológico, del cual se asumen características y comportamientos que se espera, las mujeres y los hombres, actúen cotidianamente. El sexismo puede incluir diferentes creencias o actitudes: La creencia de que un sexo es superior o inferior al otro, la actitud de misoginia o misandria, la actitud de imponer una noción de masculinidad (género) a los hombres (sexo) y una noción de feminidad (género) a las mujeres (sexo), el menosprecio o la ocultación de las mujeres, la burla o la descalificación hacia la apariencia o conducta de las mujeres o de los hombres, referencias que aluden despectivamente a la sexualidad de hombres o mujeres, entre otras.</p>
         <br />
-        <p id="referencia">Punto Género - INMUJERES. Disponible en: http://puntogenero.inmujeres.gob.mx/Portal/madig/sexismo/</p>
+        <p class="referencia">Punto Género - INMUJERES. Disponible en: http://puntogenero.inmujeres.gob.mx/Portal/madig/sexismo/</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -311,7 +583,7 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Corresponden a los tipos de violencia definidos en Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, generalizados a las y los integrantes de la Universidad. Los tipos de violencia son: violencia psicológica, violencia física, violencia patrimonial, violencia económica, violencia sexual y cualesquiera otras formas análogas que lesionen o sean susceptibles de dañar la dignidad, integridad o libertad de las personas.</p>
+          <p>Corresponden a los tipos de violencia definidos en Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, generalizados a las y los integrantes de la Universidad. Los tipos de violencia son: violencia psicológica, violencia física, violencia patrimonial, violencia económica, violencia sexual y cualesquiera otras formas análogas que lesionen o sean susceptibles de dañar la dignidad, integridad o libertad de las personas.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -333,7 +605,7 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Las formas, manifestaciones o los ámbitos de ocurrencia en que se presenta la violencia de género.</p>
+          <p>Las formas, manifestaciones o los ámbitos de ocurrencia en que se presenta la violencia de género.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -353,9 +625,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Son los actos individuales o colectivos que transgreden derechos fundamentales de las personas y propician su denigración, discriminación, marginación o exclusión en el ámbito público.</p>
+          <p>Son los actos individuales o colectivos que transgreden derechos fundamentales de las personas y propician su denigración, discriminación, marginación o exclusión en el ámbito público.</p>
          <br />
-         <p id="referencia">Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.</p>
+         <p class="referencia">Ley General de Acceso de las Mujeres a una Vida Libre de Violencia.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -376,9 +648,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Cualquier acción u omisión, basada en su género, que les cause daño o sufrimiento psicológico, físico, patrimonial, económico, sexual o la muerte tanto en el ámbito privado como en el público.</p>
+          <p>Cualquier acción u omisión, basada en su género, que les cause daño o sufrimiento psicológico, físico, patrimonial, económico, sexual o la muerte tanto en el ámbito privado como en el público.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -399,7 +671,7 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Cualquier acción u omisión contra un (una) integrante de la comunidad universitaria, derivada de su expresión e identidad de género, orientación y/o preferencia sexual y que resulte en daño o sufrimiento psicológico, físico, patrimonial, económico, sexual o la muerte.</p>
+          <p>Cualquier acción u omisión contra un (una) integrante de la comunidad universitaria, derivada de su expresión e identidad de género, orientación y/o preferencia sexual y que resulte en daño o sufrimiento psicológico, físico, patrimonial, económico, sexual o la muerte.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -419,9 +691,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas, así como la percepción de un salario menor por igual trabajo, dentro de un mismo centro laboral.</p>
+          <p>Es toda acción u omisión del Agresor que afecta la supervivencia económica de la víctima. Se manifiesta a través de limitaciones encaminadas a controlar el ingreso de sus percepciones económicas, así como la percepción de un salario menor por igual trabajo, dentro de un mismo centro laboral.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -442,9 +714,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es cualquier acto que inflige daño no accidental, usando la fuerza física o algún tipo de arma u objeto que pueda provocar o no lesiones ya sean internas, externas, o ambas.</p>
+          <p>Es cualquier acto que inflige daño no accidental, usando la fuerza física o algún tipo de arma u objeto que pueda provocar o no lesiones ya sean internas, externas, o ambas.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -464,9 +736,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades y puede abarcar los daños a los bienes comunes o propios de la víctima.</p>
+          <p>Es cualquier acto u omisión que afecta la supervivencia de la víctima. Se manifiesta en: la transformación, sustracción, destrucción, retención o distracción de objetos, documentos personales, bienes y valores, derechos patrimoniales o recursos económicos destinados a satisfacer sus necesidades y puede abarcar los daños a los bienes comunes o propios de la víctima.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -486,9 +758,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es cualquier acto u omisión que dañe la estabilidad psicológica, que puede consistir en: negligencia, abandono, descuido reiterado, celotipia, insultos, humillaciones, devaluación, marginación, indiferencia, infidelidad, comparaciones destructivas, rechazo, restricción a la autodeterminación y amenazas, las cuales conllevan a la víctima a la depresión, al aislamiento, a la devaluación de su autoestima e incluso al suicidio.</p>
+          <p>Es cualquier acto u omisión que dañe la estabilidad psicológica, que puede consistir en: negligencia, abandono, descuido reiterado, celotipia, insultos, humillaciones, devaluación, marginación, indiferencia, infidelidad, comparaciones destructivas, rechazo, restricción a la autodeterminación y amenazas, las cuales conllevan a la víctima a la depresión, al aislamiento, a la devaluación de su autoestima e incluso al suicidio.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -508,9 +780,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Toda acción u omisión dirigida a desvalorar, intimidar o controlar sus acciones, comportamientos y decisiones, consistente en prohibiciones, coacciones, condicionamientos, intimidaciones, insultos, amenazas, celotipia, desdén, indiferencia, descuido reiterado, chantaje, humillaciones, comparaciones destructivas, abandono o actitudes devaluatorias, o cualquier otra, que provoque en quien la recibe alteración autocognitiva y autovalorativa que integran su autoestima o alteraciones en alguna esfera o área de su estructura psíquica.</p>
+          <p>Toda acción u omisión dirigida a desvalorar, intimidar o controlar sus acciones, comportamientos y decisiones, consistente en prohibiciones, coacciones, condicionamientos, intimidaciones, insultos, amenazas, celotipia, desdén, indiferencia, descuido reiterado, chantaje, humillaciones, comparaciones destructivas, abandono o actitudes devaluatorias, o cualquier otra, que provoque en quien la recibe alteración autocognitiva y autovalorativa que integran su autoestima o alteraciones en alguna esfera o área de su estructura psíquica.</p>
          <br />
-         <p id="referencia">Ley de Acceso de las Mujeres a una Vida Libre de Violencia del Distrito Federal.</p>
+         <p class="referencia">Ley de Acceso de las Mujeres a una Vida Libre de Violencia del Distrito Federal.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -530,9 +802,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Es cualquier acto que degrada o daña el cuerpo y/o la sexualidad de la víctima y que por tanto atenta contra su libertad, dignidad e integridad física. Es una expresión de abuso de poder que implica la supremacía masculina sobre la mujer, al denigrarla y concebirla como objeto</p>
+          <p>Es cualquier acto que degrada o daña el cuerpo y/o la sexualidad de la víctima y que por tanto atenta contra su libertad, dignidad e integridad física. Es una expresión de abuso de poder que implica la supremacía masculina sobre la mujer, al denigrarla y concebirla como objeto</p>
          <br />
-         <p id="referencia">Ley General de Acceso de las Mujeres a una Vida Libre de Violencia</p>
+         <p class="referencia">Ley General de Acceso de las Mujeres a una Vida Libre de Violencia</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -552,11 +824,11 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>Se ejerce por las personas que tienen un vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica, consistente en un acto o una omisión en abuso de poder que daña la autoestima, salud, integridad, libertad y seguridad de la víctima, e impide su desarrollo y atenta contra la igualdad.<br />
-              Puede consistir en un solo evento dañino o en una serie de eventos cuya suma produce el daño.<br />
-              También incluye el acoso o el hostigamiento sexual.</p>
+          <p>Se ejerce por las personas que tienen un vínculo laboral, docente o análogo con la víctima, independientemente de la relación jerárquica, consistente en un acto o una omisión en abuso de poder que daña la autoestima, salud, integridad, libertad y seguridad de la víctima, e impide su desarrollo y atenta contra la igualdad.<br />
+              Puede consistir en un solo evento dañino o en una serie de eventos cuya suma produce el daño.<br />
+              También incluye el acoso o el hostigamiento sexual.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -576,9 +848,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>SConstituye violencia laboral: la negativa ilegal a contratar a la Víctima o a respetar su permanencia o condiciones generales de trabajo; la descalificación del trabajo realizado, las amenazas, la intimidación, las humillaciones, la explotación y todo tipo de discriminación por condición de género.</p>
+          <p>Constituye violencia laboral: la negativa ilegal a contratar a la Víctima o a respetar su permanencia o condiciones generales de trabajo; la descalificación del trabajo realizado, las amenazas, la intimidación, las humillaciones, la explotación y todo tipo de discriminación por condición de género.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -598,9 +870,9 @@ nav {
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         <div class="modal-body">
-          <p>aquellas conductas que dañen la autoestima de las alumnas con actos de discriminación por su sexo, edad, condición social, académica, limitaciones y/o características físicas, que les infligen maestras o maestros.</p>
+          <p>aquellas conductas que dañen la autoestima de las alumnas con actos de discriminación por su sexo, edad, condición social, académica, limitaciones y/o características físicas, que les infligen maestras o maestros.</p>
          <br />
-         <p id="referencia">Ibídem.</p>
+         <p class="referencia">Ibídem.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
@@ -608,19 +880,105 @@ nav {
       </div>
     </div>
   </div> 
-   <footer>
+   <footer style="width: 100% !important;">
 
   
   <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR ARRIBA</a></p></div>  
-    <div><div class="row" id="footerh2"><h2 class="col-sm-4"><a href="aviso.html">AVISO DE PRIVACIDAD</a></h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4">CONTACTO</h2></div></div>
+    <div style="width: 90%;margin: 0 auto;"><div class="row" id="footerh2"><h2 class="col-sm-4"><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+AVISO DE PRIVACIDAD</button></h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4"><button class="btn" data-toggle="modal" data-target="#myModal2">CONTACTO</button></h2></div></div>
 
-    <div class="row">
-    <div class="col-sm-4"> <h3> <span></span>APRENDER</h3><p>Glosario</p><p>Preguntas frecuentes</p><p>Mapa de datos estadísticos</p><p>Artículos informativos</p><p>Testimonios</p><p>Tests</p><p>Eventos</p></div>
-    <div class="col-sm-4"> <h3> <span></span>CONTRIBUIR</h3><p>Foro de Discusión</p><p>Cuestionarios de investigación</p></div>
-    <div class="col-sm-4"> <h3> <span></span>AYUDAR</h3><p>Mapa de Centros de Ayuda</p><p>Recursos a Distancia</p><p>Compartir testimonio</p></div>  
-  </div>
+    <div class="row" style="width: 90%;margin: 0 auto;">
+        <div class="col-sm-4" style="margin: 0 auto;border:3px solid rgb(242, 82, 110);"> <h3> <span></span>APRENDER</h3><p  ><a href="glosario.html">Glosario</a></p><p><a href="preguntas.html">Preguntas frecuentes</a></p><p><a href="mapa_estadistico.html">Mapa de datos estadísticos</a></p><p><a href="articulos.html">Artículos informativos</a></p><p><a href="#">Testimonios</a></p><p ><a href="tests"> Tests</a></p><p><a href="">Eventos</a></p></div>
+    <div class="col-sm-4" style="margin: 0 auto;border: 3px solid #f2526e;"> <h3> <span></span>CONTRIBUIR</h3><p><a href="foros.html">Foro de Discusión</a></p><p><a href="cuestionario.html">Cuestionarios de investigación</a></p></div>
+    <div class="col-sm-4" style="margin: 0 auto;border: 3px solid #f2526e;"> <h3> <span></span>AYUDAR</h3><p><a href="mexico_mapa.html">Mapa de Centros de Ayuda</a></p><p>Recursos a Distancia</p><p><a>Compartir testimonio</a></p></div>  
+  </div><div style="text-align: right;width: 90%;margin: 0 auto;"><p style="font-size: 1.5em;color: white !important;">Universidad Iberoamericana 2018</p></div>
    
     </footer>  
+     	<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">AVISO DE PRIVACIDAD</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+         <p>En cumplimiento con lo establecido por <strong>la Ley Federal de Protección de Datos Personales</strong> en
+Posesión de los Particulares, <strong>la Universidad Iberoamericana</strong>, A. C. con domicilio en Prolongación
+Paseo de la Reforma No. 880, Colonia Lomas de Santa Fe, Delegación Álvaro Obregón, C. P.
+01219, Ciudad de México, le informa que los datos personales, entendiendo por estos, de manera
+enunciativa mas no limitativa: nombre, fecha de nacimiento, nacionalidad, dirección, correo
+electrónico, número de teléfono, («datos personales»), los datos personales sensibles,
+entendiendo por estos, de manera enunciativa mas no limitativa: origen racial o étnico, estado de
+salud presente y futuro, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones
+políticas y demás información que pueda ser usada para identificarlo, otorgados por usted
+(«Usuario») y recopilados directamente en nuestra base de datos serán usados exclusivamente
+			 para que la Universidad Iberoamericana </p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+	  <div class="modal fade" id="myModal2" role="dialog" >
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content" style="background-color: #2E2E2C;">
+        <div class="modal-header">
+          <h4 class="modal-title">¡Contáctanos!</h4>
+        </div>
+        <div class="modal-body">
+       		<div class="contacts table" aria-labelledby="contacts-caption-text">
+  <span class="caption" id="contacts-caption-text">OBSERVATORIO DE GÉNERO Y JUVENTUD</span>
+  <div class="contacts-header thead">
+    <span class="th" id="th-name">Nombre:</span>
+    <span class="th" id="th-org">Función:</span>
+    <span class="th" id="th-phone">Correo:</span>
+  </div>  
+  <ul class="tbody">
+    <li class="tr" itemscope itemtype="http://schema.org/Person">
+      <span class="td">
+        <span class="label">Nombre:</span>
+        <span class="data" itemprop="name" aria-labelledby="th-name">Elvia</span>
+      </span>
+      <span class="td" itemscope itemtype="http://schema.org/Organization">
+        <span class="label">Función:</span>
+        <span class="data" itemprop="name" aria-labelledby="th-org">Coordinadora</span>
+      </span>
+      <span class="td">
+        <span class="label">Correo:</span>
+        <span class="data" itemprop="email" aria-labelledby="th-email"><a href="mailto:ola.nordmann@acme-corp.no">elvia@...</a></span>
+      </span>
+    </li>
+    <li class="tr" itemscope itemtype="http://schema.org/Person">
+      <span class="td">
+        <span class="label">Nombre:</span>
+        <span class="data" itemprop="name" aria-labelledby="th-name">Gloria</span>
+      </span>
+      <span class="td" itemscope itemtype="http://schema.org/Organization">
+        <span class="label">Función</span>
+        <span class="data" itemprop="name" aria-labelledby="th-org">Asistente</span>
+      </span>
+      <span class="td">
+        <span class="label">Correo</span>
+        <span class="data" itemprop="email" aria-labelledby="th-email"><a href="mailto:kari.nordmann@acme-corp.no">Gloria...</a></span>
+      </span>
+    </li>    
+  </ul>
+	</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+		</div>
     <!--FILTRO DE CATEGORIAS -->
 <script>
 filterSelection("all")

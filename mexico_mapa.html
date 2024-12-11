@@ -5,31 +5,197 @@
     <title>OGJ: Mapa de centros de ayuda</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script src="http://maps.google.com/maps/api/js?sensor=true&language=en"></script>
+       <link rel="shortcut icon" href="images/asset11.png" />
     <script src="gmaps.js"></script>
     <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
-      <link href="css/estilos.css" rel="stylesheet">
+      <link href="css/estilosinternas.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="examples.css" />
 
-                <style> .topnav{position: relative; left: 90px;}
+                <style> 
+                    #filtrar > div > label{border: 1px solid white;    margin-bottom: 36px;
+    margin-top: -27px;}
+               
+                    /*.topnav{position: relative; left: 90px;}
     .topnav a { line-height: 20px; letter-spacing: 1px;
         margin-top: 10px; border-left: 1px white solid;} 
                     body > p{margin-left: 20px; margin-top: 50px;}
-              nav{margin-top: -32px;margin-left: -120px;}
-      
-                    #filtrar {
+                    body > div > div.custom-select > select{    padding: 10px 10px;font-size: 1.2em;}
+              nav{margin-top: -32px;margin-left: -120px;}*/
+                    p {
+                        font-size: 3em;}
+                    #filtrar > h3{ font-size: 2em;}
+                    #filtrar > div{padding: 12px 20.5%; font-size: 1.6em;line-height: 46px;
+    border: 1px solid white;     display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-flow: row;
+    flex-wrap: wrap;} 
+          
+     #map {
+    width: 65%;
+         height: 550px;}               
+#filtrar {
     position: relative;
     width: 28%;
-    left: 67%;
-    top: -720px;
-                        background: black;}
-                .custom-select {
+    left: 68%;
+    top: -582px;
+    background: black;
+}
+* {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+body>div {
+    max-width: 1920px;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+}
+               #filtrar > div > label{flex-basis: 100%;}
+ .custom-select {
+    width: 59%;
     position: relative;
-    left: 73%;
-    top: -700px;
-    background-color: black;
-}        
+    left: 0%;
+    top: 47px;
+    padding: 10px 10px;
+}     
 
+        left: 74%;}  
+                    body > div.row > div.custom-select > select{font-size: 1em;}           
     </style>
+         <style>
+    a{color: white !important;}
+    h1{float: left;height: 44px;
+    margin-top: 3px;
+    position: relative;
+    left: 5%;}
+body {color: white !important; margin:0;background-color: #2E2E2C !important;}
+	h1{ height: 60px;margin-top: 5px; width: 40%; text-indent: -99999999px;background: url(images/logo_NAV.png) 40%/30% no-repeat;float: left;}
+.dropdown, .dropup {
+    position: unset;
+}
+.topnav {
+  overflow: hidden;
+  background:url(images/nav_bar.png) repeat-x;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+	background-color: #181719;
+	border-right: 1px solid;
+	font-family: 'barlow semi condensed';
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+    float: left ;
+    overflow: hidden ;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;    
+    border: none;
+    outline: none;
+    color: white !important;
+    padding: 14px 16px !important;
+    background-color: #181719;
+    font-family: 'barlow semi condensed';
+    margin: 0;border-right: 1px solid;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute ;
+    background-color: white;
+	color: white !important;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none !important;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+        
+	
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+    @media screen and (max-width: 959px){ and (min-width: 768px)
+#myTopnav > a {
+    position: relative;
+    left: 8%;
+        }}
+    @media screen and (min-width: 960px){
+#myTopnav > a {
+    position: relative;
+    /* left: 20%; */
+    font-size: 1.2em;
+    }}
+</style>
     <script>
         $(function () {
           var map = new GMaps({
@@ -162,7 +328,7 @@
         var styles = [
             {
               stylers: [
-                {  },
+                { },
      
               ]
             }, {
@@ -192,61 +358,121 @@
     </script>
   </head>
   <body>
- 
-    <nav >
-      <h2 style="display:none;">Navegación del OGJ</h2>
-      <div class="topnav" id="myTopnav"> 
-        <img  id="logo-NAV" src="../OGJ/images/logo_NAV.png"> 
-            <a href="index.html#acerca"  class="active">INICIO</a>
-            <a href="index.html#inicio">ACERCA</a>
-            <a href="index.html#contacto">CONTACTO</a>
-            <a href="index.html#aprender">APRENDER</a>
-            <a href="index.html#contribuir">CONTRIBUIR</a>
-          <a href="index.html#ayudar">AYUDAR</a> 
-             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-      </nav> 
-    <h1><span>AYUDAR</span>MAPA DE CENTROS DE AYUDA</h1>
-      <p>MAPA DE CENTROS DE AYUDA</p>
-    <div class="row">
-      <div class="span11">
-        <div id="map"></div>
-        </div>
-        <div id="filtrar">
-      <h3>FILTRAR</h3>
-       <div > <h4>CATEGORIAS</h4>
-   <label>     <input type="checkbox" name="categorias"> Centro de crisis</label>
-               <label>    <input type="checkbox" name="categorias"> Ayuda psicológica</label>
-               <label>    <input type="checkbox" name="categorias">Denuncias</label>
-             <label>    <input type="checkbox" name="categorias">Consejo legal</label>
-          </div>
+ <div class="topnav" id="myTopnav">
+	     
+<h1 >OBSERVATORIO DE GÉNERO Y JUVENTUD</h1>
+	<div id="arriba" style="margin-left: 25%;margin-top: 10px;">
+<h2 style="display: none;">Menu de navegación</h2>
+  <a href="index.html" class="active">INICIO</a>
+  <a href="index.html#">ACERCA</a>
+  <a  data-toggle="modal" data-target="#myModal2">CONTACTO</a>
+  <div class="dropdown">
+    <button class="dropbtn">APRENDER 
+    </button>
+    <div class="dropdown-content">
+      <a href="glosario.html">GLOSARIO</a>
+      <a href="preguntas.html">PREGUNTAS FRECUENTES</a>
       
-      </div>
-      <div class="custom-select" style="width:200px;">
-  <select>
-    <option value="0">UBICACIÓN</option>
-    <option value="1">México</option>
-    <option value="2">Jalisco</option>
-    <option value="3">Chihuahua</option>
-    <option value="4">Sonora</option>
-    <option value="5">Veracruz</option>
-    <option value="6">Oaxaca</option>
-    <option value="7">Coahuila</option>
-    <option value="8">Sinaloa</option>
-    <option value="9">Nuevo León</option>
-    <option value="10">California</option>
-    <option value="11">Yucatán</option>
-    <option value="12">Guerrero</option>
-  </select>
-</div>
+	<a href="articulos.html">ARTICULOS</a>
 
-        <footer >
-            <style> #footerh { height: 70px; border: none; margin: 0 auto; display: flex; flex-flow: row; flex-direction: row; flex-wrap: wrap; justify-content: space-around;}   
-            h2 a{color: white;margin-top: -10px;} </style>
+
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">CONTRIBUYE 
+    </button>
+    <div class="dropdown-content">
+      <a href="foros.php">FOROS</a>
+      <a href="cuestionario.php">CUESTIONARIO</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">AYUDA
+    </button>
+    <div class="dropdown-content">
+      <a href="#">CENTROS DE AYUDA</a>
+      <a href="#">TESTIMONIOS</a>
+      <a href="#">RECURSOS A DISTANCIA</a>
+    </div>
+  </div> 
+	
+</div>
+	
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div> 
+    <h3><span>AYUDAR</span>MAPA DE CENTROS DE AYUDA</h3>
+      <p id="arriba" style="font-weight: 900;"> <span style="font-weight: 100;">AYUDAR</span> / MAPA DE CENTROS DE AYUDA</p>
+  <iframe width="100%" height="576" src="https://maphub.net/embed/41197?button=0&panel=1" frameborder="0"></iframe>
+
+  <footer>
+<style>
+    footer{height: 900px;}
+    body > div > footer{background-color: #181719;}
+    body > div > footer{margin-top: -155px;}
+   .column {
+    /* margin-bottom: 65px; */
+    /* margin: 0 auto; */
+    max-width: 24%;
+    float: left;
+    /* font-size: 1em; */
+    margin: 0 auto;
+    width: 19.33%;
+    border: 2px solid #181719; 
+    padding: 87.2px;
+    height: 300px;
+    background-color: #181719;
+}
+    body > div > footer > div.row > div > div{ border: 2px solid #f2526e;     width: 320px;}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+      body > div > footer > div.row {
+    /* margin: 0 auto; */
+    margin-top: 89px;
+}
+    body > div > footer > div.row > div > div > li, body > div > footer > div.row > div:nth-child(2) > li, body > div > footer > div.row > div:nth-child(3) > li{
+            list-style: none;
+    text-decoration: none;
+    font-size: 1.8em;
+        
+    }
+    body > div > footer > div.row > div > p{font-size: 2em;    margin-top: -79px;}
+    body > div > footer > div.row > div:nth-child(2) > div,   body > div > footer > div.row > div:nth-child(3) > div{height: 381px;}
+    body > div > footer > div.row > div> div > li > a, body > div > footer > div.row > div:nth-child(2) > li > a, body > div > footer > div.row > div:nth-child(3) > li > a{    color: white;
+    text-decoration: none;}
+    body > div > footer > div.row{height: 521px;}
+      </style>
   
-  <div id="regresar" ><span>h</span> </div>  
-    <div><div id="footerh"><h2 ><a href="aviso.html">AVISO DE PRIVACIDAD</a></h2><h2>MAPA DEL SITIO</h2><h2>CONTACTO</h2></div></div>
-    </footer>   
+  <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR </a></p></div>  
+
+<div class="row">
+  <div class="column" >
+       <p>AVISO DE PRIVACIDAD</p>
+    <div>
+      <h2>APRENDER</h2>
+   
+        <li ><a href="glosario.html">Glosario</a></li><li><a href="preguntas.html">Preguntas frecuentes</a></li><li><a href="mapa_estadistico.html">Mapa de datos estadísticos</a></li><li><a href="articulos.html">Artículos informativos</a></li><li><a href="#">Testimonios</a></li><li><a href="tests"> Tests</a></li><li><a href="">Eventos</a></li></div>
+      
+  </div>
+  <div class="column" >
+          <p>MAPA DEL SITIO</p>
+  <div>  <h2>CONTRIBUIR</h2>
+
+      <li><a href="foros.html">Foro de Discusión</a></li><li><a href="cuestionario.html">Cuestionarios de investigación</a></li></div>
+  </div>
+  <div class="column" >
+      <p>CONTACTO</p>
+   <div>
+       <h2>PARTICIPAR</h2>
+    
+      <li><a href="mexico_mapa.html">Mapa de Centros de Ayuda</a></li><li><a href="mexico_mapa.html">Recursos a Distancia</a></li><li><a>Compartir testimonio</a></li>
+      </div>
+  </div>
+</div>
+    </footer> 
         
     
 
