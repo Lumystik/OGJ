@@ -236,7 +236,7 @@ grid-template-areas: "titulo reglas" "proponer proponer" "OGJ OGJ" "usuarios usu
 
 #foros h2{
     font-size: 2.2rem;
-color: #20DBB0;
+ color: #F07157 !important;;
 grid-area: titulo;
 font-family: 'archiveregular';
 }
@@ -258,7 +258,7 @@ font-family: 'archiveregular';
 }
 
 #ver_reglas{
-    color: #20DBB0;
+      color: #F07157 !important;
     grid-area: reglas;
     margin: 0%;
     padding-top: 10%;
@@ -293,7 +293,7 @@ color: white;
     color: rgb(255, 255, 255);
     font-size: 19px;
     text-align: center;
-     background-color: #2A837D;
+         background-color: #F07157 !important;
      font-family: 'Sequel Neue';
 }
 
@@ -768,7 +768,7 @@ padding: 3%;
         grid-area: preguntas;
         width: 88%;
         margin: auto;
-    
+    overflow: scroll;
     }
     
     #preguntas_frecuentes .preguntas_filter_container div{

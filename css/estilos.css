@@ -36,24 +36,25 @@
 body>div{ max-width: 1920px;  margin: 0 auto;   color: #fff;text-align: center;}
 body{background-color: #2E2E2C;}
 .col-sm-2{margin: 0 auto;}
-.row{width: 100%;}
-#header_div{margin: 0 auto;background-color: black;}
+.row {width: 100%; margin-left: 0px; margin-right: 0px; justify-content: center;}
+#genero, #i{margin-top: 30px;}
+#env{margin-top: 0px;}
+#header_div{margin: 0 auto;background-color: #181719;}
 #header_div>p:nth-child(1){ font-size: 25px;}
-header h1{  margin: 0 auto;font-family: 'ttsupermolot'; font-size: 3em; font-style: normal;}
-header h1 span{width: 60%; height: 180px; background: url(../images/logo_h1.png) 30% 50%/150px no-repeat; text-indent: -99999px; 
-display: inline-block;} 
+header h1{  margin: 0 auto;font-family: 'ttsupermolot'; font-size: 3em; font-style: normal; text-shadow: 1px 1px 1px black;}
 h3{font-family: 'Sequel Neue';}
 #navContribuir, #navAprender{border: 1px solid white;}
 #arriba > div.row{margin: 0 auto;}
 #aprender> h2, #contribuir >h2, #ayudar > h2{font-family: 'archiveregular';font-size: 3em;}
 #inicio > h2{font-family: 'archiveregular';}
-#header_div > h2{font-size: 1.5em;}
+#header_div > h2{margin-top: 24px; font-size: 1.5em;}
 ul li{list-style: none;}
 nav{width: 100%; height: 55px; position: fixed; z-index: 3;}
 #logo-NAV{ float: left; }
 #myTopnav > a:nth-child(5){border-left: 1px white solid;}
 .topnav  {
   overflow: hidden;  background-color: rgba(0, 0, 0, 0.5); }
+#navAprender{padding: 10px;}
 #myTopnav > a.icon{color: white;}
 .topnav a {
   margin-top: 5px;
@@ -64,8 +65,9 @@ nav{width: 100%; height: 55px; position: fixed; z-index: 3;}
   padding: 10px 15px;
   text-decoration: none;
   font-size: 17px;
-  background-color: #000000;
+  background-color: #181719;
 }
+
 .topnav a:hover {
   background-color: #ddd;
   color: black;
@@ -73,6 +75,7 @@ nav{width: 100%; height: 55px; position: fixed; z-index: 3;}
 .active {
   color: white;
 }
+
 .topnav .icon {
   display: none;}
 #regresar > p > a{color: white;}
@@ -126,6 +129,13 @@ body > div > header > div.row > div {width: 90%; }
 #logo_contacto{width: 100%; height: 100px; background: url(../images/logo_header_2.png) 170%/ 150% no-repeat;}
 body > div:nth-child(1) > header > div.row{margin: 36px auto;}
 #header_div > p:nth-child(5){ font-family: 'archiveregular';font-size: 18px;font-weight: 600;}
+.mapacentros {
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: url(images/ayudar.png) 67%/94% no-repeat;
+}
+#navAprender > .btn1{background: none;}
 #inicio{ width: 100%; }
 #inicio h3{text-align: center;} 
 .form-group{padding: 8px;}
@@ -153,7 +163,6 @@ button:hover {
 text-indent: -99999999px;
 width: 50px;
 background:url("../images/download.png") no-repeat center #2D2E2C;;}
-.tab{display: none;}
 .step {
   height: 15px;
   width: 15px;
@@ -164,7 +173,7 @@ background:url("../images/download.png") no-repeat center #2D2E2C;;}
   display: inline-block;
   opacity: 0.5;
 }
-
+#centros > p{text-align: left; background-color: black; font-size: 1.5em;}
 .step.active {
   opacity: 1;
 }
@@ -190,6 +199,29 @@ background:url("../images/download.png") no-repeat center #2D2E2C;;}
     overflow: hidden;
 }
 .participar{background-color: #666666;color: white;border: 2px solid #666666;margin-bottom: 10px;}
+#theinput{
+      display: inline-block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  border: 1px solid #b7b7b7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+    font-size: 24px;
+  font-family: 'Barlow Semi Condensed', sans-serif;  
+  color: white;
+  -o-text-overflow: clip;
+  text-overflow: clip;
+  background: rgba(0,0,0,1);
+  -webkit-box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.2) inset;
+  -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+  transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+}
+#centros > button > a, #cajas_principales_ayudar > div > div:nth-child(2) > button, #boton_ver_mas_mapa_aprender, #cajas_principales_testimonios > button{font-size: 1.5em;}
+
 #imagen{height: 125px; text-indent: -999999px; background: url(../images/personas.png) center center no-repeat;}
 p#pagina_cues{text-align: center;}
 #articulos,#cuestionario,#tests{	background-color: #2D2E2C;}
@@ -206,7 +238,10 @@ fieldset{margin: 0 auto !important;}
 	color: #FFFFFF;
 	border-bottom: 2px solid #ffff;}
 legend{color :white;}
-.modal-title{color: #20dbb0; text-align: center;}
+.modal-title{color: black;font-family: 'Barlow Semi Condensed', sans-serif; text-align: center;    border-bottom: 1px solid black;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 24px;}
 modal-header{color: #2D2E2C;}
 h6{color: white !important;}
 .siguiente{background-color:  #FF485E;color: white;}
@@ -217,7 +252,7 @@ p+p+p+p#cuestionario{
 form label,legend{color: #FFFFFF !important; padding: 3px;}
 .test{	background-color: #91CE6F; margin-left: 10px; margin-bottom: 20px;}
 .pagina_test{color: #91CE6F;}
-.modal-body,.modal-header,.modal-footer{background-color: black; }
+.modal-body,.modal-header,.modal-footer{background-color: white; color: black;}
 .continuar1{background-color: #FF485E;color: white;border: 2px solid #FF485E;position: relative;top: -120px;left: 57%;}
 #nextBtn{ color: white; background-color:darkseagreen;}
 .modal{background-color: rgba(255,255,255,0.12);}
@@ -234,10 +269,10 @@ form label,legend{color: #FFFFFF !important; padding: 3px;}
 #contribuir > ul > div > li > a, #ayudar > ul > div > li > a{color: white;}
 #glosario > div > div:nth-child(1) > p:nth-child(3) > strong{background-color: #6c6c6d; }
 #arriba > div.row > div:nth-child(1){margin-left: -2px;}
-#arriba > div.row > div> p > a{box-shadow: 1px 1px black;}
+#arriba > div.row > div> p > a{box-shadow: 0px 1px 5px black}
 button{color: white;background-color: #6c6c6d;}
-footer{ margin: 0 auto; background: url(../images/TEXTURA.png) 100% no-repeat;}
-footer > div{background-color: black}
+footer{ margin: 0 auto; background: url(../images/header_texture.png) 100% no-repeat;}
+footer > div{background-color: #181719}
 #footerh2>h2{font-family: 'Barlow Semi Condensed';}
 #myTopnav > a.btn.btn-info.btn-lg{height: 28px;line-height: 20px;}
 #regresar{margin-top: 50px;}
@@ -249,9 +284,9 @@ body > div:nth-child(1) > footer > div.row > div:nth-child(3){border: 2px solid 
 #regresar > p { width: 50%;  height: 50px; margin: 0 auto; background-color:  rgba(92, 34, 58, 0.87); line-height: 50px;}
 #regresar{ background-color:  rgba(0, 0, 0, 0);}
 #regresar > p > span{width: 10%; text-indent: -9999px; display: inline-block; background: url(../images/arrow_up.png) 100%/100% no-repeat;}
-body > div > footer > div.row > div:nth-child(1) > h3 > span{ width: 100%;height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png)90px/360px no-repeat; display: inline-block;}
-body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{width: 100%; height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) -60px/360px no-repeat;display: inline-block;}
-body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{width: 100%; height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) -230px/360px no-repeat;display: inline-block;}
+body > div > footer > div.row > div:nth-child(1) > h3 > span{ width: 100%;height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png)-70%/360px no-repeat; display: inline-block;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{width: 100%; height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 44%/360px no-repeat;display: inline-block;}
+body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{width: 100%; height: 60px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 163%/360px no-repeat;display: inline-block;}
 #glosario > div > div:nth-child(4) > h3, #estadisticos > div > div:nth-child(4) > h3, #contribuye > div > div:nth-child(4) > h3{margin-top: 60px; font-size: 1.5em; font-family: 'Sequel';}
 #parrafos p{    width: 285px; font-size: 12px;text-align: left; border: 1px solid white;}
 #historias > div > div:nth-child(1) > h3 >span{width: 20%; height: 40px; display: inline-block; background: url(../images/ayudar_suma.png) 100%/50px no-repeat; }
@@ -274,23 +309,46 @@ body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{width:
 #cuestionarios > div > div:nth-child(1) > p:nth-child(4){font-size: 11px; display: inline-block; width: 200px;}
 #cuestionarios > div > div:nth-child(1) > button{font-size: 0.8em; }
 #cuestionarios > div > div:nth-child(1) > p:nth-child(2){font-size: 14px;display: inline-block; width: 200px;}
+ #theinput{     width: 57%;}
+#cajas_principales_ayudar > div > div:nth-child(2) > div{font-size: 1.5em;
+    /* margin: 0 auto; */
+    text-align: center;
+    background-color: black;}
+body > div:nth-child(1) > footer > div.row > div > p > a{color: white;}
+body > div:nth-child(1) > footer > div.row > div > h3{font-size: 1.5em}
 @media screen and (min-width: 360px){
+  /*  #myTopnav > a.active{margin-top: 51px;}*/
+    #cajas_principales_ayudar > div > div:nth-child(2) > h3 {
+    margin-top: 100px;
+}
+    #centros > p{font-size: 1em;}
+    #cajas_principales_ayudar > div > div:nth-child(2) > div{font-size: 1em;}
+ .mapacentros {
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: url(images/ayudar.png) 0%/0% no-repeat !important;
+}
    header  h1{font-size: 2em;}
     h1 span{margin-top: 60px; height: 111px;}
 #header_div > p:nth-child(1) {  width: 80%;    margin-top: 40px; display: inline-block;font-size: 20px;}
-header, nav { width: 100%; background: url(../images/TEXTURA_movil.png) 100%/160% no-repeat;}
+header, nav {
+    width: 100%;
+    height: 1820px;
+    margin-bottom: 20px;
+    background: url(../images/TEXTURA_movil.png) 100%/174% no-repeat;
+}
     #arriba > div.row {
     margin: 50px auto;
 }
    nav{height: auto;}
     .topnav .icon{margin-right: 20px;}
-    #myTopnav {height:auto;}
-    #logo-NAV{height: 44px; margin-top: 3px; position: relative; left: 5%;};
+    #logo-NAV{height: 44px; margin-top: 3px; position: relative; left: 5%;}
     #inicio > h2{margin-top: 20px;}
 #icono1 {
         background: url(../images/header_logos1.png) 133px/900px no-repeat;
 }
-    #cajas_principales_ayudar > div > div:nth-child(2) > h3{margin-top: 91px;}    
+     
     #icono2 {
 background: url(../images/header_logos1.png)-110px/886px no-repeat;
 }
@@ -325,7 +383,7 @@ background: url(../images/header_logos1.png)-385px/880px no-repeat;
     margin: 0 auto;}
   #aprender > ul > div > li{text-align: center; margin-right: 30px;}
 
-  #footerh2{  border:1px solid white; margin: 0 auto;font-size: 1em;}
+  #footerh2{  margin: 0 auto;font-size: 0.8em;}
 body > div:nth-child(1) > footer > div.row > div:nth-child(1) {
     width: 255px; margin-top: 20px; margin-bottom: 17px;
 }
@@ -340,27 +398,46 @@ body > div:nth-child(1) > footer > div.row > div:nth-child(1) {
     #foros > div > input{    margin-left: 30px;}
     .carousel-item {
     left: 14px;
-}
-    #demo{margin-top: 10px;}
+    } #myTopnav > a.icon{margin-bottom: 5px;}
    #suma>div, #recursos>div {margin-top: 10px;background-color: #0b0b0b;}
   #centros{ height: 200px;margin-top: 20px;}
-  #centros h3{margin-top: 40px;}
     #aprender_del_tema:hover, #contribuir_al_tema:hover, #dar_recibir_ayuda:hover{text-shadow: 1px 1px white;}
     #arriba > div.row > div:nth-child(1){margin: 0 auto;}
     #header_div{height: 882px;}
+    body > div:nth-child(1) > footer > div.row > div:nth-child(1) > p {margin: 0 auto;  }
+    body > div:nth-child(1) > footer > div.row > div:nth-child(1) > p > a{ color: white;}
+    #arriba > div.row > div:nth-child(1), #arriba > div.row > div:nth-child(2){ padding-top: 10px; margin-bottom: 10px; }
+    h2{font-size: 2.5em;}
+    .mapacentros{background:none !important;}
+    #aprender{    position: absolute;
+    top: 429%;}
+    #contribuir{    position: absolute;
+    top: 610%;}
+    #ayudar{    position: absolute;
+    top: 790%;}
 }
-@media screen and (min-width: 480px){#intro{padding-left: 0px;}}
+
+@media screen and (min-width: 480px){#intro{padding-left: 0px;}
+
+    .mapacentros{
+            width: 83%;
+            margin: 0 auto;
+            margin-top: 20px;
+            background: url(images/ayudar.png) 48%/92%  no-repeat !important ;
+        }
+}
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
       display: block;
   }
+    #navAprender > .btn1{background: none;}
 }
 
 
 @media screen and (max-width: 600px) {
-
+    #arriba > div.row > div:nth-child(3){height: 180px;}
  .topnav.responsive {position: relative; }
   .topnav.responsive .icon {
     position: absolute;
@@ -372,6 +449,7 @@ body > div:nth-child(1) > footer > div.row > div:nth-child(1) {
     display: block;
      background-color: #0b0b0b;
   }  
+    #texto_de_caja{text-align: left;}
  body > div:nth-child(1) > header > div.row {
     margin: 31px auto;
     width: 96%;
@@ -396,11 +474,42 @@ body > div:nth-child(1) > footer > div.row > div:nth-child(1) {
    
    
 }
+@media (min-width: 576px){
+footer .col-sm-4 {
+    max-width: 28.333333% !important;
+}
+    header .col-sm-4 {
+    max-width: 32.333333% !important;
+}
+}
 @media screen and (min-width: 640px){ 
  #intro{padding-left: 0px;}}
 @media screen and (min-width: 768px)  and (max-width: 959px){
+    #aprender {
+    position: absolute;
+    top: 241%;
+}
+    #contribuir {
+    position: absolute;
+    top: 360%;
+}
+   #ayudar {
+    position: absolute;
+    top: 471%;
+}
+    #parrafos1{font-size: 1em !important; }
+    #cajas_principales_contribuir > p{font-size: 1em !important}
+      #cajas_principales_ayudar > div > div:nth-child(2) > h3{margin-top: 91px;} 
+    #cajas_principales_recursos > p, #cajas_principales_testimonios > p{ font-size: 1.3em;}
+         .mapacentros{
+            width: 83%;
+            margin: 0 auto;
+            margin-top: 20px;
+            background: url(images/ayudar.png) 48%/92%  no-repeat ;
+        }
+       #arriba > div.row > div:nth-child(3){height: 180px;}
     #cajas_principales_ayudar > div > div:nth-child(2) > h3{margin: 0 auto;}
-    #header_div{background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000;}
+    #header_div{background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #181719;}
     .topnav a:before, .topnav a:after
 {
     position: absolute;
@@ -423,7 +532,7 @@ display: inline-block;}
     header{ height: 1078px;}
     header,nav{
     width: 100%;
-    background: url(../images/TEXTURA.png) 0%/130% no-repeat;
+    background: url(../images/header_texture.png) 0%/180% no-repeat;
 }
     #header_div{width: 709px;
     height: 544px;}
@@ -476,7 +585,7 @@ body > div > header > div.row {
     .logo_aprender {margin-top: 10px;background: url(../images/logos_aprender_contribuir_dar_recibir.png) -28%/234% no-repeat;
 }
     #aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda > p:nth-child(3){text-align: left;}
-;    .logo_contribuir {margin-top: 10px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/234% no-repeat}
+    .logo_contribuir {margin-top: 10px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/234% no-repeat}
     .logo_dar {margin-top: 10px; background: url(../images/logos_aprender_contribuir_dar_recibir.png) 128%/234% no-repeat;}  
   ul div{ height: 50px; font-size: 1.2em;line-height: 50px;}
   aprender>ul{    width: 83%}
@@ -495,12 +604,17 @@ body > div > header > div.row {
 #aprender > ul, #contribuir >ul, #ayudar>ul {width: 94%;font-size: 0.8em;}
 #cuestionarios{margin-top: 30px;}
 #cuestionarios > div > div:nth-child(2) > h3{font-family: 'Sequel'; margin-top: 20px; font-size: 1.5em;}
-#cuestionarios > div > div:nth-child(1) > h3:nth-child(3){font-family: 'Sequel';margin-top: 10px;}}
+#cuestionarios > div > div:nth-child(1) > h3:nth-child(3){font-family: 'Sequel';margin-top: 10px;}
+  
+
+}
 @media screen and  (min-width: 959px){
+       #arriba > div.row > div:nth-child(3){height: 182px;}
+    #arriba > div.row > div:nth-child(3) > p:nth-child(2) > a{margin-top: 9px;}
 h1{width: 490px; font-size: 3em;  margin-bottom: 36px; }
 h1 span{width: 135px;margin-top: 0px; height: 130px;top:118px;position: relative; right:301px;}
 header{height: 1078px;}
-header,nav{width: 100%;background: url(../images/TEXTURA.png) 0%/130% no-repeat;}
+header,nav{width: 100%;background: url(../images/header_texture.png) 0%/130% no-repeat;}
 #header_div > div {background: url(../images/raya.png) 180px no-repeat, url(../images/raya2.png) 370px no-repeat, url(../images/raya3.png) 560px no-repeat;}
 #header_div > p{margin-top: 20px;}
 #header_div > p:nth-child(6){font-size: 1em;}
@@ -524,19 +638,20 @@ background: url(../images/header_logos1.png)-385px/880px no-repeat;}
     display: inline-block;
 }
     header{height: 1200px;}
+    .kenburns-top{-webkit-animation:kenburns-top 5s ease-out both;animation:kenburns-top 5s ease-out both}
     header,nav{
     width: 100%;
-    background: url(../images/TEXTURA.png) 0%/103% no-repeat;}
+    background: url(../images/header_texture.png) 0%/143% no-repeat;}
     #header_div{width: 800px;
-    height: 544px;background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000; }
+    height: 544px;background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #181719; }
     nav {
     width: 100%;     line-height: 20px;}
-  #myTopnav > a{position:relative; left: 20%;     font-size: 1.2em;s}
+  #myTopnav > a{position:relative; left: 20%;     font-size: 1.2em;}
 .topnav a, #logo_NAV{padding-left: 0px;}
     #seccion_contribuir_inicio #aprender_h2_uno{font-size: 3em;}
  #header_div > div{ width: 86%; margin: 0 30px;}
 #header_div > div > div > p:nth-child(2){width: 140%;display: inline-block;}
-#header_div > p:nth-child(5){margin-top: 26px;position: relative;right: 20%; font-size: 20px;}
+#header_div > p:nth-child(5){margin-top: 46px;position: relative;right: 20%; font-size: 20px;}
 #header_div > p:nth-child(6){position: relative;right: 19%; font-size: 0.8em;}
 .topnav{ width: 100%; height: 55px;}
 .topnav a{margin-top: 10px; padding: 4px 15px;border-right: 1px solid white;}
@@ -554,7 +669,9 @@ body > div > header > div.row{width: 800px; margin: 0 auto;}
 body > div:nth-child(1) > header > div.row > div:nth-child(1){margin-left: -4px;}
 #logo_act{background:url(../images/logo_header_2.png) -25%/ 236% no-repeat;}
 #logo_calendar {background: url(../images/logo_header_2.png) 46%/ 297% no-repeat;}
-#logo_contacto {background: url(../images/logo_header_2.png) 110%/ 311% no-repeat;}
+#logo_contacto {
+    background: url(../images/logo_header_2.png) 116% 29%/ 260% no-repeat;
+}
 #inicio{margin-top: 42px;margin-bottom: 100px;}
 #intro {width: 800px;height:auto;
  margin: 0 auto;text-align: left;}
@@ -589,9 +706,22 @@ background:url(../images/logos_aprender_contribuir_dar_recibir.png) -60px/446px 
 body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{
 background:url(../images/logos_aprender_contribuir_dar_recibir.png) -273px/436px no-repeat}
   #cuestionarios{margin-top: 64px;}
+     
 }
 
 @media screen and (min-width: 1024px) {
+    #aprender {
+    position: absolute;
+    top: 241%;
+}
+    #contribuir {
+    position: absolute;
+    top: 370%;
+}
+    #ayudar {
+    position: absolute;
+    top: 476%;
+}
     h2{margin-top: 20px;}
  header h1{width: 50%; font-size: 3em;}
  header h1 span {
@@ -601,17 +731,27 @@ background:url(../images/logos_aprender_contribuir_dar_recibir.png) -273px/436px
     text-indent: -99999px;
     display: inline-block;
 }
-    #header_div{background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000;}
+    #cajas_principales_ayudar > div > div:nth-child(2) > h3 {
+    margin-top: 61px;
+}
+    #cajas_principales_contribuir{margin-top: -58px;}
+    #header_div{background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #181719;}
 body > div > footer > div.row > div:nth-child(1) > h3 > span {
 background:url(../images/logos_aprender_contribuir_dar_recibir.png)120px/460px no-repeat}
 body > div:nth-child(1) > footer > div.row > div:nth-child(2) > h3 > span{
 background:url(../images/logos_aprender_contribuir_dar_recibir.png) -60px/446px no-repeat} 
 body > div:nth-child(1) > footer > div.row > div:nth-child(3) > h3 > span{
 background:url(../images/logos_aprender_contribuir_dar_recibir.png) -273px/436px no-repeat}
+    #myModal2 > div > div > div.modal-body > iframe{width: 100%;}
+    body > div > ul{font-size: 1.5em;}
 
+    #navAyudar{width: 80% !important;}
+    
 }
 @media screen and (min-width:1080px){ 
+    
 header h1{width: 604px; margin: 0 auto;font-family: 'ttsupermolot';     font-size: 49px;font-style: normal;}
+    #myModal2 > div > div > div.modal-body > iframe{width: 100%;}
 header h1 span {
     width: 260px;
     height: 180px;
@@ -620,8 +760,8 @@ header h1 span {
 }
   #header_div {
        width: 800px;
-    height: 544px;
-      background: url(../images/monos_del_header.png)80% 86%/200px no-repeat #000;
+    height: 564px;
+      background: url(../images/monos_del_header.png)80% 89%/200px no-repeat #181719;
 }
     #seccion_aprender_inicio > p{font-size: 1.4em;}
 body > div > footer > div.row > div:nth-child(1) > h3 > span { margin-top: 20px;
@@ -656,12 +796,35 @@ background:url(../images/logos_aprender_contribuir_dar_recibir.png) 140%/196% no
     top: 57px;}
     #cajas_principales_testimonios > button{  position: relative;
     top: 87px;}
+    #cajas_principales_ayudar > div > div:nth-child(2) > div, #centros > p, #cajas_principales_recursos > p, #cajas_principales_testimonios > p{font-size: 1em;}
 }
 @media screen and (min-width:1280px) and (min-width:1580px){
+     #aprender {
+    position: absolute;
+    top: 244%;
+}
+    #contribuir {
+    position: absolute;
+    top: 365%;
+}
+    #ayudar {
+    position: absolute;
+    top: 475%;
+}
+ #arriba > div.row > div:nth-child(3) {
+    height: 182px;
+}
     nav {
     height: 66px;
     width: 100%;
 }
+ 
+    #logo_contacto {
+    background: url(../images/logo_header_2.png) 109% 43%/ 314% no-repeat;
+}
+    #navAprender{letter-spacing: 63px;}
+  /*  #aprender{position: absolute;
+    top: 260%;} */
     #logo-NAV {
     height: 44px;
     margin-top: 8px;
@@ -674,19 +837,22 @@ background:url(../images/logos_aprender_contribuir_dar_recibir.png) 140%/196% no
 
     header, nav {
     width: 100%;
-    background: url(../images/TEXTURA.png) 0%/102% no-repeat;
-}
+    background: url(../images/header_texture.png) 0%/102% no-repeat; 
+
+
     #header_div {
     width: 800px;
     height: 544px;
-        background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #000;
+        background: url(../images/monos_del_header.png)80% 80%/200px no-repeat #181719;
 }
+    #myModal2 > div > div > div.modal-body > iframe{width: 100%;}
     #header_div > p:nth-child(5) {font-size: 22px;}
     #header_div > p:nth-child(6){font-size: 15px;}
     #logo_calendar, #logo_contacto, #logo_act{height: 60px;margin-top: 20px;}
     #inicio {
     margin-top: 101px;
     }
+    #navContribuir{letter-spacing: 200px;}
     #seccion_aprender_inicio > p{font-size: 1em;}
 #aprender_del_tema, #contribuir_al_tema, #dar_recibir_ayuda{ margin: 0;     padding: 0px 10px;     border: 3px solid #2E2E2C;}   .logo_contribuir {background: url(../images/logos_aprender_contribuir_dar_recibir.png) 48%/214% no-repeat;} 
 #inicio > h2 {
@@ -714,32 +880,50 @@ background:url(../images/logos_aprender_contribuir_dar_recibir.png) -553px/760px
 #actividades > div > div:nth-child(1) > div> p{margin-left: 30px;}
 
     #arriba > div.row > div:nth-child(3) > p> a{font-size: 1em;}
+    #contribuir>p{font-size: 1.4em;}
+    #titulo > h3{margin-top: 3px;}
+    #cajas_principales_aprender {
+    background: url(images/aprenderg2.png) 0% 0% / 100% 87% no-repeat;
+}
+    #boton_escribir_testimonios_aprender > a, #boton_ver_todos_los_test_aprender > a{margin-top: -30px;}
+    #boton_escribir_testimonios_aprender{margin-top: -80px;}
+    #boton_ver_todos_los_test_aprender{margin-top: 0}
+   
 }
 @media screen and (min-width:1920px){
-header h1{width: 604px; margin: 0 auto;font-family: 'ttsupermolot';     font-size: 49px;font-style: normal; }
+header h1 {
+    width: 604px;
+    margin: 0 auto;
+    font-family: 'ttsupermolot';
+    font-size: 59px;
+    font-style: normal;
+}
 header h1 span {
     width: 260px;
     height: 180px;
-    background: url(../images/logo_h1.png) 40% 90%/140px no-repeat;
+    background: url(../images/logo_h1.png) -13% 114%/140px no-repeat;
     text-indent: -99999px;
 }
-
   #aprender >h2{margin-top: 140px; font-size:  6em;}
    #contribuir >h2{ margin-top: 70px; font-size:  6em;}
   #ayudar>h2{margin-top: 70px;font-size: 6em;}
   #aprender > p, #ayudar>p, #contribuir>p{font-size: 2.5em;}
     #header_div {
     width: 1020px;
-    height: 687px;
+    height: 777px;
       margin-top: 0px;
-        background: url(../images/monos_del_header.png)85% 88%/230px no-repeat #000;
+     background: url(../images/monos_del_header.png)88% 91%/271px no-repeat #181719;
 }
     #header_div > div {
     background: url(../images/raya.png) 238px no-repeat, url(../images/raya2.png) 693px no-repeat, url(../images/raya3.png) 430px no-repeat;
 }
 
     header {
-    height: 1350px;
+    height: 1436px;
+}
+    #header_div > h2 {
+    margin-top: 48px;
+    font-size: 1.8em;
 }
 #header_div > p:nth-child(1) {
     width: 80%;
@@ -748,18 +932,18 @@ header h1 span {
     font-size: 32px;
 }
     #header_div > p:nth-child(5) {
-    margin-top: 26px;
+    margin-top: 68px;
     position: relative;
-    right: 22%;
+    right: 16%;
     font-size: 29px;
 }
     #header_div > p:nth-child(6) {
     position: relative;
-    right: 19%;
+    right: 16%;
     font-size: 21px;
 }
     #icono3 {
-    background: url(../images/header_logos1.png)62%/669% no-repeat;
+    background: url(../images/header_logos1.png)66%/669% no-repeat;
 }
     #icono4 {
     background: url(../images/header_logos1.png)99%/688% no-repeat;
@@ -774,7 +958,7 @@ body > div > header > div.row {
   #header_div > p:nth-child(6){font-size: 1.3em;}
     
     body > div:nth-child(1) > header > div.row{height: 184px;}
-        #logo_calendar, #logo_contacto, #logo_act{height: 80px;margin-top: 30px;}
+  
     #intro {
         margin: 0 430px;}
     #inicio > h2{font-size: 63px;}
@@ -795,12 +979,13 @@ body > div > header > div.row {
     background: url(../images/logos_aprender_contribuir_dar_recibir.png) 125%/249% no-repeat;
 }
   #header_div > div > div > p:nth-child(2){font-size: 1.5em;}
-  nav{height: 96px;}
+  nav{ max-width: 1920px; height: 96px;}
 .topnav {
-    height: 108px;
-  
+    height: 97px;
+  font-size: 1.1em;
     
 }
+    #button1{background: none; margin: 0 auto; }
   .topnav>a{font-size: 1.4em;  line-height: 66px; padding: 0px 30px;}
     .topnav a {
   
@@ -815,7 +1000,7 @@ body > div > header > div.row {
     float: left;
 }
 
-  #intro{width: 1100px;
+  #intro{width: 1033px;
     height: 414px;}
   #intro p{font-size: 1.7em;} 
  
@@ -859,5 +1044,63 @@ background:url(../images/logos_aprender_contribuir_dar_recibir.png) -453px/760px
     margin-top: 45px;
     color: #20dbb0;
 }
-  
+    #inicio1{position: absolute;
+    top: 1208px;}
+    button > a{margin: 10px auto;} 
+    #pre_preguntas_aprender{font-size: 1em;}
+  body > div:nth-child(1) > footer > div.row > div{max-width: 40%;}
+}
+
+
+
+@media screen and (min-width:1920px){
+#myTopnav > a.btn.btn-info.btn-lg {
+    height: 66px;
+    line-height: 60px;
+}
+    #seccion_aprender_inicio > p,  #seccion_contribuir_inicio > p{font-size: 2em;}
+    #seccion_aprender_inicio #pre_preguntas_aprender, #seccion_aprender_inicio #pre_test_aprender {
+    line-height: 36px;
+    font-size: 1em;
+}
+    .comentar{margin-top: 0px;}
+    #theinput {
+    width: 57%;
+    height: 25px;
+    padding: 15px 64px;
+}
+
+    #cajas_principales_aprender {
+    background: url(images/aprenderg2.png) 0% 0% / 100% 88% no-repeat;
+}
+    h4, h4 {
+    margin-top: 0px;
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+    .mapacentros {
+    width: 83%;
+    margin: 0 auto;
+    margin-top: 20px;
+        text-align: left;
+    background: url(images/ayudar.png) 56%/94% no-repeat;
+}
+    #navAprender > .btn1{background: none;}
+    #myModal2 > div > div > div.modal-body > iframe{width: 100%;}
+    #centros > p, #cajas_principales_ayudar > div > div:nth-child(2) > div{font-size: 1.5em;}
+    #arriba > div.row > div:nth-child(3) {
+    height: 174px;
+}
+    #aprender {
+    position: absolute;
+    top: 199%;
+}
+    #contribuir {
+    position: absolute;
+    top: 321%;
+}
+    #ayudar {
+    position: absolute;
+    top: 418%;
+}
 }
