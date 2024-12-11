@@ -3,8 +3,8 @@
 
 @font-face {
     font-family: 'ttsupermolot';
-    src: url("fonts/tt_supermolot_black-webfont.woff") format('woff'), 
-      url('fonts/tt_supermolot_black-webfont.woff2');
+    src: url("tt_supermolot_black-webfont.woff") format('woff'), 
+      url('tt_supermolot_black-webfont.woff2');
     font-weight: bold;
     font-style: normal;
 
