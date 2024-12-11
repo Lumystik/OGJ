@@ -1,1214 +1,1465 @@
 <!Doctype html>
 <html lang="es" dir="ltr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="author" content="Universidad Iberoamericana, Observatorio de Juventud y Género, Diseño Interactivo">
     <meta name="description" content="El Observatorio de Género y Juventud busca promocionar la igualdad y equidad de género como objetivo de disminuir y erradicar la violencia de género en la juventud en el ámbito familiar, escolar, de pareja, profesional, laboral, etc. Todo esto mediante actividades como talleres, reuniones cómo pláticas y conferencias e informando a las personas por medio de artículos de investigación, estadísticas y otros datos cuantitativos. 
 ">
     <meta name="keywords" content="Observatorio, juventud, género, jóvenes, test, cuestionarios, testimonios, centros de ayuda, mapa, datos estadísticos, violencia, violencia de género, violencia de pareja, violencia familiar, foros, ayuda, centros de ayuda. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Observatorio de Género y Juventud</title>
- <link rel="shortcut icon" href="images/finalOGO.png" />
-      <link href="css/estilos.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-     <link rel="stylesheet" href="css/maxcdn.bootstrapcdn.css">
-     <link href="aprender_estilo.css" rel="stylesheet">
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" href="images/finalOGO.png" />
+    <link href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="css/maxcdn.bootstrapcdn.css">
+    <link href="aprender_estilo.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="css/bootstrap-grid.css"></script>
-	<style>
-		.close{color: black !important;}
-		.table{
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  padding: 3px;
-	background-color: white;color: black;
-}
+    <style>
+      .close {
+        color: black !important;
+      }
 
-.caption{
-  display: table-caption;
-  text-align: center;
-  font-weight: bold;
-}
+      .table {
+        display: table;
+        table-layout: fixed;
+        width: 100%;
+        padding: 3px;
+        background-color: white;
+        color: black;
+      }
 
-.thead{
-  display: table-header-group;
-  font-weight: bold;
-}
+      .caption {
+        display: table-caption;
+        text-align: center;
+        font-weight: bold;
+      }
 
-.tbody{
-  display: table-row-group;
-}
+      .thead {
+        display: table-header-group;
+        font-weight: bold;
+      }
 
-.tr{
-  display: table-row;
-}
+      .tbody {
+        display: table-row-group;
+      }
 
-  #cajas_principales_ayudar{width: 89% !important; margin-top: 30px;}
+      .tr {
+        display: table-row;
+      }
 
-        #navAprender{word-spacing: 57px;}
-       
+      #cajas_principales_ayudar {
+        width: 89% !important;
+        margin-top: 30px;
+      }
 
-.th,
-.td{
-  display: table-cell;
-}
+      #navAprender {
+        word-spacing: 57px;
+      }
 
-.td{
-  padding: 10px 0;
-}
+      .th,
+      .td {
+        display: table-cell;
+      }
 
-.label{
-  display: none;
-}
+      .td {
+        padding: 10px 0;
+      }
 
-@media all and (max-width: 600px){
-  .thead{
-    display: none;
-  }
-  .tr{
-    display: block;
-    margin-bottom: 1.5em;
-    padding: 10px;
-  }
-  .td{
-    display: inherit;
-    padding: 0;
-  }
-  .label{
-    font-weight: bold;
-    display: inline-block;
-    min-width: 120px;
-  }  
-}
-    
-    
+      .label {
+        display: none;
+      }
+
+      @media all and (max-width: 600px) {
+        .thead {
+          display: none;
+        }
+
+        .tr {
+          display: block;
+          margin-bottom: 1.5em;
+          padding: 10px;
+        }
+
+        .td {
+          display: inherit;
+          padding: 0;
+        }
+
+        .label {
+          font-weight: bold;
+          display: inline-block;
+          min-width: 120px;
+        }
+      }
     </style>
     <style>
-       /* #navAprender1{ width: 65%;margin: 0 auto; border: solid 1px white}*/
-		  .preguntas{
-        width: 80%;color: white;
-    }
+      /* #navAprender1{ width: 65%;margin: 0 auto; border: solid 1px white}*/
+      .preguntas {
+        width: 80%;
+        color: white;
+      }
 
+      .modal-body,
+      .modal-header,
+      .modal-footer {
+        background-color: white !important;
+        color: black !important;
+      }
 
-	.modal-body, .modal-header, .modal-footer{background-color:white !important;color: black !important;}
-	#nextBtn{
-		    background-color: #00AB9E !important;color: white;border:none;    width: 150px;
-    height: 50px !important;
-	}
-		.tab{color: black !important;}
-	#prevBtn {
-    background-color: #2E2E2C !important;
-    color: white;
-    border: none;    width: 150px!important;
-    height: 50px !important;
-}
-	.step, .step.finish{
-		background-color: #00AB9E;
-	}
-.icono_foro_contribuir {
-    width: 60px;
-    height: 54px;
-    margin: auto;
-    background: url(images/foro.png) 100% 100%/ 100% no-repeat;
-    text-indent: -99999px;
-}
-       #cajas_principales_contribuir > p {
-    font-size: 1.4em;
-}
+      #nextBtn {
+        background-color: #00AB9E !important;
+        color: white;
+        border: none;
+        width: 150px;
+        height: 50px !important;
+      }
 
-        #navAprender > button.btn1:focus{color: rgb(107, 211, 123);text-decoration: underline;}
-        #navContribuir > button.btn:focus{color: #20dbb0;text-decoration: underline;}
-        #navAyudar > button.btn:focus{color: rgb(107, 211, 123);text-decoration: underline;}
-.icono_cuestionario_contribuir {
-    width: 88px;
-    height: 100px;
-    margin: auto;
-    background: url(images/logo1_ayudar2.png) 44% 78%/ 61% no-repeat;
-    text-indent: -99999px;
-}
-        #footerh2 > h2:nth-child(1)>a{color: white;} #boton_ver_mas_glosario_aprender{width: 24%;}
-        #elBoton > p{position: relative; left: -70%;}
-        #texto_de_caja{margin-top: 0px;}
-    #parrafos1{margin-top: 50px; font-size: 1.5em;border: 1px solid white;}
-        .parrafosboton{margin: 10px auto; padding:10px;}
-        h4, h4 { margin-top: 0px;
-    font-size: 1.5rem;
-  }
-  .recursos_distancia{
-            background-color: black;
-        }
-  header h1 span{width: 60%; height: 160px; background: url(images/OGO.png) 51% 53%/10s0px no-repeat; text-indent: -99999px; 
-display: inline-block;} 
-        
-    .filterDivAyudar {
-  color: #ffffff;
+      .tab {
+        color: black !important;
+      }
 
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
+      #prevBtn {
+        background-color: #2E2E2C !important;
+        color: white;
+        border: none;
+        width: 150px !important;
+        height: 50px !important;
+      }
 
-.show {
-  display: block;
-}
+      .step,
+      .step.finish {
+        background-color: #00AB9E;
+      }
 
-.container {
-  margin-top: 20px;
-  overflow: hidden;
-}
-        .recursos_distancia, #cajas_principales_testimonios{
-            background-color: #181719;
-            margin-top: 20px;height: 300px;width: 70%;margin: 0 auto;
-        }
-        .voz_ayudar{
-              background-color: black;
-            margin-top: 20px;height: 300px;width: 83%;margin: 0 auto;            
-        }
-        .voz_ayudar>h3{ margin-top: 20px;}
-         .recursos_distancia,.voz_ayudar >h3{
-           margin-top: 20px;
-        }
-       p#centros{
-            width: 80%;
-            margin: 0 auto;
-        }
-             .recursos_distancia >button{
-            margin-top: 20px;
-        }
-      
-       
-        h3{
-            font-family: 'Sequel Neue';
-        
-        }
-          #navAprender > button:hover{color: rgb(107, 211, 123);}
+      .icono_foro_contribuir {
+        width: 60px;
+        height: 54px;
+        margin: auto;
+        background: url(images/foro.png) 100% 100%/ 100% no-repeat;
+        text-indent: -99999px;
+      }
 
-        @media screen and (max-width: 360px){
-           #seccion_aprender_inicio > div.container_ayudar_inicio > div.filterDivAyudar.recursos_ayudar.show, #seccion_aprender_inicio > div.container_ayudar_inicio > div.filterDivAyudar.historias_ayudar.show{ background: url(images/aprenderg6.png) 100% 100% / 100% no-repeat;}
-            #cajas_principales_ayudar{margin-top: 20px !important;}
-            #cajas_principales_ayudar > div > div:nth-child(2) > button{margin-top: 17px;}
-          #cajas_principales_contribuir > p:nth-child(4), #cajas_principales_contribuir > p:nth-child(3), #texto_de_caja{text-align: left; font-size: 1em !important;}
-            #cajas_principales_contribuir > p{font-size: 1em;}
-            #seccion_contribuir_inicio h3 {
-margin-top: 0px;
-}
-            #parrafos1{font-size: 1em;}
-            .recursos_distancia >button {
-     margin-top: 0px;
-}
-              #cajas_principales_ayudar > div > div:nth-child(2) > div{border: 1px solid white}
-                 .mapacentros{
-            width: 100%;
-                     height: 300px;
-            margin: 0 auto;
-                   
-            background: url(images/aprenderg5.png) 48%/100%  no-repeat !important;
-            }
-        }
-        @media screen and (min-width:768px){ 
-              .recursos_distancia>p{width: 40%;margin: 0 auto;}
-            #centros > p {
-    text-align: left;
-    background-color: black;
-    font-size: 1em;
-}
-             .voz_ayudar>p{width: 40%;margin: 0 auto;}
-     .mapacentros{
-            width: 83%;
-            margin: 0 auto;
-            margin-top: 20px;
-            background: url(images/ayudar.png) 48%/92%  no-repeat !important ;
-            }}
+      #cajas_principales_contribuir>p {
+        font-size: 1.4em;
+      }
 
-        .filtro_mapa{
-            width: 50%;
+      #navAprender>button.btn1:focus {
+        color: rgb(107, 211, 123);
+        text-decoration: underline;
+      }
+
+      #navContribuir>button.btn:focus {
+        color: #20dbb0;
+        text-decoration: underline;
+      }
+
+      #navAyudar>button.btn:focus {
+        color: rgb(107, 211, 123);
+        text-decoration: underline;
+      }
+
+      .icono_cuestionario_contribuir {
+        width: 88px;
+        height: 100px;
+        margin: auto;
+        background: url(images/logo1_ayudar2.png) 44% 78%/ 61% no-repeat;
+        text-indent: -99999px;
+      }
+
+      #footerh2>h2:nth-child(1)>a {
+        color: white;
+      }
+
+      #boton_ver_mas_glosario_aprender {
+        width: 24%;
+      }
+
+      #elBoton>p {
+        position: relative;
+        left: -70%;
+      }
+
+      #texto_de_caja {
+        margin-top: 0px;
+      }
+
+      #parrafos1 {
+        margin-top: 50px;
+        font-size: 1.5em;
+        border: 1px solid white;
+      }
+
+      .parrafosboton {
+        margin: 10px auto;
+        padding: 10px;
+      }
+
+      h4,
+      h4 {
+        margin-top: 0px;
+        font-size: 1.5rem;
+      }
+
+      .recursos_distancia {
+        background-color: black;
+      }
+
+      header h1 span {
+        width: 60%;
+        height: 160px;
+        background: url(images/OGO.png) 51% 53%/10s0px no-repeat;
+        text-indent: -99999px;
+        display: inline-block;
+      }
+
+      .filterDivAyudar {
+        color: #ffffff;
+        text-align: center;
+        margin: 2px;
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+
+      .container {
+        margin-top: 20px;
+        overflow: hidden;
+      }
+
+      .recursos_distancia,
+      #cajas_principales_testimonios {
+        background-color: #181719;
+        margin-top: 20px;
+        height: 300px;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      .voz_ayudar {
+        background-color: black;
+        margin-top: 20px;
+        height: 300px;
+        width: 83%;
+        margin: 0 auto;
+      }
+
+      .voz_ayudar>h3 {
+        margin-top: 20px;
+      }
+
+      .recursos_distancia,
+      .voz_ayudar>h3 {
+        margin-top: 20px;
+      }
+
+      p#centros {
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      .recursos_distancia>button {
+        margin-top: 20px;
+      }
+
+      h3 {
+        font-family: 'Sequel Neue';
+      }
+
+      #navAprender>button:hover {
+        color: rgb(107, 211, 123);
+      }
+
+      @media screen and (max-width: 360px) {
+
+        #seccion_aprender_inicio>div.container_ayudar_inicio>div.filterDivAyudar.recursos_ayudar.show,
+        #seccion_aprender_inicio>div.container_ayudar_inicio>div.filterDivAyudar.historias_ayudar.show {
+          background: url(images/aprenderg6.png) 100% 100% / 100% no-repeat;
         }
-        #boton_ver_todos_los_eventos_aprender > a{font-size: 1.3em;}
-    .margin-top
-        #navAyudar{background-color: ##2E2E2C; border: 2px solid white;}
-        
-        #cajas_principales_ayudar{height: auto;}  
-        #i > div{width:92%;margin: 0 auto;    position: relative;
-    left: 8%;
-    top: 20px;}
-       #i{    position: relative;
-    top: 20px;
-    left: 13%;
-    width: 90%;}
-     #aprender_del_tema:hover, #contribuir_al_tema:hover, #dar_recibir_ayuda:hover{    background-color: #9a34b2;} 
-				@media screen and (max-width: 768px){
-					footer{height: 700px !important;}
-		}
-		@media screen and (max-width: 1920px){
-			footer{height: 1000px;}
-		}
+
+        #cajas_principales_ayudar {
+          margin-top: 20px !important;
+        }
+
+        #cajas_principales_ayudar>div>div:nth-child(2)>button {
+          margin-top: 17px;
+        }
+
+        #cajas_principales_contribuir>p:nth-child(4),
+        #cajas_principales_contribuir>p:nth-child(3),
+        #texto_de_caja {
+          text-align: left;
+          font-size: 1em !important;
+        }
+
+        #cajas_principales_contribuir>p {
+          font-size: 1em;
+        }
+
+        #seccion_contribuir_inicio h3 {
+          margin-top: 0px;
+        }
+
+        #parrafos1 {
+          font-size: 1em;
+        }
+
+        .recursos_distancia>button {
+          margin-top: 0px;
+        }
+
+        #cajas_principales_ayudar>div>div:nth-child(2)>div {
+          border: 1px solid white
+        }
+
+        .mapacentros {
+          width: 100%;
+          height: 300px;
+          margin: 0 auto;
+          background: url(images/aprenderg5.png) 48%/100% no-repeat !important;
+        }
+      }
+
+      @media screen and (min-width:768px) {
+        .recursos_distancia>p {
+          width: 40%;
+          margin: 0 auto;
+        }
+
+        #centros>p {
+          text-align: left;
+          background-color: black;
+          font-size: 1em;
+        }
+
+        .voz_ayudar>p {
+          width: 40%;
+          margin: 0 auto;
+        }
+
+        .mapacentros {
+          width: 83%;
+          margin: 0 auto;
+          margin-top: 20px;
+          background: url(images/ayudar.png) 48%/92% no-repeat !important;
+        }
+      }
+
+      .filtro_mapa {
+        width: 50%;
+      }
+
+      #boton_ver_todos_los_eventos_aprender>a {
+        font-size: 1.3em;
+      }
+
+      .margin-top #navAyudar {
+        background-color: ##2E2E2C;
+        border: 2px solid white;
+      }
+
+      #cajas_principales_ayudar {
+        height: auto;
+      }
+
+      #i>div {
+        width: 92%;
+        margin: 0 auto;
+        position: relative;
+        left: 8%;
+        top: 20px;
+      }
+
+      #i {
+        position: relative;
+        top: 20px;
+        left: 13%;
+        width: 90%;
+      }
+
+      #aprender_del_tema:hover,
+      #contribuir_al_tema:hover,
+      #dar_recibir_ayuda:hover {
+        background-color: #9a34b2;
+      }
+
+      @media screen and (max-width: 768px) {
+        footer {
+          height: 700px !important;
+        }
+      }
+
+      @media screen and (max-width: 1920px) {
+        footer {
+          height: 1000px;
+        }
+      }
     </style>
-    
-</head>
-<body style="background-color: #2E2E2C;" >
- <div>
-  
-<header id="arriba">
-
-      <nav>
-      <div class="topnav" id="myTopnav"> 
-        <img  id="logo-NAV" src="images/logo_NAV.png"> 
-            
-          <a href="#acerca"  class="active">INICIO </a>
-            <a href="#inicio1">ACERCA</a>
-            <a href="#contacto" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style=";border:none;" >CONTACTO</a>
-            <a href="#aprender">APRENDER </a>
-            <a href="#contribuir" >CONTRIBUIR</a>
-            <a href="#ayudar">PARTICIPAR</a>  
-             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-        </div>
-      </nav>
-  <h1 id="acerca"><span>g</span>OBSERVATORIO DE GÉNERO Y JUVENTUD</h1>
-   
-       <div id="header_div">
-            <p style="color: #a8579d;text-align: left;">Un <strong>observatorio</strong> es un conjunto de <em>personas y organizaciones</em> que vigilan, estudian y analizan fenómenos y prácticas relacionadas con un tema, que el caso del <strong>OGJ</strong> es la <strong>igualdad, equidad, y violencia de género en jóvenes</strong> </p> <br>
-        <h2 style="width: 90%;margin: 0 auto;font-family: 'archiveregular';margin-top: 20px;margin-bottom: 30px;"> LOS OBSERVATORIOS SON RECONOCIDOS POR: </h2>   
-<div class="row" >
-  <div class="col-sm-2"><p id="icono1"></p> <p >Manejo y <strong>democratización de la información</strong></p></div>
- <div  class="col-sm-2"><p id="icono2"></p> <p >Definir <strong>indicadores</strong></p></div>
-  <div class="col-sm-2"><p id="icono3"></p> <p > Involucran a la sociedad en la búsqueda de soluciones </p></div>
-  <div class="col-sm-2"><p id="icono4"></p> <p ><strong>Abogacía</strong> por el cambio</p></div>
-     </div>
-           
-  <p style="color: #999FDD;">¡FORMA PARTE DEL OBSERVATORIO!</p>
-  <p style="font-family: 'archiveregular';"><strong>PARTICIPA </strong>DESDE ESTE SITIO O ACUDE A NUESTROS EVENTOS</p>
-    
-
-        </div>
-  <div class="row">
-  <div class="col-sm-4"><p id="logo_act"></p><p><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1" style="background-color: #411414; border:none;" ; >SOBRE EL SITIO</a></p></div>
-      <div class="col-sm-4"><p id="logo_calendar"></p><p><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="background-color: #411414; border:none;" ; > CALENDARIO DE EVENTOS</a></p></div>
-  <div class="col-sm-4"><p id="logo_contacto"> </p><p ><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style="background-color: #421E46 ;border:none;" ; >CONTACTO</a></p></div>  
-  </div>    
-</header>
-<section id="inicio" ><span id="inicio1"></span> <h2>Acerca de este sitio</h2> <!-- APRENDER, CONTRIBUIR, DAR Y RECIBIR -->
-  <div  id="intro" class="row"  >
-      <div id="aprender_del_tema" class="col-sm-12 col-md-4 col-lg-4"  > 
-       <div>
-           <p class="logo_aprender"></p>
-   		 <h3>APRENDER MÁS DEL TEMA</h3>
+  </head>
+  <body style="background-color: #2E2E2C;">
+    <div>
+      <header id="arriba">
+        <nav>
+          <div class="topnav" id="myTopnav"><img id="logo-NAV" src="images/logo_NAV.png"><a href="#acerca" class="active">INICIO </a><a href="#inicio1">ACERCA</a><a href="#contacto" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style=";border:none;">CONTACTO</a><a href="#aprender">APRENDER </a><a href="#contribuir">CONTRIBUIR</a><a href="#ayudar">PARTICIPAR</a><a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a></div>
+        </nav>
+        <h1 id="acerca"><span>g</span>OBSERVATORIO DE GÉNERO Y JUVENTUD</h1>
+        <div id="header_div">
+          <p style="color: #a8579d;text-align: left;">Un <strong>observatorio</strong> es un conjunto de <em>personas y organizaciones</em> que vigilan, estudian y analizan fenómenos y prácticas relacionadas con un tema, que el caso del <strong>OGJ</strong> es la <strong>igualdad, equidad, y violencia de género en jóvenes</strong></p><br>
+          <h2 style="width: 90%;margin: 0 auto;font-family: 'archiveregular';margin-top: 20px;margin-bottom: 30px;"> LOS OBSERVATORIOS SON RECONOCIDOS POR: </h2>
+          <div class="row">
+            <div class="col-sm-2">
+              <p id="icono1"></p>
+              <p>Manejo y <strong>democratización de la información</strong></p>
+            </div>
+            <div class="col-sm-2">
+              <p id="icono2"></p>
+              <p>Definir <strong>indicadores</strong></p>
+            </div>
+            <div class="col-sm-2">
+              <p id="icono3"></p>
+              <p> Involucran a la sociedad en la búsqueda de soluciones </p>
+            </div>
+            <div class="col-sm-2">
+              <p id="icono4"></p>
+              <p><strong>Abogacía</strong> por el cambio</p>
+            </div>
           </div>
-   		   <p><a href="#seccion_aprender_inicio" style="color:white; text-decoration:none; font-size:1.2em">Resuelve tus dudas básicas y aprende del tema con datos concretos e historias de quienes han vivido situaciones de violencia de género, así como actividades.</a> </p>
-		  </div>    
-		<div id="contribuir_al_tema" class="col-sm-12 col-md-4 col-lg-4">
-  <div>    <p class="logo_contribuir"></p>
-  		 <h3  >CONTRIBUIR AL TEMA</h3></div>
-  		  <p><a href="#seccion_contribuir_inicio" style="color:white; text-decoration:none; font-size:1.2em">Apóyanos en la detección y prevención de la violencia de género por medio de tu participación en el foro y cuestionarios de investigación</a></p></div>
-    <div  id="dar_recibir_ayuda" class="col-sm-12  col-md-4 col-lg-4"> 
-  <div>    <p class="logo_dar"></p>
-    	 <h3 > DAR Y RECIBIR AYUDA</h3></div>
-   		 <p><a href="#ayudar" style="color:white; text-decoration:none; font-size:1.2em">Aquí puedes encontrar apoyo en forma de centros físicos a dónde acudir y ayuda a distancia. También puedes sumar tu voz para ayudar a otros.</a></p>
-   	 </div>       
-  </div>
-</section>
-     <div id="seccion_aprender_inicio">
-    <h2 id="aprender_h2_uno">APRENDER</h2>
-         <span id="aprender"></span>
-    <p >Puedes aprender sobre cuestiones de género con los siguientes recursos.</p>
-<div id="navAprender" style="background:none;">
-  <button class="btn1 active" onclick="filterSelection_1('basico_aprender')">LO BÁSICO</button>
-  <button class="btn1" id="button1" onclick="filterSelection_1('datos_aprender')" style="background:none;">DATOS</button>
-  <button class="btn1" id="button1" onclick="filterSelection_1('historias_aprender')" style="background:none;">HISTORIAS</button>
-  <button class="btn1" id="button1" onclick="filterSelection_1('actividades_aprender')" style="background:none;">ACTIVIDADES</button>
-</div>
-
-<div class="container_aprender_inicio">
-    <div class="filterDivAprender basico_aprender">
-         <div id="contenedor_interno">
-            <div id="cajas_principales_aprender" class="glosario_aprender">
-               <div id="titulo"><p class="icono_glosario_aprender">logo</p><h3 id="titulo_aprender" style="color: 	#B7CBB8;">GLOSARIO DE TÉRMINOS</h3></div>
-                <p id="texto_de_caja">Aclara las definiciones de términos académicos o inusuales en orden alfabético o cuando los <strong>encuentres</strong> en otra parte del sitio</p>
-            <div id="pre_preguntas_aprender">Género: conjunto de... <button id="boton_ver_mas_preguntas_test"data-toggle="modal" data-target="#genero">VER MÁS</button></div>
-       <div id="pre_preguntas_aprender">Acoso:Toda actividad... <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#acoso_sexual"> VER MÁS</button></div>
-    <div id="pre_preguntas_aprender">Identidad: conjunto de... <button id="boton_ver_mas_preguntas_test"  data-toggle="modal" data-target="#identidad_de_genero">VER MÁS</button></div>
-              <div id="pre_preguntas_aprender" style="border:none; margin:0 auto;"><button id="boton_ver_mas_preguntas_test"> <a href="glosario.html">VER TODAS</a></button></div>
+          <p style="color: #999FDD;">¡FORMA PARTE DEL OBSERVATORIO!</p>
+          <p style="font-family: 'archiveregular';"><strong>PARTICIPA </strong>DESDE ESTE SITIO O ACUDE A NUESTROS EVENTOS</p>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <p id="logo_act"></p>
+            <p><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1" style="background-color: #411414; border:none;" ;>SOBRE EL SITIO</a></p>
+          </div>
+          <div class="col-sm-4">
+            <p id="logo_calendar"></p>
+            <p><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="background-color: #411414; border:none;" ;> CALENDARIO DE EVENTOS</a></p>
+          </div>
+          <div class="col-sm-4">
+            <p id="logo_contacto"></p>
+            <p><a class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style="background-color: #421E46 ;border:none;" ;>CONTACTO</a></p>
+          </div>
+        </div>
+      </header>
+      <section id="inicio"><span id="inicio1"></span>
+        <h2>Acerca de este sitio</h2>
+        <!-- APRENDER, CONTRIBUIR, DAR Y RECIBIR -->
+        <div id="intro" class="row">
+          <div id="aprender_del_tema" class="col-sm-12 col-md-4 col-lg-4">
+            <div>
+              <p class="logo_aprender"></p>
+              <h3>APRENDER MÁS DEL TEMA</h3>
             </div>
-
-            <div id="cajas_principales_aprender" class="preguntas_aprender">
-                <div id="titulo"><p class="icono_preguntas_frecuentes_aprender">logo</p><h3 id="titulo_aprender" style="color: 	#B7CBB8;">PREGUNTAS FRECUENTES</h3></div>
+            <p>
+              <a href="#seccion_aprender_inicio" style="color:white; text-decoration:none; font-size:1.2em">Resuelve tus dudas básicas y aprende del tema con datos concretos e historias de quienes han vivido situaciones de violencia de género, así como actividades.</a>
+            </p>
+          </div>
+          <div id="contribuir_al_tema" class="col-sm-12 col-md-4 col-lg-4">
+            <div>
+              <p class="logo_contribuir"></p>
+              <h3>CONTRIBUIR AL TEMA</h3>
+            </div>
+            <p>
+              <a href="#seccion_contribuir_inicio" style="color:white; text-decoration:none; font-size:1.2em">Apóyanos en la detección y prevención de la violencia de género por medio de tu participación en el foro y cuestionarios de investigación</a>
+            </p>
+          </div>
+          <div id="dar_recibir_ayuda" class="col-sm-12  col-md-4 col-lg-4">
+            <div>
+              <p class="logo_dar"></p>
+              <h3> DAR Y RECIBIR AYUDA</h3>
+            </div>
+            <p>
+              <a href="#ayudar" style="color:white; text-decoration:none; font-size:1.2em">Aquí puedes encontrar apoyo en forma de centros físicos a dónde acudir y ayuda a distancia. También puedes sumar tu voz para ayudar a otros.</a>
+            </p>
+          </div>
+        </div>undefined
+      </section>undefined<div id="seccion_aprender_inicio">
+        <h2 id="aprender_h2_uno">APRENDER</h2>
+        <span id="aprender"></span>
+        <p>Puedes aprender sobre cuestiones de género con los siguientes recursos.</p>
+        <div id="navAprender" style="background:none;">
+          <button class="btn1 active" onclick="filterSelection_1('basico_aprender')">LO BÁSICO</button>
+          <button class="btn1" id="button1" onclick="filterSelection_1('datos_aprender')" style="background:none;">DATOS</button>
+          <button class="btn1" id="button1" onclick="filterSelection_1('historias_aprender')" style="background:none;">HISTORIAS</button>
+          <button class="btn1" id="button1" onclick="filterSelection_1('actividades_aprender')" style="background:none;">ACTIVIDADES</button>
+        </div>
+        <div class="container_aprender_inicio">
+          <div class="filterDivAprender basico_aprender">
+            <div id="contenedor_interno">
+              <div id="cajas_principales_aprender" class="glosario_aprender">
+                <div id="titulo">
+                  <p class="icono_glosario_aprender">logo</p>
+                  <h3 id="titulo_aprender" style="color: 	#B7CBB8;">GLOSARIO DE TÉRMINOS</h3>
+                </div>
+                <p id="texto_de_caja">Aclara las definiciones de términos académicos o inusuales en orden alfabético o cuando los <strong>encuentres</strong> en otra parte del sitio </p>
+                <div id="pre_preguntas_aprender">Género: conjunto de... <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#genero">VER MÁS</button>
+                </div>
+                <div id="pre_preguntas_aprender">Acoso:Toda actividad... <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#acoso_sexual"> VER MÁS</button>
+                </div>
+                <div id="pre_preguntas_aprender">Identidad: conjunto de... <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#identidad_de_genero">VER MÁS</button>
+                </div>
+                <div id="pre_preguntas_aprender" style="border:none; margin:0 auto;">
+                  <button id="boton_ver_mas_preguntas_test">
+                    <a href="glosario.html">VER TODAS</a>
+                  </button>
+                </div>
+              </div>
+              <div id="cajas_principales_aprender" class="preguntas_aprender">
+                <div id="titulo">
+                  <p class="icono_preguntas_frecuentes_aprender">logo</p>
+                  <h3 id="titulo_aprender" style="color: 	#B7CBB8;">PREGUNTAS FRECUENTES</h3>
+                </div>
                 <p id="texto_de_caja">Resuelve alguna de las dudas más frecuentes con respecto a cuestiones de género que tratamos en el Observatorio</p>
-                <div id="pre_preguntas_aprender">¿Qué es expresión de género? <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#expresion_de_genero1">VER MÁS</button></div>
-                <div id="pre_preguntas_aprender">¿Qué es sexismo? <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#sexismo1"> VER MÁS</button></div>
-                <div id="pre_preguntas_aprender" data-toggle="modal" data-target="#modalidades_de_violencia1">¿Cuáles son las modalidades de violencia? <button id="boton_ver_mas_preguntas_test">VER MÁS</button></div>
-                <div id="pre_preguntas_aprender" style="border:none; margin:0 auto;"><button id="boton_ver_mas_preguntas_test"> <a href="preguntas.html" data-target="#genero">VER TODAS</a></button></div>
-            </div>  
-        </div>
-    </div>
-
-    
-    
-  <div class="filterDivAprender datos_aprender">
-    <div id="contenedor_interno">
-        <div id="cajas_principales_aprender" class="mapasaprender" >
-          <div style="    height: 381px;background: url(images/aprenderg.png) 100%/ 100% no-repeat;">
-              <div id="titulo"><p class="icono_mapas_aprender">logo</p><h3 id="titulo_aprender" style="color: #B7CBB8;">MAPA DE DATOS ESTADÍSTICOS</h3></div>
-              <p id="texto_de_caja" style="background-color: black;">Consulta datos relevantes a cuestiones de género y como cambian en las diferentes regiones de nuestro país.</p>
-              <div id="elBoton"><button id="boton_explorar_mapa_aprender"><a href="estadisticos.html">EXPLORAR </a></button></div> 
+                <div id="pre_preguntas_aprender">¿Qué es expresión de género? <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#expresion_de_genero1">VER MÁS</button>
+                </div>
+                <div id="pre_preguntas_aprender">¿Qué es sexismo? <button id="boton_ver_mas_preguntas_test" data-toggle="modal" data-target="#sexismo1"> VER MÁS</button>
+                </div>
+                <div id="pre_preguntas_aprender" data-toggle="modal" data-target="#modalidades_de_violencia1">¿Cuáles son las modalidades de violencia? <button id="boton_ver_mas_preguntas_test">VER MÁS</button>
+                </div>
+                <div id="pre_preguntas_aprender" style="border:none; margin:0 auto;">
+                  <button id="boton_ver_mas_preguntas_test">
+                    <a href="preguntas.html" data-target="#genero">VER TODAS</a>
+                  </button>
+                </div>
+              </div>
             </div>
-        </div>
-        
-        <div id="cajas_principales_aprender" class="articulos_aprender"  >
-            <div id="titulo"><p class="icono_articulos_aprender">logo</p><h3 id="titulo_aprender" style="color: #B7CBB8;">ARTÍCULOS DE INVESTIGACIÓN</h3></div>
-             <p id="texto_de_caja">Accede a artículos académicos y otros textos informativos relevantes a los temas tratados por el OGJ</p>
-             <div id="pre_articulos_aprender"><a href="articulos.html">Relación entre violencia y dependencia económica</a></div>
-             <div id="pre_articulos_aprender"><a href="articulos.html">Violencia de género en comunidades aisladas</a></div>
-             <div id="pre_articulos_aprender"><a href="articulos.html">Medios de intervención en una situación de violencia</a></div>
-             <div id="elBoton"><button id="boton_leer_mas_articulos_aprender"><a href="articulos.html">LEER MÁS</a></button></div>
-        </div> 
-     </div>
-    </div>
-    
-    <div class="filterDivAprender historias_aprender">
-        <div id="contenedor_interno">
-            <div id="cajas_principales_aprender" class="leer_testimonio_aprender">
-                <div id="titulo"><p class="icono_leer_testimonios_aprender">logo</p><h3 id="titulo_aprender" style="color: #B7CBB8;">LEER TESTIMONIOS</h3></div>
-                <p id="texto_de_caja">
-                    Otras personas lo han vivido. Lee sus historias, escucha sus voces.</p>
+          </div>
+          <div class="filterDivAprender datos_aprender">
+            <div id="contenedor_interno">
+              <div id="cajas_principales_aprender" class="mapasaprender">
+                <div style="    height: 381px;background: url(images/aprenderg.png) 100%/ 100% no-repeat;">
+                  <div id="titulo">
+                    <p class="icono_mapas_aprender">logo</p>
+                    <h3 id="titulo_aprender" style="color: #B7CBB8;">MAPA DE DATOS ESTADÍSTICOS</h3>
+                  </div>
+                  <p id="texto_de_caja" style="background-color: black;">Consulta datos relevantes a cuestiones de género y como cambian en las diferentes regiones de nuestro país.</p>
+                  <div id="elBoton">
+                    <button id="boton_explorar_mapa_aprender">
+                      <a href="estadisticos.html">EXPLORAR </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div id="cajas_principales_aprender" class="articulos_aprender">
+                <div id="titulo">
+                  <p class="icono_articulos_aprender">logo</p>
+                  <h3 id="titulo_aprender" style="color: #B7CBB8;">ARTÍCULOS DE INVESTIGACIÓN</h3>
+                </div>
+                <p id="texto_de_caja">Accede a artículos académicos y otros textos informativos relevantes a los temas tratados por el OGJ</p>
+                <div id="pre_articulos_aprender">
+                  <a href="articulos.html">Relación entre violencia y dependencia económica</a>
+                </div>
+                <div id="pre_articulos_aprender">
+                  <a href="articulos.html">Violencia de género en comunidades aisladas</a>
+                </div>
+                <div id="pre_articulos_aprender">
+                  <a href="articulos.html">Medios de intervención en una situación de violencia</a>
+                </div>
+                <div id="elBoton">
+                  <button id="boton_leer_mas_articulos_aprender">
+                    <a href="articulos.html">LEER MÁS</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filterDivAprender historias_aprender">
+            <div id="contenedor_interno">
+              <div id="cajas_principales_aprender" class="leer_testimonio_aprender">
+                <div id="titulo">
+                  <p class="icono_leer_testimonios_aprender">logo</p>
+                  <h3 id="titulo_aprender" style="color: #B7CBB8;">LEER TESTIMONIOS</h3>
+                </div>
+                <p id="texto_de_caja"> Otras personas lo han vivido. Lee sus historias, escucha sus voces.</p>
                 <h4>TESTIMONIO MÁS RECIENTE</h4>
                 <div class="testimonio_reciente">El año pasado hubo un situación en mi trabajo que me hizo sentir incomoda, pero al principio no dije nada. Creía que era imaginación mia, o estaba exagerando ...</div>
-                <div id="elBoton"><button id="boton_leer_mas_testimonios_aprender"><a href="tesimonios.php">LEER MÁS</a></button></div>
+                <div id="elBoton">
+                  <button id="boton_leer_mas_testimonios_aprender">
+                    <a href="tesimonios.php">LEER MÁS</a>
+                  </button>
+                </div>
+              </div>
+              <div id="cajas_principales_aprender" class="escribir_testimonio_aprender">
+                <div id="titulo">
+                  <p class="icono_escribir_testimonios_aprender">logo</p>
+                  <h3 id="titulo_aprender" style="color: #B7CBB8;">SUMA TU VOZ</h3>
+                </div>
+                <p id="texto_de_caja">Si has pasado por una situación de violencia de género, comparte tu historia para ayudar a otras personas en situaciones similares y generar conciencia.</p>
+                <p id="texto_de_caja">Escribir tu historia también es un ejercicio de reflexión que puede ayudarte a procesar lo que viviste.</p>
+                <div id="elBoton">
+                  <button id="boton_escribir_testimonios_aprender">
+                    <a href="tesimonios.php">LEER MÁS</a>
+                  </button>
+                </div>
+              </div>
             </div>
-
-            <div id="cajas_principales_aprender" class="escribir_testimonio_aprender">
-                <div id="titulo"><p class="icono_escribir_testimonios_aprender">logo</p><h3 id="titulo_aprender" style="color: #B7CBB8;">SUMA TU VOZ</h3></div>
-               <p id="texto_de_caja">Si has pasado por una situación de violencia de género, comparte tu historia para ayudar a otras personas en situaciones similares y generar conciencia.</p>
-               <p id="texto_de_caja">Escribir tu historia también es un ejercicio de reflexión que puede ayudarte a procesar lo que viviste.</p>
-               <div id="elBoton"><button id="boton_escribir_testimonios_aprender"><a href="tesimonios.php">LEER MÁS</a></button></div>
-            </div>
-        </div>
-     </div>
-    
-    <div class="filterDivAprender actividades_aprender">
-        <div id="contenedor_interno">
-            <div id="cajas_principales_aprender" class="test_aprender">
-                <div id="titulo"> <p class="icono_test_aprender">logo</p><h3 id="titulo_aprender" style="color: #B7CBB8;">TOMA NUESTROS TEST</h3></div>
-               <p id="texto_de_caja">Aprende sobre cuestiones de género y sobre ti mismo.</p>
-            
-            <div id="elBoton"><button id="boton_ver_todos_los_test_aprender" class="btn" style="background-color: gray !important;"><a href="tests.php">VER TODOS LOS TEST</a></button></div>
-            </div>
-
-            <div id="cajas_principales_aprender" class="eventos_aprender">
-                <div id="titulo"><p class="icono_eventos_aprender">logo</p><h3 id="titulo_aprender" style="font-size: 1.9em;color: #B7CBB8;">ACUDE A NUESTROS EVENTOS</h3></div>
-                 <p id="texto_de_caja">Acude a los <strong>talleres, platicas, conferencias</strong> y otros eventos organizados por el OGJ.</p>
+          </div>
+          <div class="filterDivAprender actividades_aprender">
+            <div id="contenedor_interno">
+              <div id="cajas_principales_aprender" class="test_aprender">
+                <div id="titulo">
+                  <p class="icono_test_aprender">logo</p>
+                  <h3 id="titulo_aprender" style="color: #B7CBB8;">TOMA NUESTROS TEST</h3>
+                </div>
+                <p id="texto_de_caja">Aprende sobre cuestiones de género y sobre ti mismo.</p>
+                <div id="elBoton">
+                  <button id="boton_ver_todos_los_test_aprender" class="btn" style="background-color: gray !important;">
+                    <a href="tests.php">VER TODOS LOS TEST</a>
+                  </button>
+                </div>
+              </div>
+              <div id="cajas_principales_aprender" class="eventos_aprender">
+                <div id="titulo">
+                  <p class="icono_eventos_aprender">logo</p>
+                  <h3 id="titulo_aprender" style="font-size: 1.9em;color: #B7CBB8;">ACUDE A NUESTROS EVENTOS</h3>
+                </div>
+                <p id="texto_de_caja">Acude a los <strong>talleres, platicas, conferencias</strong> y otros eventos organizados por el OGJ. </p>
                 <h4>EVENTO PRÓXIMO</h4>
                 <div class="evento_proximo_aprender">
-                <h5>EVENTO:</h5>
-                <p id="texto_de_caja" class="nom_evento">Violencia normalizada</p>
-                <p id="fecha_evento_aprender" >MARZO 20</p>
-                <p id="horario_evento_aprender">13:00 - 15:00</p>
-                <p id="texto_de_caja" class="direccion_evento_aprender">Campus Ibero <br/> Auditorio Biblioteca</p>
+                  <h5>EVENTO:</h5>
+                  <p id="texto_de_caja" class="nom_evento">Violencia normalizada</p>
+                  <p id="fecha_evento_aprender">MARZO 20</p>
+                  <p id="horario_evento_aprender">13:00 - 15:00</p>
+                  <p id="texto_de_caja" class="direccion_evento_aprender">Campus Ibero <br /> Auditorio Biblioteca </p>
                 </div>
-                <div id="elBoton"><button id="boton_ver_todos_los_eventos_aprender"><a href="calendario.php">VER TODOS LOS EVENTOS</a></button></div>
+                <div id="elBoton">
+                  <button id="boton_ver_todos_los_eventos_aprender">
+                    <a href="calendario.php">VER TODOS LOS EVENTOS</a>
+                  </button>
+                </div>
+              </div>
             </div>
-        </div>
-    </div>
-</div>
-</div>
-     
-     
-     
-     
-     <div id="seccion_contribuir_inicio">
-    <h2 style="color:#20dbb0"id="aprender_h2_uno">CONTRIBUIR</h2>
-         <div id="contribuir"></div>
-     <p >Contribuye a la investigación a través de los <strong>cuestionarios</strong>, y únete a la conversación en los <strong>foros de discusión</strong></p>
-<div id="navContribuir">
-  <button class="btn active" onclick="filterSelection('foros')"> FOROS</button>
-  <button class="btn" onclick="filterSelection('cuestionarios')">CUESTIONARIOS</button>
-</div>
-
-<div class="container_contribuir_inicio">
-    <div class="filterDivContribuir foros">
-         <div id="contenedor_interno">
-            <div id="cajas_principales_contribuir" class="glosario_aprender">
-           <div id="titulo"> <p class="icono_foro_contribuir">logo</p><h3 style="color: 	#BBE9E0;">FOROS</h3></div>
-                <span id="contribuir"></span>
-            <p>Contribuye a la investicación a través de los <strong>cuestionarios</strong>, y únete a la conversación en los <strong>foros de discusión.</strong></p>
-          <div style="box-shadow: 1px 1px 1px 1px  white">
-                
-                 <p id="definicion_aprender" style="color: #a8579d; font-size: 1.5em;">"¿Qué opinas de los vagones reservados para mujeres del transporte público?"</p>
-             <p id="definicion_aprender" style="text-align: center; font-size: 1.5em;"> Me hacen sentir más segura <br> en mi camino a la escuela</p>  
-                </div>    
-   <div id="elBoton" > <button id="boton_ver" class="comentar"><a href="foros.php?id_foro">IR A FOROS</a></button></div></div> 
-        
-
-        <div id="cajas_principales_contribuir" >
-            <h4 style="color:#98B7AC;" >TEMAS DE LOS FOROS</h4>
-            
-            <div id="parrafos1">
-            <p>Roles de género</p>
-                <p>Violencia en pareja</p>
-            <p>Violencia en ambiente familiar</p>
-                <p>Abusos en escuela o trabajo</p>
-            </div>
-            <button   id="boton_ver_mas_preguntas" class="parrafosboton"> <a href="foros_internas.php?id_foro">VER MÁS</a></button>
-
-             </div>
-            </div>  
-        </div>
-    </div> 
-  <div class="filterDivContribuir cuestionarios">
-    <div id="contenedor_interno">
-        <div id="cajas_principales_contribuir">
-        <div id="titulo">  <p class="icono_cuestionario_contribuir">logo</p><h3>CUESTIONARIOS DE INVESTIGACIÓN</h3></div>
-          <p  style="font-size: 1.2em;" id="texto_de_caja">Participa en la investigación del OGJ, proporcionando datos confiables sobre tus experiencias.</p>
-          <h4 >AVISO DE PRIVACIDAD</h4>
-        <p  style="font-size: 1.2em;" >Tus datos personales son necesarios para asegurar la confiabilidad de tus datos, pero no serán publicados ni compartidos con terceros</p>
-         <div id="elBoton"><button type="button" class="btn " style="background-color: inherit;" data-toggle="modal" data-target="#exampleModalLong">
-AVISO DE PRIVACIDAD</button></div>
-        </div>
-              <div id="cajas_principales_contribuir" >
-        <h4 style="margin-top: 85px;" >TEMAS DE LOS CUESTIONARIOS</h4>
-<div id="parrafos1">
-            <p>Roles de género</p>
-            <p>Violencia en pareja</p>
-    <p>Violencia en ambiente familiar</p>
-    <p>Abusos en escuela o trabajo</p>
-            </div>
-       <button class="btn" style="background-color: darkgray;"> <a href="cuestionario.php">CONTRIBUYE</a></button>
-
-        </div>
-        </div>  
-    </div>
-    </div> 
-	 
-	 <div class="modal fade" id="myModa222" role="dialog">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
- 
-        <div class="modal-body">
-						          <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-<form id="regForm1" action="/action_page.php" method="post">
-
-
-  <!-- One "tab" for each step in the form: -->
-  <div class="tab">
-      
-      <p style="border-bottom: 1px solid;width: 80%;margin: 0 auto;font-size: 24px;">GRACIAS POR QUERER CONTRIBUIR</p>
-  <p style="width: 80%; text-align: left;margin: 0 auto;">El observatorio a creado este cuestionario para conocer la forma en la cual los y las jóvenes desarrollan y construyen sus relaciones interpersonales y sus relaciones de pareja.</p>
-<br/>
-<p style="width: 80%;text-align: left;margin: 0 auto;">Recuerda que NO existen respuestas correctas ni incorrectas, lo que queremos es que expreses tu propia opinión a partir de tu experiencia y contestes con sinceridad.</p>
-</div>
-  <div class="tab">
-      <p style="border-bottom: 1px solid;width: 80%;margin: 0 auto;font-size: 24px;">GRACIAS POR QUERER CONTRIBUIR</p>
-  <p>*Para poder contribuir sólo te pedimos los siguientes datos</p>
-  <p class="advertencia">- Se mantendran privados y no se mostraran de ninguna manera<br/>
-</p>
-    GÉNERO:
-    <p><input placeholder="género..." oninput="this.className = ''" name="genero"></p>
-    EDAD:
-    <p><input placeholder="edad..." oninput="this.className = ''" name="edad"></p>
-    ESTADO:
-    <p><input placeholder="estado..." oninput="this.className = ''" name="estado"></p>
-  </div>
-   <div class="tab">
-  <p>1.¿En tus relaciones se han presentado alguna de estas situaciones?.</p>
-   <div style="width: 80%;margin: 0 auto;">
-     <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">A veces mi pareja toma venganza por cosas que he hecho. Siento que es su manera de buscar equilibrar el poder.</label>
-    </div>
-    <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">A veces necesito sentir que hago "justicia" por el daño que me han hecho. Siento que es la manera en que podemos estar iguales y volver a empezar o salir victorioso/a si la relación terminó.</label>
-    </div>
-      <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">No aplica.</label>
-    </div>   
-    </div>
-  
-   </div>
-       <div class="tab">
-  <p>Elige la afirmación que se acerca más a lo que tú dirías sobre tus relaciones de pareja:</p>
-<div style="width: 80%;margin: 0 auto;">
-    <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">A veces me han hecho sentir mal porque he sentido que me han controlado o que han abusado de mi confianza.</label>
-    </div>
-    <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">
-Me gusta respetar los tiempos y espacios de la otra persona y que respeten los míos.</label>
-    </div>
-      <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">
-He tenido relaciones difíciles, donde el enojo ha sacado lo peor de quienes somos, pero trato de superarlo.</label>
-    </div>  
-<div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">
-
-He tenido buenas experiencias en mi vida, con algunos momentos desagradables, como todos, pero en general considero que la mayoría de mis vivencias han sido buenas.</label>
-    </div>
-</div>
-  
-   </div>
-           <div class="tab">
-  <p>¿Cuándo crees que comienzan las primeras agresiones (fisicas o psicologicas)</p>
-   <div style="width: 80%;margin: 0 auto;">
-        <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">En el noviazgo.</label>
-    </div>
-    <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">
-	Despues del matrimonio</label>
-    </div>
-      <div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">
-	Tras tener hijos</label>
-    </div>  
-<div class="radio" style="text-align: left;">
-      <label><input type="radio" name="optradio">
-Al independizarse los hijos</label>
-    </div>
-    </div>
-  
-   </div>
-  <div class="botones" style="overflow:auto;">
-    <div>
-      <button type="button" id="prevBtn" onclick="nextPrev(-1)">ATRÁS</button>
-      <button type="button" id="nextBtn" onclick="nextPrev(1)">SIGUIENTE</button>
-    
-    </div>
-  </div>
-  <!-- Circles which indicates the steps of the form: -->
-  <div style="text-align:center;margin-top:40px;">
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-    <span class="step"></span>
-
-  </div>
-  
-</form>
-  
-    </div>
-
-
-        </div>
-    
-      </div>
-    </div>
-    <div id="seccion_aprender_inicio" style="color: white;">
-    <h2 style="color:#8188D5;font-family: 'archiveregular'; font-size: 3.5rem;  margin-bottom: 2%;">PARTICIPAR</h2>
-        <div  id="ayudar"></div>
-    <p>Da y recibe ayuda de violencia de género: ubica <strong>recursos físicos</strong>, contacta <strong>recursos a distancia</strong>, o participa con tu <strong>testimonio</strong>.</p> 
-<div id="navAyudar" style="border: 1px solid;margin: 0 auto;width: 100%;">
-  <button class="btn active" onclick="filterSelection_2('mapas_ayuda')"> MAPAS DE CENTROS DE AYUDA</button>
-  <button class="btn" onclick="filterSelection_2('recursos_ayudar')">RECURSOS A DISTANCIA</button>
-  <button class="btn" onclick="filterSelection_2('historias_ayudar')">SUMA TU VOZ</button>
-    </div>
-
-<div class="container_ayudar_inicio" >
-  <div class="filterDivAyudar mapas_ayuda">
-    <div id="cajas_principales_ayudar" class="mapacentros" style="background-color: transparent;">
-<div class="row">
-        
-        <div id="centros" class="col-sm-6">
-            <h3>MAPA DE CENTROS DE AYUDA</h3>
-             <p>Consulta la ubicación e información de contacto de centros dedicados a combatir la violencia de género, para que acudas en caso de que estés pasando por esa situación.</p>
-         <button>   <a href="mexico_mapa.html">VER MAPA</a></button>
           </div>
-
-           <div class="col-sm-6"><h3>Filtra por tipo de centro</h3>
-           <div  style="color:#5D6BAE;"><p>Refugio para emergencias</p>
-             <p>Asesoría legal</p>
-             <p>Salud mental</p>
-             </div>
-            <button>VER MAPA</button>
-            </div> 
+        </div>undefined
+      </div>undefined<div id="seccion_contribuir_inicio">
+        <h2 style="color:#20dbb0" id="aprender_h2_uno">CONTRIBUIR</h2>
+        <div id="contribuir"></div>
+        <p>Contribuye a la investigación a través de los <strong>cuestionarios</strong>, y únete a la conversación en los <strong>foros de discusión</strong>
+        </p>
+        <div id="navContribuir">
+          <button class="btn active" onclick="filterSelection('foros')"> FOROS</button>
+          <button class="btn" onclick="filterSelection('cuestionarios')">CUESTIONARIOS</button>
         </div>
-          
+        <div class="container_contribuir_inicio">
+          <div class="filterDivContribuir foros">
+            <div id="contenedor_interno">
+              <div id="cajas_principales_contribuir" class="glosario_aprender">
+                <div id="titulo">
+                  <p class="icono_foro_contribuir">logo</p>
+                  <h3 style="color: 	#BBE9E0;">FOROS</h3>
+                </div>
+                <span id="contribuir"></span>
+                <p>Contribuye a la investicación a través de los <strong>cuestionarios</strong>, y únete a la conversación en los <strong>foros de discusión.</strong>
+                </p>
+                <div style="box-shadow: 1px 1px 1px 1px  white">
+                  <p id="definicion_aprender" style="color: #a8579d; font-size: 1.5em;">"¿Qué opinas de los vagones reservados para mujeres del transporte público?"</p>
+                  <p id="definicion_aprender" style="text-align: center; font-size: 1.5em;"> Me hacen sentir más segura <br> en mi camino a la escuela </p>
+                </div>
+                <div id="elBoton">
+                  <button id="boton_ver" class="comentar">
+                    <a href="foros.php?id_foro">IR A FOROS</a>
+                  </button>
+                </div>
+              </div>
+              <div id="cajas_principales_contribuir">
+                <h4 style="color:#98B7AC;">TEMAS DE LOS FOROS</h4>
+                <div id="parrafos1">
+                  <p>Roles de género</p>
+                  <p>Violencia en pareja</p>
+                  <p>Violencia en ambiente familiar</p>
+                  <p>Abusos en escuela o trabajo</p>
+                </div>
+                <button id="boton_ver_mas_preguntas" class="parrafosboton">
+                  <a href="foros_internas.php?id_foro">VER MÁS</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="filterDivContribuir cuestionarios">
+          <div id="contenedor_interno">
+            <div id="cajas_principales_contribuir">
+              <div id="titulo">
+                <p class="icono_cuestionario_contribuir">logo</p>
+                <h3>CUESTIONARIOS DE INVESTIGACIÓN</h3>
+              </div>
+              <p style="font-size: 1.2em;" id="texto_de_caja">Participa en la investigación del OGJ, proporcionando datos confiables sobre tus experiencias.</p>
+              <h4>AVISO DE PRIVACIDAD</h4>
+              <p style="font-size: 1.2em;">Tus datos personales son necesarios para asegurar la confiabilidad de tus datos, pero no serán publicados ni compartidos con terceros</p>
+              <div id="elBoton">
+                <button type="button" class="btn " style="background-color: inherit;" data-toggle="modal" data-target="#exampleModalLong"> AVISO DE PRIVACIDAD</button>
+              </div>
+            </div>
+            <div id="cajas_principales_contribuir">
+              <h4 style="margin-top: 85px;">TEMAS DE LOS CUESTIONARIOS</h4>
+              <div id="parrafos1">
+                <p>Roles de género</p>
+                <p>Violencia en pareja</p>
+                <p>Violencia en ambiente familiar</p>
+                <p>Abusos en escuela o trabajo</p>
+              </div>
+              <button class="btn" style="background-color: darkgray;">
+                <a href="cuestionario.php">CONTRIBUYE</a>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
- 
-  </div>
-   
-    
-    
-  <div class="filterDivAyudar recursos_ayudar">
-    <div id="cajas_principales_recursos" class="recursos_distancia">
-      <h3 >RECURSOS A DISTANCIA</h3>
-        <p>Obtén la información de contacto de organizaciones que brindan ayuda a personas que estuvieron o están en una situación de violencia de género a distancia, vía telefónica o usando plataformas digitales.</p>
-                 <button id="boton_ver_mas_mapa_aprender">CONTACTAR</button>
-
+      <div class="modal fade" id="myModa222" role="dialog">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <form id="regForm1" action="/action_page.php" method="post">
+                <!-- One "tab" for each step in the form: -->
+                <div class="tab">
+                  <p style="border-bottom: 1px solid;width: 80%;margin: 0 auto;font-size: 24px;">GRACIAS POR QUERER CONTRIBUIR</p>
+                  <p style="width: 80%; text-align: left;margin: 0 auto;">El observatorio a creado este cuestionario para conocer la forma en la cual los y las jóvenes desarrollan y construyen sus relaciones interpersonales y sus relaciones de pareja.</p>
+                  <br />
+                  <p style="width: 80%;text-align: left;margin: 0 auto;">Recuerda que NO existen respuestas correctas ni incorrectas, lo que queremos es que expreses tu propia opinión a partir de tu experiencia y contestes con sinceridad.</p>
+                </div>
+                <div class="tab">
+                  <p style="border-bottom: 1px solid;width: 80%;margin: 0 auto;font-size: 24px;">GRACIAS POR QUERER CONTRIBUIR</p>
+                  <p>*Para poder contribuir sólo te pedimos los siguientes datos</p>
+                  <p class="advertencia">- Se mantendran privados y no se mostraran de ninguna manera <br />
+                  </p> GÉNERO: <p>
+                    <input placeholder="género..." oninput="this.className = ''" name="genero">
+                  </p> EDAD: <p>
+                    <input placeholder="edad..." oninput="this.className = ''" name="edad">
+                  </p> ESTADO: <p>
+                    <input placeholder="estado..." oninput="this.className = ''" name="estado">
+                  </p>
+                </div>
+                <div class="tab">
+                  <p>1.¿En tus relaciones se han presentado alguna de estas situaciones?.</p>
+                  <div style="width: 80%;margin: 0 auto;">
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio">A veces mi pareja toma venganza por cosas que he hecho. Siento que es su manera de buscar equilibrar el poder. </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio">A veces necesito sentir que hago "justicia" por el daño que me han hecho. Siento que es la manera en que podemos estar iguales y volver a empezar o salir victorioso/a si la relación terminó. </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio">No aplica. </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab">
+                  <p>Elige la afirmación que se acerca más a lo que tú dirías sobre tus relaciones de pareja:</p>
+                  <div style="width: 80%;margin: 0 auto;">
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio">A veces me han hecho sentir mal porque he sentido que me han controlado o que han abusado de mi confianza. </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio"> Me gusta respetar los tiempos y espacios de la otra persona y que respeten los míos. </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio"> He tenido relaciones difíciles, donde el enojo ha sacado lo peor de quienes somos, pero trato de superarlo. </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio"> He tenido buenas experiencias en mi vida, con algunos momentos desagradables, como todos, pero en general considero que la mayoría de mis vivencias han sido buenas. </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab">
+                  <p>¿Cuándo crees que comienzan las primeras agresiones (fisicas o psicologicas)</p>
+                  <div style="width: 80%;margin: 0 auto;">
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio">En el noviazgo. </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio"> Despues del matrimonio </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio"> Tras tener hijos </label>
+                    </div>
+                    <div class="radio" style="text-align: left;">
+                      <label>
+                        <input type="radio" name="optradio"> Al independizarse los hijos </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="botones" style="overflow:auto;">
+                  <div>
+                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">ATRÁS</button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">SIGUIENTE</button>
+                  </div>
+                </div>
+                <!-- Circles which indicates the steps of the form: -->
+                <div style="text-align:center;margin-top:40px;">
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                  <span class="step"></span>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="seccion_aprender_inicio" style="color: white;">
+        <h2 style="color:#8188D5;font-family: 'archiveregular'; font-size: 3.5rem;  margin-bottom: 2%;">PARTICIPAR</h2>
+        <div id="ayudar"></div>
+        <p>Da y recibe ayuda de violencia de género: ubica <strong>recursos físicos</strong>, contacta <strong>recursos a distancia</strong>, o participa con tu <strong>testimonio</strong>. </p>
+        <div id="navAyudar" style="border: 1px solid;margin: 0 auto;width: 100%;">
+          <button class="btn active" onclick="filterSelection_2('mapas_ayuda')"> MAPAS DE CENTROS DE AYUDA</button>
+          <button class="btn" onclick="filterSelection_2('recursos_ayudar')">RECURSOS A DISTANCIA</button>
+          <button class="btn" onclick="filterSelection_2('historias_ayudar')">SUMA TU VOZ</button>
+        </div>
+        <div class="container_ayudar_inicio">
+          <div class="filterDivAyudar mapas_ayuda">
+            <div id="cajas_principales_ayudar" class="mapacentros" style="background-color: transparent;">
+              <div class="row">
+                <div id="centros" class="col-sm-6">
+                  <h3>MAPA DE CENTROS DE AYUDA</h3>
+                  <p>Consulta la ubicación e información de contacto de centros dedicados a combatir la violencia de género, para que acudas en caso de que estés pasando por esa situación.</p>
+                  <button>
+                    <a href="mexico_mapa.html">VER MAPA</a>
+                  </button>
+                </div>
+                <div class="col-sm-6">
+                  <h3>Filtra por tipo de centro</h3>
+                  <div style="color:#5D6BAE;">
+                    <p>Refugio para emergencias</p>
+                    <p>Asesoría legal</p>
+                    <p>Salud mental</p>
+                  </div>
+                  <button>VER MAPA</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filterDivAyudar recursos_ayudar">
+            <div id="cajas_principales_recursos" class="recursos_distancia">
+              <h3>RECURSOS A DISTANCIA</h3>
+              <p>Obtén la información de contacto de organizaciones que brindan ayuda a personas que estuvieron o están en una situación de violencia de género a distancia, vía telefónica o usando plataformas digitales.</p>
+              <button id="boton_ver_mas_mapa_aprender">CONTACTAR</button>
+            </div>
+          </div>
+          <div class="filterDivAyudar historias_ayudar">
+            <div id="cajas_principales_testimonios" class="voz_ayudar">
+              <h3>SUMA TU VOZ</h3>
+              <p>Si has pasado por una situación de violencia de género comparte tu historia para ayudar a otras personas en situaciones similares y generar consciencia. </p>
+              <button>
+                <a href="tesimonios.php">PARTICIPAR</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="regresar">
+          <span>h</span>
+          <p>
+            <span>d </span>
+            <a href="#arriba">REGRESAR ARRIBA</a>
+          </p>
+        </div>
+        <div>
+          <div class="row" id="footerh2">
+            <h2 class="col-sm-4">
+              <button type="button" class="btn " style="background-color: inherit;" data-toggle="modal" data-target="#exampleModalLong"> AVISO DE PRIVACIDAD</button>
+            </h2>
+            <h2 class="col-sm-4">MAPA DEL SITIO</h2>
+            <h2 class="col-sm-4">
+              <button class="btn" data-toggle="modal" data-target="#myModal2" style="background-color: inherit;">CONTACTO</button>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4" style="margin: 0 auto;">
+            <h3>
+              <span></span>APRENDER
+            </h3>
+            <p>
+              <a href="glosario.html">Glosario</a>
+            </p>
+            <p>
+              <a href="preguntas.html">Preguntas frecuentes</a>
+            </p>
+            <p>Mapa de datos estadísticos</p>
+            <p>
+              <a href="articulos.html">Artículos informativos</a>
+            </p>
+            <p>
+              <a href="#">Testimonios</a>
+            </p>
+            <p>
+              <a href="tests"> Tests</a>
+            </p>
+            <p>
+              <a href="">Eventos</a>
+            </p>
+          </div>
+          <div class="col-sm-4" style="margin: 0 auto;">
+            <h3>
+              <span></span>CONTRIBUIR
+            </h3>
+            <p>
+              <a href="foros.html">Foro de Discusión</a>
+            </p>
+            <p>
+              <a href="cuestionario.html">Cuestionarios de investigación</a>
+            </p>
+          </div>
+          <div class="col-sm-4" style="margin: 0 auto;">
+            <h3>
+              <span></span>AYUDAR
+            </h3>
+            <p>
+              <a href="mexico_mapa.html">Mapa de Centros de Ayuda</a>
+            </p>
+            <p>
+              <a href="mexico_mapa.html">Recursos a Distancia</a>
+            </p>
+            <p>
+              <a>Compartir testimonio</a>
+            </p>
+          </div>
+        </div>
+        <div style="text-align: right;width: 90%;margin: 0 auto;">
+          <p style="font-size: 1.5em;">Universidad Iberoamericana 2018</p>
+        </div>
+      </footer>
     </div>
-    </div>
-    
-    <div class="filterDivAyudar historias_ayudar">
-    <div id="cajas_principales_testimonios" class="voz_ayudar">
-     <h3>SUMA TU VOZ</h3>
-        <p>Si has pasado por una situación de violencia de género comparte tu historia para ayudar a otras personas en situaciones similares y generar consciencia. </p>
-         <button ><a href="tesimonios.php">PARTICIPAR</a></button>
-    </div>
-      </div>
-   </div> 
-    </div> 
-<footer>
-
-  
-  <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR ARRIBA</a></p></div>  
-    <div><div class="row" id="footerh2"><h2 class="col-sm-4"><button type="button" class="btn " style="background-color: inherit;" data-toggle="modal" data-target="#exampleModalLong">
-AVISO DE PRIVACIDAD</button></h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4"><button class="btn" data-toggle="modal" data-target="#myModal2" style="background-color: inherit;">CONTACTO</button></h2></div></div>
-
-    <div class="row">
-        <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>APRENDER</h3><p  ><a href="glosario.html">Glosario</a></p><p><a href="preguntas.html">Preguntas frecuentes</a></p><p>Mapa de datos estadísticos</p><p><a href="articulos.html">Artículos informativos</a></p><p><a href="#">Testimonios</a></p><p ><a href="tests"> Tests</a></p><p><a href="">Eventos</a></p></div>
-    <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>CONTRIBUIR</h3><p><a href="foros.html">Foro de Discusión</a></p><p><a href="cuestionario.html">Cuestionarios de investigación</a></p></div>
-    <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>AYUDAR</h3><p><a href="mexico_mapa.html">Mapa de Centros de Ayuda</a></p><p><a href="mexico_mapa.html">Recursos a Distancia</a></p><p><a>Compartir testimonio</a></p></div>  
-  </div><div style="text-align: right;width: 90%;margin: 0 auto;"><p style="font-size: 1.5em;">Universidad Iberoamericana 2018</p></div>
-   
-    </footer>        
-    </div>
-  <!-- SCRIPT DE MENU DESPLEGABLE -->
- 
-<script> 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script> 
-  <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle" style="color:black !important;">AVISO DE PRIVACIDAD</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-         <p>En cumplimiento con lo establecido por <strong>la Ley Federal de Protección de Datos Personales</strong> en
-Posesión de los Particulares, <strong>la Universidad Iberoamericana</strong>, A. C. con domicilio en Prolongación
-Paseo de la Reforma No. 880, Colonia Lomas de Santa Fe, Delegación Álvaro Obregón, C. P.
-01219, Ciudad de México, le informa que los datos personales, entendiendo por estos, de manera
-enunciativa mas no limitativa: nombre, fecha de nacimiento, nacionalidad, dirección, correo
-electrónico, número de teléfono, («datos personales»), los datos personales sensibles,
-entendiendo por estos, de manera enunciativa mas no limitativa: origen racial o étnico, estado de
-salud presente y futuro, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones
-políticas y demás información que pueda ser usada para identificarlo, otorgados por usted
-(«Usuario») y recopilados directamente en nuestra base de datos serán usados exclusivamente
-			 para que la Universidad Iberoamericana </p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
-      </div>
-    </div>
-  </div>
-</div>
-	
-	  <div class="modal fade" id="myModal2" role="dialog" >
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="background-color: #2E2E2C;">
-        <div class="modal-header">
-          <h4 class="modal-title" style="color:black !important;">¡Contáctanos!</h4>
-        </div>
-        <div class="modal-body">
-       		<div class="contacts table" aria-labelledby="contacts-caption-text">
-  <span class="caption" id="contacts-caption-text">OBSERVATORIO DE GÉNERO Y JUVENTUD</span>
-  <div class="contacts-header thead">
-    <span class="th" id="th-name">Nombre:</span>
-    <span class="th" id="th-org">Función:</span>
-    <span class="th" id="th-phone">Correo:</span>
-  </div>  
-  <ul class="tbody">
-    <li class="tr" itemscope itemtype="http://schema.org/Person">
-      <span class="td">
-        <span class="label">Nombre:</span>
-        <span class="data" itemprop="name" aria-labelledby="th-name">Elvia</span>
-      </span>
-      <span class="td" itemscope itemtype="http://schema.org/Organization">
-        <span class="label">Función:</span>
-        <span class="data" itemprop="name" aria-labelledby="th-org">Coordinadora</span>
-      </span>
-      <span class="td">
-        <span class="label">Correo:</span>
-        <span class="data" itemprop="email" aria-labelledby="th-email"><a href="mailto:ola.nordmann@acme-corp.no">elvia@...</a></span>
-      </span>
-    </li>
-    <li class="tr" itemscope itemtype="http://schema.org/Person">
-      <span class="td">
-        <span class="label">Nombre:</span>
-        <span class="data" itemprop="name" aria-labelledby="th-name">Gloria</span>
-      </span>
-      <span class="td" itemscope itemtype="http://schema.org/Organization">
-        <span class="label">Función</span>
-        <span class="data" itemprop="name" aria-labelledby="th-org">Asistente</span>
-      </span>
-      <span class="td">
-        <span class="label">Correo</span>
-        <span class="data" itemprop="email" aria-labelledby="th-email"><a href="mailto:kari.nordmann@acme-corp.no">Gloria...</a></span>
-      </span>
-    </li>    
-  </ul>
-	</div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-          </div></div>
-  <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog" >
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="background-color: #2E2E2C;">
-        <div class="modal-header">
-          <h4 class="modal-title">Eventos</h4>
-        </div>
-        <div class="modal-body">
-         <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=blommaavmystik%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FMexico_City" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-      <!-- Modal -->
-  <div class="modal fade" id="myModal1" role="dialog" >
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="background-color: #2E2E2C;">
-        <div class="modal-header">
-          <h4 class="modal-title">Sobre el sitio</h4>
-        </div>
-        <div class="modal-body">
-         <strong>Resuelve</strong> con actividades tus dudas básicas y <strong>aprende</strong> del tema con datos concretos e historias de quienes han vivido situaciones de violencia de género. 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-      <!-- Modal -->
-    <style> .modal-title{margin: 0 auto;} </style>
-  <div class="modal fade" id="myModal2" role="dialog" >
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content" style="background-color: #2E2E2C;">
-        <div class="modal-header">
-          <h4 class="modal-title">¡Contáctanos!</h4>
-        </div>
-        <div class="modal-body">
-       		<div class="contacts table" aria-labelledby="contacts-caption-text">
-  <span class="caption" id="contacts-caption-text">OBSERVATORIO DE GÉNERO Y JUVENTUD</span>
-  <div class="contacts-header thead">
-    <span class="th" id="th-name">Nombre:</span>
-    <span class="th" id="th-org">Función:</span>
-    <span class="th" id="th-phone">Correo:</span>
-  </div>  
-  <ul class="tbody">
-    <li class="tr" itemscope itemtype="http://schema.org/Person">
-      <span class="td">
-        <span class="label">Nombre:</span>
-        <span class="data" itemprop="name" aria-labelledby="th-name">Elvia</span>
-      </span>
-      <span class="td" itemscope itemtype="http://schema.org/Organization">
-        <span class="label">Función:</span>
-        <span class="data" itemprop="name" aria-labelledby="th-org">Coordinadora</span>
-      </span>
-      <span class="td">
-        <span class="label">Correo:</span>
-        <span class="data" itemprop="email" aria-labelledby="th-email"><a href="mailto:ola.nordmann@acme-corp.no">elvia@...</a></span>
-      </span>
-    </li>
-    <li class="tr" itemscope itemtype="http://schema.org/Person">
-      <span class="td">
-        <span class="label">Nombre:</span>
-        <span class="data" itemprop="name" aria-labelledby="th-name">Gloria</span>
-      </span>
-      <span class="td" itemscope itemtype="http://schema.org/Organization">
-        <span class="label">Función</span>
-        <span class="data" itemprop="name" aria-labelledby="th-org">Asistente</span>
-      </span>
-      <span class="td">
-        <span class="label">Correo</span>
-        <span class="data" itemprop="email" aria-labelledby="th-email"><a href="mailto:kari.nordmann@acme-corp.no">Gloria...</a></span>
-      </span>
-    </li>    
-  </ul>
-	</div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-     <div class="modal fade" id="expresion_de_genero1" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">EXPRESIÓN DE GÉNERO</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Es la forma en la que cada persona expresa expresamos nuestro género, por ejemplo, a través de la vestimenta, el comportamiento, los intereses y las afinidades. Esto trasciende las percepciones estereotipadas o estandarizadas de la sociedad en cuanto a lo femenino, masculino y andrógino (la combinación de ambos).</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-    
-    <div class="modal fade" id="genero" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">GÉNERO</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Categoría que analiza cómo se definen, representan y simbolizan las diferencias sexuales en una determinada sociedad. Así pues, es el conjunto de ideas, creencias y atribuciones sociales, construidas en cada cultura y momento histórico, tomando como base la diferencia sexual; a partir de ello se construyen los conceptos de “masculinidad” y “feminidad”, los cuales determinan el comportamiento, las funciones, oportunidades,valoración y las relaciones entre mujeres y hombres. Son construcciones socioculturales que pueden modificarse, dado que han sido aprendidas. Las aprendemos a partir de la interrelación familiar y social.</p>
-          <br />
-        <p class="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-       <div class="modal fade" id="identidad_de_genero" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">IDENTIDAD DE GÉNERO</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Es la vivencia interna e individual del género tal y como cada persona la experimenta, la cual podría corresponder o no, con su sexo biológico. Por lo tanto, es una construcción personal, social y cultural y no un hecho determinado.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-	     <!-- Modal SEXISMO-->
-      <div class="modal fade" id="sexismo1" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">SEXISMO</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Se refiere a todas aquellas prácticas y actitudes que promueven el trato diferenciado de las personas en razón de su sexo biológico, del cual se asumen características y comportamientos que se espera, las mujeres y los hombres, actúen cotidianamente. El sexismo puede incluir diferentes creencias o actitudes: La creencia de que un sexo es superior o inferior al otro, la actitud de misoginia o misandria, la actitud de imponer una noción de masculinidad (género) a los hombres (sexo) y una noción de feminidad (género) a las mujeres (sexo), el menosprecio o la ocultación de las mujeres, la burla o la descalificación hacia la apariencia o conducta de las mujeres o de los hombres, referencias que aluden despectivamente a la sexualidad de hombres o mujeres, entre otras.</p>
-        <br />
-        <p class="referencia">Punto Género - INMUJERES. Disponible en: http://puntogenero.inmujeres.gob.mx/Portal/madig/sexismo/</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-    
-             <!-- Modal TIPOS DE VIOLENCIA-->
-      <div class="modal fade" id="tipos_de_violencia" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">TIPOS DE VIOLENCIA</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Corresponden a los tipos de violencia definidos en Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, generalizados a las y los integrantes de la Universidad. Los tipos de violencia son: violencia psicológica, violencia física, violencia patrimonial, violencia económica, violencia sexual y cualesquiera otras formas análogas que lesionen o sean susceptibles de dañar la dignidad, integridad o libertad de las personas.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-
-        <!-- Modal MODALIDADES DE VIOLENCIA-->
-      <div class="modal fade" id="modalidades_de_violencia1" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">MODALIDADES DE VIOLENCIA</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Las formas, manifestaciones o los ámbitos de ocurrencia en que se presenta la violencia de género.</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-	  <div class="modal fade" id="acoso_sexual" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">ACOSO SEXUAL</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        </div>
-        <div class="modal-body">
-          <p>Toda actividad con connotación sexual que sucede entre dos personas sin que medie el consentimiento de alguna de ellas. El acoso se puede manifestar entre adultos, de un adulto a un menor o incluso entre menores. El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder que conlleva a un estado de indefensión y de riesgo para la víctima, independientemente de que se realice en uno o varios eventos.</p>
-        <p>Los comportamientos que se califican como acoso sexual pueden ser tanto físicos (violencia física, tocamientos, acercamientos innecesarios) como verbales (comentarios y preguntas sobre el aspecto, el estilo de vida, la orientación sexual; llamadas de teléfono ofensivas, mensajes de texto, correo electrónico, etc.) y no verbales (silbidos, gestos de connotación sexual, presentación de objetos pornográficos).</p>
-        <br />
-        <p class="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES.<br /> Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia. <br />Organización Internacional del Trabajo</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
-        </div>
-      </div>
-      
-    </div>
-  </div>
+    <!-- SCRIPT DE MENU DESPLEGABLE -->
     <script>
-     
-filterSelection_1("basico_aprender")
-function filterSelection_1(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDivAprender");
-  if (c == "all") c = " ";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle" style="color:black !important;">AVISO DE PRIVACIDAD</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>En cumplimiento con lo establecido por <strong>la Ley Federal de Protección de Datos Personales</strong> en Posesión de los Particulares, <strong>la Universidad Iberoamericana</strong>, A. C. con domicilio en Prolongación Paseo de la Reforma No. 880, Colonia Lomas de Santa Fe, Delegación Álvaro Obregón, C. P. 01219, Ciudad de México, le informa que los datos personales, entendiendo por estos, de manera enunciativa mas no limitativa: nombre, fecha de nacimiento, nacionalidad, dirección, correo electrónico, número de teléfono, («datos personales»), los datos personales sensibles, entendiendo por estos, de manera enunciativa mas no limitativa: origen racial o étnico, estado de salud presente y futuro, creencias religiosas, filosóficas y morales, afiliación sindical, opiniones políticas y demás información que pueda ser usada para identificarlo, otorgados por usted («Usuario») y recopilados directamente en nuestra base de datos serán usados exclusivamente para que la Universidad Iberoamericana </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color: #2E2E2C;">
+          <div class="modal-header">
+            <h4 class="modal-title" style="color:black !important;">¡Contáctanos!</h4>
+          </div>
+          <div class="modal-body">
+            <div class="contacts table" aria-labelledby="contacts-caption-text">
+              <span class="caption" id="contacts-caption-text">OBSERVATORIO DE GÉNERO Y JUVENTUD</span>
+              <div class="contacts-header thead">
+                <span class="th" id="th-name">Nombre:</span>
+                <span class="th" id="th-org">Función:</span>
+                <span class="th" id="th-phone">Correo:</span>
+              </div>
+              <ul class="tbody">
+                <li class="tr" itemscope itemtype="http://schema.org/Person">
+                  <span class="td">
+                    <span class="label">Nombre:</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-name">Elvia</span>
+                  </span>
+                  <span class="td" itemscope itemtype="http://schema.org/Organization">
+                    <span class="label">Función:</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-org">Coordinadora</span>
+                  </span>
+                  <span class="td">
+                    <span class="label">Correo:</span>
+                    <span class="data" itemprop="email" aria-labelledby="th-email">
+                      <a href="mailto:ola.nordmann@acme-corp.no">elvia@...</a>
+                    </span>
+                  </span>
+                </li>
+                <li class="tr" itemscope itemtype="http://schema.org/Person">
+                  <span class="td">
+                    <span class="label">Nombre:</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-name">Gloria</span>
+                  </span>
+                  <span class="td" itemscope itemtype="http://schema.org/Organization">
+                    <span class="label">Función</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-org">Asistente</span>
+                  </span>
+                  <span class="td">
+                    <span class="label">Correo</span>
+                    <span class="data" itemprop="email" aria-labelledby="th-email">
+                      <a href="mailto:kari.nordmann@acme-corp.no">Gloria...</a>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color: #2E2E2C;">
+          <div class="modal-header">
+            <h4 class="modal-title">Eventos</h4>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://calendar.google.com/calendar/embed?showPrint=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=blommaavmystik%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FMexico_City" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal1" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color: #2E2E2C;">
+          <div class="modal-header">
+            <h4 class="modal-title">Sobre el sitio</h4>
+          </div>
+          <div class="modal-body">
+            <strong>Resuelve</strong> con actividades tus dudas básicas y <strong>aprende</strong> del tema con datos concretos e historias de quienes han vivido situaciones de violencia de género.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <style>
+      .modal-title {
+        margin: 0 auto;
+      }
+    </style>
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content" style="background-color: #2E2E2C;">
+          <div class="modal-header">
+            <h4 class="modal-title">¡Contáctanos!</h4>
+          </div>
+          <div class="modal-body">
+            <div class="contacts table" aria-labelledby="contacts-caption-text">
+              <span class="caption" id="contacts-caption-text">OBSERVATORIO DE GÉNERO Y JUVENTUD</span>
+              <div class="contacts-header thead">
+                <span class="th" id="th-name">Nombre:</span>
+                <span class="th" id="th-org">Función:</span>
+                <span class="th" id="th-phone">Correo:</span>
+              </div>
+              <ul class="tbody">
+                <li class="tr" itemscope itemtype="http://schema.org/Person">
+                  <span class="td">
+                    <span class="label">Nombre:</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-name">Elvia</span>
+                  </span>
+                  <span class="td" itemscope itemtype="http://schema.org/Organization">
+                    <span class="label">Función:</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-org">Coordinadora</span>
+                  </span>
+                  <span class="td">
+                    <span class="label">Correo:</span>
+                    <span class="data" itemprop="email" aria-labelledby="th-email">
+                      <a href="mailto:ola.nordmann@acme-corp.no">elvia@...</a>
+                    </span>
+                  </span>
+                </li>
+                <li class="tr" itemscope itemtype="http://schema.org/Person">
+                  <span class="td">
+                    <span class="label">Nombre:</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-name">Gloria</span>
+                  </span>
+                  <span class="td" itemscope itemtype="http://schema.org/Organization">
+                    <span class="label">Función</span>
+                    <span class="data" itemprop="name" aria-labelledby="th-org">Asistente</span>
+                  </span>
+                  <span class="td">
+                    <span class="label">Correo</span>
+                    <span class="data" itemprop="email" aria-labelledby="th-email">
+                      <a href="mailto:kari.nordmann@acme-corp.no">Gloria...</a>
+                    </span>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="expresion_de_genero1" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">EXPRESIÓN DE GÉNERO</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Es la forma en la que cada persona expresa expresamos nuestro género, por ejemplo, a través de la vestimenta, el comportamiento, los intereses y las afinidades. Esto trasciende las percepciones estereotipadas o estandarizadas de la sociedad en cuanto a lo femenino, masculino y andrógino (la combinación de ambos).</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="genero" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">GÉNERO</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Categoría que analiza cómo se definen, representan y simbolizan las diferencias sexuales en una determinada sociedad. Así pues, es el conjunto de ideas, creencias y atribuciones sociales, construidas en cada cultura y momento histórico, tomando como base la diferencia sexual; a partir de ello se construyen los conceptos de “masculinidad” y “feminidad”, los cuales determinan el comportamiento, las funciones, oportunidades,valoración y las relaciones entre mujeres y hombres. Son construcciones socioculturales que pueden modificarse, dado que han sido aprendidas. Las aprendemos a partir de la interrelación familiar y social.</p>
+            <br />
+            <p class="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="identidad_de_genero" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">IDENTIDAD DE GÉNERO</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Es la vivencia interna e individual del género tal y como cada persona la experimenta, la cual podría corresponder o no, con su sexo biológico. Por lo tanto, es una construcción personal, social y cultural y no un hecho determinado.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal SEXISMO-->
+    <div class="modal fade" id="sexismo1" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">SEXISMO</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Se refiere a todas aquellas prácticas y actitudes que promueven el trato diferenciado de las personas en razón de su sexo biológico, del cual se asumen características y comportamientos que se espera, las mujeres y los hombres, actúen cotidianamente. El sexismo puede incluir diferentes creencias o actitudes: La creencia de que un sexo es superior o inferior al otro, la actitud de misoginia o misandria, la actitud de imponer una noción de masculinidad (género) a los hombres (sexo) y una noción de feminidad (género) a las mujeres (sexo), el menosprecio o la ocultación de las mujeres, la burla o la descalificación hacia la apariencia o conducta de las mujeres o de los hombres, referencias que aluden despectivamente a la sexualidad de hombres o mujeres, entre otras.</p>
+            <br />
+            <p class="referencia">Punto Género - INMUJERES. Disponible en: http://puntogenero.inmujeres.gob.mx/Portal/madig/sexismo/</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal TIPOS DE VIOLENCIA-->
+    <div class="modal fade" id="tipos_de_violencia" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">TIPOS DE VIOLENCIA</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Corresponden a los tipos de violencia definidos en Ley General de Acceso de las Mujeres a una Vida Libre de Violencia, generalizados a las y los integrantes de la Universidad. Los tipos de violencia son: violencia psicológica, violencia física, violencia patrimonial, violencia económica, violencia sexual y cualesquiera otras formas análogas que lesionen o sean susceptibles de dañar la dignidad, integridad o libertad de las personas.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal MODALIDADES DE VIOLENCIA-->
+    <div class="modal fade" id="modalidades_de_violencia1" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">MODALIDADES DE VIOLENCIA</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Las formas, manifestaciones o los ámbitos de ocurrencia en que se presenta la violencia de género.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="acoso_sexual" role="dialog">
+      <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">ACOSO SEXUAL</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <p>Toda actividad con connotación sexual que sucede entre dos personas sin que medie el consentimiento de alguna de ellas. El acoso se puede manifestar entre adultos, de un adulto a un menor o incluso entre menores. El acoso sexual es una forma de violencia en la que, si bien no existe la subordinación, hay un ejercicio abusivo de poder que conlleva a un estado de indefensión y de riesgo para la víctima, independientemente de que se realice en uno o varios eventos.</p>
+            <p>Los comportamientos que se califican como acoso sexual pueden ser tanto físicos (violencia física, tocamientos, acercamientos innecesarios) como verbales (comentarios y preguntas sobre el aspecto, el estilo de vida, la orientación sexual; llamadas de teléfono ofensivas, mensajes de texto, correo electrónico, etc.) y no verbales (silbidos, gestos de connotación sexual, presentación de objetos pornográficos).</p>
+            <br />
+            <p class="referencia">Ugalde, Y., Ramírez, M.A. y Larralde, S. (2013). Glosario de Género. México: INMUJERES. <br /> Ley General de Acceso de las Mujeres a Una Vida Libre de Violencia. <br />Organización Internacional del Trabajo </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">CERRAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      filterSelection_1("basico_aprender")
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+      function filterSelection_1(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDivAprender");
+        if (c == "all") c = " ";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
 
-// Add active class to the current button (highlight it)
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      // Add active class to the current button (highlight it)
       var btnContainer = document.getElementById("navAprender");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-    
-    
-  <script>
-filterSelection("foros")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDivContribuir");
-  if (c == "all") c = " ";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script>
+      filterSelection("foros")
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDivContribuir");
+        if (c == "all") c = " ";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
 
-// Add active class to the current button (highlight it)
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      // Add active class to the current button (highlight it)
       var btnContainer = document.getElementById("navContribuir");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-<script>
-filterSelection_2("mapas_ayuda")
-function filterSelection_2(c) {
-  var x, i;
-  x = document.getElementsByClassName("filterDivAyudar");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script>
+      filterSelection_2("mapas_ayuda")
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+      function filterSelection_2(c) {
+        var x, i;
+        x = document.getElementsByClassName("filterDivAyudar");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("navAyudar");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-</script>
-	<script>
-var currentTab = 0; // Current tab is set to be the first tab (0)
-showTab(currentTab); // Display the crurrent tab
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
 
-function showTab(n) {
-  // This function will display the specified tab of the form...
-  var x = document.getElementsByClassName("tab");
-  x[n].style.display = "block";
-  //... and fix the Previous/Next buttons:
-  if (n == 0) {
-    document.getElementById("prevBtn").style.display = "none";
-  } else {
-    document.getElementById("prevBtn").style.display = "inline";
-  }
-  if (n == (x.length - 1)) {
-    document.getElementById("nextBtn").innerHTML = "ACEPTAR";
-  } else {
-    document.getElementById("nextBtn").innerHTML = "Siguiente" + "<span class='glyphicon glyphicon-menu-right'></span>";
-  }
-  //... and run a function that will display the correct step indicator:
-  fixStepIndicator(n)
-}
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("navAyudar");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+    <script>
+      var currentTab = 0; // Current tab is set to be the first tab (0)
+      showTab(currentTab); // Display the crurrent tab
+      function showTab(n) {
+        // This function will display the specified tab of the form...
+        var x = document.getElementsByClassName("tab");
+        x[n].style.display = "block";
+        //... and fix the Previous/Next buttons:
+        if (n == 0) {
+          document.getElementById("prevBtn").style.display = "none";
+        } else {
+          document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (n == (x.length - 1)) {
+          document.getElementById("nextBtn").innerHTML = "ACEPTAR";
+        } else {
+          document.getElementById("nextBtn").innerHTML = "Siguiente" + " < span class = 'glyphicon glyphicon-menu-right' > < /span>";
+        }
+        //... and run a function that will display the correct step indicator:
+        fixStepIndicator(n)
+      }
 
-function nextPrev(n) {
-  // This function will figure out which tab to display
-  var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab >= x.length) {
-    // ... the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
-  }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
-}
+      function nextPrev(n) {
+        // This function will figure out which tab to display
+        var x = document.getElementsByClassName("tab");
+        // Exit the function if any field in the current tab is invalid:
+        if (n == 1 && !validateForm()) return false;
+        // Hide the current tab:
+        x[currentTab].style.display = "none";
+        // Increase or decrease the current tab by 1:
+        currentTab = currentTab + n;
+        // if you have reached the end of the form...
+        if (currentTab >= x.length) {
+          // ... the form gets submitted:
+          document.getElementById("regForm").submit();
+          return false;
+        }
+        // Otherwise, display the correct tab:
+        showTab(currentTab);
+      }
 
-function validateForm() {
-  // This function deals with validation of the form fields
-  var x, y, i, valid = true;
-  x = document.getElementsByClassName("tab");
-  y = x[currentTab].getElementsByTagName("input");
-  // A loop that checks every input field in the current tab:
-  for (i = 0; i < y.length; i++) {
-    // If a field is empty...
-    if (y[i].value == "") {
-      // add an "invalid" class to the field:
-      y[i].className += " invalid";
-      // and set the current valid status to false
-      valid = false;
-    }
-  }
-  // If the valid status is true, mark the step as finished and valid:
-  if (valid) {
-    document.getElementsByClassName("step")[currentTab].className += " finish";
-  }
-  return valid; // return the valid status
-}
+      function validateForm() {
+        // This function deals with validation of the form fields
+        var x, y, i, valid = true;
+        x = document.getElementsByClassName("tab");
+        y = x[currentTab].getElementsByTagName("input");
+        // A loop that checks every input field in the current tab:
+        for (i = 0; i < y.length; i++) {
+          // If a field is empty...
+          if (y[i].value == "") {
+            // add an "invalid" class to the field:
+            y[i].className += " invalid";
+            // and set the current valid status to false
+            valid = false;
+          }
+        }
+        // If the valid status is true, mark the step as finished and valid:
+        if (valid) {
+          document.getElementsByClassName("step")[currentTab].className += " finish";
+        }
+        return valid; // return the valid status
+      }
 
-function fixStepIndicator(n) {
-  // This function removes the "active" class of all steps...
-  var i, x = document.getElementsByClassName("step");
-  for (i = 0; i < x.length; i++) {
-    x[i].className = x[i].className.replace(" active", "");
-  }
-  //... and adds the "active" class on the current step:
-  x[n].className += " active";
-}
-</script>
-    
-</body>
+      function fixStepIndicator(n) {
+        // This function removes the "active" class of all steps...
+        var i, x = document.getElementsByClassName("step");
+        for (i = 0; i < x.length; i++) {
+          x[i].className = x[i].className.replace(" active", "");
+        }
+        //... and adds the "active" class on the current step:
+        x[n].className += " active";
+      }
+    </script>
+  </body>
 </html>
