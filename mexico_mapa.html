@@ -1,39 +1,35 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>OGJ: Mapa de centros de ayuda</title>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="http://maps.google.com/maps/api/js?sensor=true&language=en"></script>
-       <link rel="shortcut icon" href="images/asset11.png" />
-    <script src="gmaps.js"></script>
-    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
-      <link href="css/estilosinternas.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="examples.css" />
-
-                <style> 
-                    #filtrar > div > label{border: 1px solid white;    margin-bottom: 36px;
-    margin-top: -27px;}
-               
-                    /*.topnav{position: relative; left: 90px;}
-    .topnav a { line-height: 20px; letter-spacing: 1px;
-        margin-top: 10px; border-left: 1px white solid;} 
-                    body > p{margin-left: 20px; margin-top: 50px;}
-                    body > div > div.custom-select > select{    padding: 10px 10px;font-size: 1.2em;}
-              nav{margin-top: -32px;margin-left: -120px;}*/
-                    p {
-                        font-size: 3em;}
-                    #filtrar > h3{ font-size: 2em;}
-                    #filtrar > div{padding: 12px 20.5%; font-size: 1.6em;line-height: 46px;
+<!Doctype html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Universidad Iberoamericana, Observatorio de Juventud y Género, Diseño Interactivo">
+    <meta name="description" content="El Observatorio de Género y Juventud busca promocionar la igualdad y equidad de género como objetivo de disminuir y erradicar la violencia de género en la juventud en el ámbito familiar, escolar, de pareja, profesional, laboral, etc. Todo esto mediante actividades como talleres, reuniones cómo pláticas y conferencias e informando a las personas por medio de artículos de investigación, estadísticas y otros datos cuantitativos. 
+">
+    <meta name="keywords" content="Observatorio, juventud, género, jóvenes, test, cuestionarios, testimonios, centros de ayuda, mapa, datos estadísticos, violencia, violencia de género, violencia de pareja, violencia familiar, foros, ayuda, centros de ayuda. ">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Observatorio de Género y Juventud</title>
+ <link rel="shortcut icon" href="images/finalOGO.png" />
+      <link href="css/estilos.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+     <link rel="stylesheet" href="css/maxcdn.bootstrapcdn.css">
+     <link href="aprender_estilo.css" rel="stylesheet">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="css/bootstrap-grid.css"></script>
+	<style>
+    #filtrar > h3{ font-size: 2em;}
+    #filtrar > div{padding: 12px 20.5%; font-size: 1.6em;line-height: 46px;
     border: 1px solid white;     display: flex;
     justify-content: center;
     flex-direction: row;
     flex-flow: row;
     flex-wrap: wrap;} 
           
-     #map {
+    #map {
     width: 65%;
-         height: 550px;}               
+    height: 550px;}               
 #filtrar {
     position: relative;
     width: 28%;
@@ -41,162 +37,289 @@
     top: -582px;
     background: black;
 }
-* {
-    font-family: 'Barlow Semi Condensed', sans-serif;
-}
-user agent stylesheet
-div {
-    display: block;
-}
-body>div {
-    max-width: 1920px;
-    margin: 0 auto;
-    color: #fff;
-    text-align: center;
-}
-               #filtrar > div > label{flex-basis: 100%;}
- .custom-select {
-    width: 59%;
-    position: relative;
-    left: 0%;
-    top: 47px;
-    padding: 10px 10px;
-}     
-
-        left: 74%;}  
-                    body > div.row > div.custom-select > select{font-size: 1em;}           
-    </style>
-         <style>
-    a{color: white !important;}
-    h1{float: left;height: 44px;
-    margin-top: 3px;
-    position: relative;
-    left: 5%;}
-body {color: white !important; margin:0;background-color: #2E2E2C !important;}
-	h1{ height: 60px;margin-top: 5px; width: 40%; text-indent: -99999999px;background: url(images/logo_NAV.png) 40%/30% no-repeat;float: left;}
-.dropdown, .dropup {
-    position: unset;
-}
-.topnav {
-  overflow: hidden;
-  background:url(images/nav_bar.png) repeat-x;
+		.close{color: black !important;}
+		.table{
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  padding: 3px;
+	background-color: white;color: black;
 }
 
-.topnav a {
-  float: left;
-  display: block;
-  color: white;
+.caption{
+  display: table-caption;
   text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-	background-color: #181719;
-	border-right: 1px solid;
-	font-family: 'barlow semi condensed';
+  font-weight: bold;
 }
 
-.active {
-  background-color: #4CAF50;
-  color: white;
+.thead{
+  display: table-header-group;
+  font-weight: bold;
 }
 
-.topnav .icon {
+.tbody{
+  display: table-row-group;
+}
+
+.tr{
+  display: table-row;
+}
+
+  #cajas_principales_ayudar{width: 89% !important; margin-top: 30px;}
+
+        #navAprender{word-spacing: 57px;}
+       
+
+.th,
+.td{
+  display: table-cell;
+}
+
+.td{
+  padding: 10px 0;
+}
+
+.label{
   display: none;
 }
 
-.dropdown {
-    float: left ;
-    overflow: hidden ;
-}
-
-.dropdown .dropbtn {
-    font-size: 17px;    
-    border: none;
-    outline: none;
-    color: white !important;
-    padding: 14px 16px !important;
-    background-color: #181719;
-    font-family: 'barlow semi condensed';
-    margin: 0;border-right: 1px solid;
-}
-
-.dropdown-content {
+@media all and (max-width: 600px){
+  .thead{
     display: none;
-    position: absolute ;
-    background-color: white;
-	color: white !important;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  }
+  .tr{
+    display: block;
+    margin-bottom: 1.5em;
+    padding: 10px;
+  }
+  .td{
+    display: inherit;
+    padding: 0;
+  }
+  .label{
+    font-weight: bold;
+    display: inline-block;
+    min-width: 120px;
+  }  
 }
+    
+    
+    </style>
+    <style>
+       /* #navAprender1{ width: 65%;margin: 0 auto; border: solid 1px white}*/
+		  .preguntas{
+        width: 80%;color: white;
+    }
 
-.dropdown-content a {
-    float: none !important;
+
+	.modal-body, .modal-header, .modal-footer{background-color:white !important;color: black !important;}
+	#nextBtn{
+		    background-color: #00AB9E !important;color: white;border:none;    width: 150px;
+    height: 50px !important;
+	}
+		.tab{color: black !important;}
+	#prevBtn {
+    background-color: #2E2E2C !important;
     color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
+    border: none;    width: 150px!important;
+    height: 50px !important;
+}
+	.step, .step.finish{
+		background-color: #00AB9E;
+	}
+.icono_foro_contribuir {
+    width: 60px;
+    height: 54px;
+    margin: auto;
+    background: url(images/foro.png) 100% 100%/ 100% no-repeat;
+    text-indent: -99999px;
+}
+       #cajas_principales_contribuir > p {
+    font-size: 1.4em;
 }
 
-.topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: #555;
-  color: white;
+        #navAprender > button.btn1:focus{color: rgb(107, 211, 123);text-decoration: underline;}
+        #navContribuir > button.btn:focus{color: #20dbb0;text-decoration: underline;}
+        #navAyudar > button.btn:focus{color: rgb(107, 211, 123);text-decoration: underline;}
+.icono_cuestionario_contribuir {
+    width: 88px;
+    height: 100px;
+    margin: auto;
+    background: url(images/logo1_ayudar2.png) 44% 78%/ 61% no-repeat;
+    text-indent: -99999px;
 }
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
+        #footerh2 > h2:nth-child(1)>a{color: white;} #boton_ver_mas_glosario_aprender{width: 24%;}
+        #elBoton > p{position: relative; left: -70%;}
+        #texto_de_caja{margin-top: 0px;}
+    #parrafos1{margin-top: 50px; font-size: 1.5em;border: 1px solid white;}
+        .parrafosboton{margin: 10px auto; padding:10px;}
+        h4, h4 { margin-top: 0px;
+    font-size: 1.5rem;
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
+  .recursos_distancia{
+            background-color: black;
+        }
+  header h1 span{width: 60%; height: 160px; background: url(images/OGO.png) 51% 53%/10s0px no-repeat; text-indent: -99999px; 
+display: inline-block;} 
         
-	
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .topnav.responsive .dropdown {float: none;}
-  .topnav.responsive .dropdown-content {position: relative;}
-  .topnav.responsive .dropdown .dropbtn {
-    display: block;
-    width: 100%;
-    text-align: left;
-  }
+    .filterDivAyudar {
+  color: #ffffff;
+
+  text-align: center;
+  margin: 2px;
+  display: none;
 }
-    @media screen and (max-width: 959px){ and (min-width: 768px)
-#myTopnav > a {
-    position: relative;
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+        .recursos_distancia, #cajas_principales_testimonios{
+            background-color: #181719;
+            margin-top: 20px;height: 300px;width: 70%;margin: 0 auto;
+        }
+        .voz_ayudar{
+              background-color: black;
+            margin-top: 20px;height: 300px;width: 83%;margin: 0 auto;            
+        }
+        .voz_ayudar>h3{ margin-top: 20px;}
+         .recursos_distancia,.voz_ayudar >h3{
+           margin-top: 20px;
+        }
+       p#centros{
+            width: 80%;
+            margin: 0 auto;
+        }
+             .recursos_distancia >button{
+            margin-top: 20px;
+        }
+      
+       
+        h3{
+            font-family: 'Sequel Neue';
+        
+        }
+          #navAprender > button:hover{color: rgb(107, 211, 123);}
+
+        @media screen and (max-width: 360px){
+           #seccion_aprender_inicio > div.container_ayudar_inicio > div.filterDivAyudar.recursos_ayudar.show, #seccion_aprender_inicio > div.container_ayudar_inicio > div.filterDivAyudar.historias_ayudar.show{ background: url(images/aprenderg6.png) 100% 100% / 100% no-repeat;}
+            #cajas_principales_ayudar{margin-top: 20px !important;}
+            #cajas_principales_ayudar > div > div:nth-child(2) > button{margin-top: 17px;}
+          #cajas_principales_contribuir > p:nth-child(4), #cajas_principales_contribuir > p:nth-child(3), #texto_de_caja{text-align: left; font-size: 1em !important;}
+            #cajas_principales_contribuir > p{font-size: 1em;}
+            #seccion_contribuir_inicio h3 {
+margin-top: 0px;
+}
+            #parrafos1{font-size: 1em;}
+            .recursos_distancia >button {
+     margin-top: 0px;
+}
+              #cajas_principales_ayudar > div > div:nth-child(2) > div{border: 1px solid white}
+                 .mapacentros{
+            width: 100%;
+                     height: 300px;
+            margin: 0 auto;
+                   
+            background: url(images/aprenderg5.png) 48%/100%  no-repeat !important;
+            }
+        }
+        @media screen and (min-width:768px){ 
+              .recursos_distancia>p{width: 40%;margin: 0 auto;}
+            #centros > p {
+    text-align: left;
+    background-color: black;
+    font-size: 1em;
+}
+             .voz_ayudar>p{width: 40%;margin: 0 auto;}
+     .mapacentros{
+            width: 83%;
+            margin: 0 auto;
+            margin-top: 20px;
+            background: url(images/ayudar.png) 48%/92%  no-repeat !important ;
+            }}
+
+        .filtro_mapa{
+            width: 50%;
+        }
+        #boton_ver_todos_los_eventos_aprender > a{font-size: 1.3em;}
+    .margin-top
+        #navAyudar{background-color: ##2E2E2C; border: 2px solid white;}
+        
+        #cajas_principales_ayudar{height: auto;}  
+        #i > div{width:92%;margin: 0 auto;    position: relative;
     left: 8%;
-        }}
-    @media screen and (min-width: 960px){
-#myTopnav > a {
-    position: relative;
-    /* left: 20%; */
-    font-size: 1.2em;
-    }}
-</style>
-    <script>
+    top: 20px;}
+       #i{    position: relative;
+    top: 20px;
+    left: 13%;
+    width: 90%;}
+     #aprender_del_tema:hover, #contribuir_al_tema:hover, #dar_recibir_ayuda:hover{    background-color: #9a34b2;} 
+				@media screen and (max-width: 768px){
+					footer{height: 700px !important;}
+		}
+		@media screen and (max-width: 1920px){
+			footer{height: 1000px;}
+		}
+    </style>
+    
+</head>
+<body style="background-color: #2E2E2C;" >
+ <div>
+  
+<header id="arriba">
+
+      <nav>
+      <div class="topnav" id="myTopnav"> 
+        <img  id="logo-NAV" src="images/logo_NAV.png"> 
+            
+          <a href="#acerca"  class="active">INICIO </a>
+            <a href="#inicio1">ACERCA</a>
+            <a href="#contacto" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style=";border:none;" >CONTACTO</a>
+            <a href="#aprender">APRENDER </a>
+            <a href="#contribuir" >CONTRIBUIR</a>
+            <a href="#ayudar">PARTICIPAR</a>  
+             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+      </nav>
+  <h1 id="acerca"><span>g</span>OBSERVATORIO DE GÉNERO Y JUVENTUD</h1>
+   
+    <h3><span>AYUDAR</span>MAPA DE CENTROS DE AYUDA</h3>
+      <p id="arriba" style="font-weight: 900;"> <span style="font-weight: 100;">AYUDAR</span> / MAPA DE CENTROS DE AYUDA</p>
+  <iframe width="100%" height="576" src="https://maphub.net/embed/41197?button=0&panel=1" frameborder="0"></iframe>
+    </div> 
+<footer>
+
+  
+  <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR ARRIBA</a></p></div>  
+    <div><div class="row" id="footerh2"><h2 class="col-sm-4"><button type="button" class="btn " style="background-color: inherit;" data-toggle="modal" data-target="#exampleModalLong">
+AVISO DE PRIVACIDAD</button></h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4"><button class="btn" data-toggle="modal" data-target="#myModal2" style="background-color: inherit;">CONTACTO</button></h2></div></div>
+
+    <div class="row">
+        <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>APRENDER</h3><p  ><a href="glosario.html">Glosario</a></p><p><a href="preguntas.html">Preguntas frecuentes</a></p><p>Mapa de datos estadísticos</p><p><a href="articulos.html">Artículos informativos</a></p><p><a href="#">Testimonios</a></p><p ><a href="tests"> Tests</a></p><p><a href="">Eventos</a></p></div>
+    <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>CONTRIBUIR</h3><p><a href="foros.html">Foro de Discusión</a></p><p><a href="cuestionario.html">Cuestionarios de investigación</a></p></div>
+    <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>AYUDAR</h3><p><a href="mexico_mapa.html">Mapa de Centros de Ayuda</a></p><p><a href="mexico_mapa.html">Recursos a Distancia</a></p><p><a>Compartir testimonio</a></p></div>  
+  </div><div style="text-align: right;width: 90%;margin: 0 auto;"><p style="font-size: 1.5em;">Universidad Iberoamericana 2018</p></div>
+   
+    </footer>        
+    </div>
+  <!-- SCRIPT DE MENU DESPLEGABLE -->
+ 
+<script> 
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script> 
+
+      <script>
         $(function () {
           var map = new GMaps({
           el: "#map",
@@ -356,127 +479,6 @@ body {color: white !important; margin:0;background-color: #2E2E2C !important;}
         map.setStyle("map_style");
       });
     </script>
-  </head>
-  <body>
- <div class="topnav" id="myTopnav">
-	     
-<h1 >OBSERVATORIO DE GÉNERO Y JUVENTUD</h1>
-	<div id="arriba" style="margin-left: 25%;margin-top: 10px;">
-<h2 style="display: none;">Menu de navegación</h2>
-  <a href="index.html" class="active">INICIO</a>
-  <a href="index.html#">ACERCA</a>
-  <a  data-toggle="modal" data-target="#myModal2">CONTACTO</a>
-  <div class="dropdown">
-    <button class="dropbtn">APRENDER 
-    </button>
-    <div class="dropdown-content">
-      <a href="glosario.html">GLOSARIO</a>
-      <a href="preguntas.html">PREGUNTAS FRECUENTES</a>
-      
-	<a href="articulos.html">ARTICULOS</a>
-
-
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">CONTRIBUYE 
-    </button>
-    <div class="dropdown-content">
-      <a href="foros.php">FOROS</a>
-      <a href="cuestionario.php">CUESTIONARIO</a>
-    </div>
-  </div> 
-  <div class="dropdown">
-    <button class="dropbtn">AYUDA
-    </button>
-    <div class="dropdown-content">
-      <a href="#">CENTROS DE AYUDA</a>
-      <a href="#">TESTIMONIOS</a>
-      <a href="#">RECURSOS A DISTANCIA</a>
-    </div>
-  </div> 
-	
-</div>
-	
-  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-</div> 
-    <h3><span>AYUDAR</span>MAPA DE CENTROS DE AYUDA</h3>
-      <p id="arriba" style="font-weight: 900;"> <span style="font-weight: 100;">AYUDAR</span> / MAPA DE CENTROS DE AYUDA</p>
-  <iframe width="100%" height="576" src="https://maphub.net/embed/41197?button=0&panel=1" frameborder="0"></iframe>
-
-  <footer>
-<style>
-    footer{height: 900px;}
-    body > div > footer{background-color: #181719;}
-    body > div > footer{margin-top: -155px;}
-   .column {
-    /* margin-bottom: 65px; */
-    /* margin: 0 auto; */
-    max-width: 24%;
-    float: left;
-    /* font-size: 1em; */
-    margin: 0 auto;
-    width: 19.33%;
-    border: 2px solid #181719; 
-    padding: 87.2px;
-    height: 300px;
-    background-color: #181719;
-}
-    body > div > footer > div.row > div > div{ border: 2px solid #f2526e;     width: 320px;}
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-      body > div > footer > div.row {
-    /* margin: 0 auto; */
-    margin-top: 89px;
-}
-    body > div > footer > div.row > div > div > li, body > div > footer > div.row > div:nth-child(2) > li, body > div > footer > div.row > div:nth-child(3) > li{
-            list-style: none;
-    text-decoration: none;
-    font-size: 1.8em;
-        
-    }
-    body > div > footer > div.row > div > p{font-size: 2em;    margin-top: -79px;}
-    body > div > footer > div.row > div:nth-child(2) > div,   body > div > footer > div.row > div:nth-child(3) > div{height: 381px;}
-    body > div > footer > div.row > div> div > li > a, body > div > footer > div.row > div:nth-child(2) > li > a, body > div > footer > div.row > div:nth-child(3) > li > a{    color: white;
-    text-decoration: none;}
-    body > div > footer > div.row{height: 521px;}
-      </style>
-  
-  <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR </a></p></div>  
-
-<div class="row">
-  <div class="column" >
-       <p>AVISO DE PRIVACIDAD</p>
-    <div>
-      <h2>APRENDER</h2>
-   
-        <li ><a href="glosario.html">Glosario</a></li><li><a href="preguntas.html">Preguntas frecuentes</a></li><li><a href="mapa_estadistico.html">Mapa de datos estadísticos</a></li><li><a href="articulos.html">Artículos informativos</a></li><li><a href="#">Testimonios</a></li><li><a href="tests"> Tests</a></li><li><a href="">Eventos</a></li></div>
-      
-  </div>
-  <div class="column" >
-          <p>MAPA DEL SITIO</p>
-  <div>  <h2>CONTRIBUIR</h2>
-
-      <li><a href="foros.html">Foro de Discusión</a></li><li><a href="cuestionario.html">Cuestionarios de investigación</a></li></div>
-  </div>
-  <div class="column" >
-      <p>CONTACTO</p>
-   <div>
-       <h2>PARTICIPAR</h2>
     
-      <li><a href="mexico_mapa.html">Mapa de Centros de Ayuda</a></li><li><a href="mexico_mapa.html">Recursos a Distancia</a></li><li><a>Compartir testimonio</a></li>
-      </div>
-  </div>
-</div>
-    </footer> 
-        
-    
-
-      
-    </div>
-  </body>
+</body>
 </html>
