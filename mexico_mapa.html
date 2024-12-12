@@ -1,422 +1,222 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="es" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="Universidad Iberoamericana, Observatorio de Juventud y Género, Diseño Interactivo">
-    <meta name="description" content="El Observatorio de Género y Juventud busca promocionar la igualdad y equidad de género como objetivo de disminuir y erradicar la violencia de género en la juventud en el ámbito familiar, escolar, de pareja, profesional, laboral, etc. Todo esto mediante actividades como talleres, reuniones cómo pláticas y conferencias e informando a las personas por medio de artículos de investigación, estadísticas y otros datos cuantitativos. 
-">
-    <meta name="keywords" content="Observatorio, juventud, género, jóvenes, test, cuestionarios, testimonios, centros de ayuda, mapa, datos estadísticos, violencia, violencia de género, violencia de pareja, violencia familiar, foros, ayuda, centros de ayuda. ">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="description" content="El Observatorio de Género y Juventud busca promocionar la igualdad y equidad de género como objetivo de disminuir y erradicar la violencia de género en la juventud en el ámbito familiar, escolar, de pareja, profesional, laboral, etc. Todo esto mediante actividades como talleres, reuniones cómo pláticas y conferencias e informando a las personas por medio de artículos de investigación, estadísticas y otros datos cuantitativos.">
+    <meta name="keywords" content="Observatorio, juventud, género, jóvenes, test, cuestionarios, testimonios, centros de ayuda, mapa, datos estadísticos, violencia, violencia de género, violencia de pareja, violencia familiar, foros, ayuda, centros de ayuda.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Observatorio de Género y Juventud</title>
- <link rel="shortcut icon" href="images/finalOGO.png" />
-      <link href="css/estilos.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-     <link rel="stylesheet" href="css/maxcdn.bootstrapcdn.css">
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="shortcut icon" href="images/finalOGO.png">
+    <link href="css/estilos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/maxcdn.bootstrapcdn.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="css/bootstrap-grid.css"></script>
-	<style>
-    #filtrar > h3{ font-size: 2em;}
-    #filtrar > div{padding: 12px 20.5%; font-size: 1.6em;line-height: 46px;
-    border: 1px solid white;     display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-flow: row;
-    flex-wrap: wrap;} 
-          
-    #map {
-    width: 65%;
-    height: 550px;}               
-#filtrar {
-    position: relative;
-    width: 28%;
-    left: 68%;
-    top: -582px;
-    background: black;
-}
-		.close{color: black !important;}
-		.table{
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  padding: 3px;
-	background-color: white;color: black;
-}
 
-.caption{
-  display: table-caption;
-  text-align: center;
-  font-weight: bold;
-}
-
-.thead{
-  display: table-header-group;
-  font-weight: bold;
-}
-
-.tbody{
-  display: table-row-group;
-}
-
-.tr{
-  display: table-row;
-}
-
-  #cajas_principales_ayudar{width: 89% !important; margin-top: 30px;}
-
-        #navAprender{word-spacing: 57px;}
-       
-
-.th,
-.td{
-  display: table-cell;
-}
-
-.td{
-  padding: 10px 0;
-}
-
-.label{
-  display: none;
-}
-
-@media all and (max-width: 600px){
-  .thead{
-    display: none;
-  }
-  .tr{
-    display: block;
-    margin-bottom: 1.5em;
-    padding: 10px;
-  }
-  .td{
-    display: inherit;
-    padding: 0;
-  }
-  .label{
-    font-weight: bold;
-    display: inline-block;
-    min-width: 120px;
-  }  
-}
-    
-    
-    </style>
     <style>
-	.step, .step.finish{
-		background-color: #00AB9E;
-	}
-
-   #footerh2 > h2:nth-child(1)>a{color: white;} #boton_ver_mas_glosario_aprender{width: 24%;}
-        #elBoton > p{position: relative; left: -70%;}
-        #texto_de_caja{margin-top: 0px;}
-    #parrafos1{margin-top: 50px; font-size: 1.5em;border: 1px solid white;}
-        .parrafosboton{margin: 10px auto; padding:10px;}
-        h4, h4 { margin-top: 0px;
-    font-size: 1.5rem;
-  }
-  .recursos_distancia{
-            background-color: black;
+        body {
+            background-color: #2E2E2C;
         }
-  header h1 span{width: 60%; height: 160px; background: url(images/OGO.png) 51% 53%/10s0px no-repeat; text-indent: -99999px; 
-display: inline-block;} 
-        
-    .filterDivAyudar {
-  color: #ffffff;
 
-  text-align: center;
-  margin: 2px;
-  display: none;
-}
-
-.show {
-  display: block;
-}
-
-
-      
-       
-        h3{
-            font-family: 'Sequel Neue';
-        
+        #filtrar > h3 {
+            font-size: 2em;
         }
-          #navAprender > button:hover{color: rgb(107, 211, 123);}
 
-        @media screen and (max-width: 360px){
-           #seccion_aprender_inicio > div.container_ayudar_inicio > div.filterDivAyudar.recursos_ayudar.show, #seccion_aprender_inicio > div.container_ayudar_inicio > div.filterDivAyudar.historias_ayudar.show{ background: url(images/aprenderg6.png) 100% 100% / 100% no-repeat;}
-            #cajas_principales_ayudar{margin-top: 20px !important;}
-            #cajas_principales_ayudar > div > div:nth-child(2) > button{margin-top: 17px;}
-          #cajas_principales_contribuir > p:nth-child(4), #cajas_principales_contribuir > p:nth-child(3), #texto_de_caja{text-align: left; font-size: 1em !important;}
-            #cajas_principales_contribuir > p{font-size: 1em;}
-            #seccion_contribuir_inicio h3 {
-margin-top: 0px;
-}
-            #parrafos1{font-size: 1em;}
-            .recursos_distancia >button {
-     margin-top: 0px;
-}
-              #cajas_principales_ayudar > div > div:nth-child(2) > div{border: 1px solid white}
-                 .mapacentros{
+        #filtrar > div {
+            padding: 12px 20.5%;
+            font-size: 1.6em;
+            line-height: 46px;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        #map {
+            width: 65%;
+            height: 550px;
+        }
+
+        #filtrar {
+            position: relative;
+            width: 28%;
+            left: 68%;
+            top: -582px;
+            background: black;
+        }
+
+        .close {
+            color: black !important;
+        }
+
+        .table {
+            display: table;
+            table-layout: fixed;
             width: 100%;
-                     height: 300px;
-            margin: 0 auto;
-                   
-            background: url(images/aprenderg5.png) 48%/100%  no-repeat !important;
+            padding: 3px;
+            background-color: white;
+            color: black;
+        }
+
+        .caption {
+            display: table-caption;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .thead {
+            display: table-header-group;
+            font-weight: bold;
+        }
+
+        .tbody {
+            display: table-row-group;
+        }
+
+        .tr {
+            display: table-row;
+        }
+
+        .th,
+        .td {
+            display: table-cell;
+        }
+
+        .td {
+            padding: 10px 0;
+        }
+
+        .label {
+            display: none;
+        }
+
+        @media all and (max-width: 600px) {
+            .thead {
+                display: none;
+            }
+
+            .tr {
+                display: block;
+                margin-bottom: 1.5em;
+                padding: 10px;
+            }
+
+            .td {
+                display: block;
+                padding: 0;
+            }
+
+            .label {
+                font-weight: bold;
+                display: inline-block;
+                min-width: 120px;
             }
         }
-        @media screen and (min-width:768px){ 
-              .recursos_distancia>p{width: 40%;margin: 0 auto;}
-            #centros > p {
-    text-align: left;
-    background-color: black;
-    font-size: 1em;
-}
-             .voz_ayudar>p{width: 40%;margin: 0 auto;}
-     .mapacentros{
-            width: 83%;
-            margin: 0 auto;
-            margin-top: 20px;
-            background: url(images/ayudar.png) 48%/92%  no-repeat !important ;
-            }}
 
-        .filtro_mapa{
-            width: 50%;
+        .step,
+        .step.finish {
+            background-color: #00AB9E;
         }
-        #boton_ver_todos_los_eventos_aprender > a{font-size: 1.3em;}
-    .margin-top
-        #navAyudar{background-color: ##2E2E2C; border: 2px solid white;}
-        
-        #cajas_principales_ayudar{height: auto;}  
-        #i > div{width:92%;margin: 0 auto;    position: relative;
-    left: 8%;
-    top: 20px;}
-       #i{    position: relative;
-    top: 20px;
-    left: 13%;
-    width: 90%;}
-     #aprender_del_tema:hover, #contribuir_al_tema:hover, #dar_recibir_ayuda:hover{    background-color: #9a34b2;} 
-				@media screen and (max-width: 768px){
-					footer{height: 700px !important;}
-		}
-		@media screen and (max-width: 1920px){
-			footer{height: 1000px;}
-		}
+
+        #footerh2 > h2:nth-child(1) > a {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            footer {
+                height: 700px !important;
+            }
+        }
+
+        @media screen and (max-width: 1920px) {
+            footer {
+                height: 1000px;
+            }
+        }
     </style>
-    
 </head>
-<body style="background-color: #2E2E2C;" >
- <div>
-  
-<header id="arriba">
+<body>
+    <header id="arriba">
+        <nav>
+            <div class="topnav" id="myTopnav">
+                <img id="logo-NAV" src="images/logo_NAV.png" alt="Logo">
+                <a href="#acerca" class="active">INICIO</a>
+                <a href="#inicio1">ACERCA</a>
+                <a href="#contacto" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">CONTACTO</a>
+                <a href="#aprender">APRENDER</a>
+                <a href="#contribuir">CONTRIBUIR</a>
+                <a href="#ayudar">PARTICIPAR</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        </nav>
+        <h3><span>AYUDAR</span> MAPA DE CENTROS DE AYUDA</h3>
+        <p style="font-weight: 900;"> <span style="font-weight: 100;">AYUDAR</span> / MAPA DE CENTROS DE AYUDA</p>
+        <iframe width="100%" height="576" src="https://maphub.net/embed/41197?button=0&panel=1" frameborder="0"></iframe>
+    </header>
 
-      <nav>
-      <div class="topnav" id="myTopnav"> 
-        <img  id="logo-NAV" src="images/logo_NAV.png"> 
-            
-          <a href="#acerca"  class="active">INICIO </a>
-            <a href="#inicio1">ACERCA</a>
-            <a href="#contacto" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2" style=";border:none;" >CONTACTO</a>
-            <a href="#aprender">APRENDER </a>
-            <a href="#contribuir" >CONTRIBUIR</a>
-            <a href="#ayudar">PARTICIPAR</a>  
-             <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <footer>
+        <div id="regresar">
+            <p><a href="#arriba">REGRESAR ARRIBA</a></p>
         </div>
-      </nav>
-   
-    <h3><span>AYUDAR</span>MAPA DE CENTROS DE AYUDA</h3>
-      <p id="arriba" style="font-weight: 900;"> <span style="font-weight: 100;">AYUDAR</span> / MAPA DE CENTROS DE AYUDA</p>
-  <iframe width="100%" height="576" src="https://maphub.net/embed/41197?button=0&panel=1" frameborder="0"></iframe>
-    </div> 
-<footer>
+        <div>
+            <div class="row" id="footerh2">
+                <h2 class="col-sm-4">
+                    <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalLong">AVISO DE PRIVACIDAD</button>
+                </h2>
+                <h2 class="col-sm-4">MAPA DEL SITIO</h2>
+                <h2 class="col-sm-4">
+                    <button class="btn" data-toggle="modal" data-target="#myModal2">CONTACTO</button>
+                </h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>APRENDER</h3>
+                <p><a href="glosario.html">Glosario</a></p>
+                <p><a href="preguntas.html">Preguntas frecuentes</a></p>
+                <p>Mapa de datos estadísticos</p>
+                <p><a href="articulos.html">Artículos informativos</a></p>
+                <p><a href="#">Testimonios</a></p>
+                <p><a href="tests">Tests</a></p>
+                <p><a href="#">Eventos</a></p>
+            </div>
+            <div class="col-sm-4">
+                <h3>CONTRIBUIR</h3>
+                <p><a href="foros.html">Foro de Discusión</a></p>
+                <p><a href="cuestionario.html">Cuestionarios de investigación</a></p>
+            </div>
+            <div class="col-sm-4">
+                <h3>AYUDAR</h3>
+                <p><a href="mexico_mapa.html">Mapa de Centros de Ayuda</a></p>
+                <p><a href="mexico_mapa.html">Recursos a Distancia</a></p>
+                <p><a href="#">Compartir testimonio</a></p>
+            </div>
+        </div>
+        <div style="text-align: right; width: 90%; margin: 0 auto;">
+            <p style="font-size: 1.5em;">Universidad Iberoamericana 2018</p>
+        </div>
+    </footer>
 
-  
-  <div id="regresar" ><span>h</span> <p> <span>d </span><a href="#arriba">REGRESAR ARRIBA</a></p></div>  
-    <div><div class="row" id="footerh2"><h2 class="col-sm-4"><button type="button" class="btn " style="background-color: inherit;" data-toggle="modal" data-target="#exampleModalLong">
-AVISO DE PRIVACIDAD</button></h2><h2 class="col-sm-4">MAPA DEL SITIO</h2><h2 class="col-sm-4"><button class="btn" data-toggle="modal" data-target="#myModal2" style="background-color: inherit;">CONTACTO</button></h2></div></div>
-
-    <div class="row">
-        <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>APRENDER</h3><p  ><a href="glosario.html">Glosario</a></p><p><a href="preguntas.html">Preguntas frecuentes</a></p><p>Mapa de datos estadísticos</p><p><a href="articulos.html">Artículos informativos</a></p><p><a href="#">Testimonios</a></p><p ><a href="tests"> Tests</a></p><p><a href="">Eventos</a></p></div>
-    <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>CONTRIBUIR</h3><p><a href="foros.html">Foro de Discusión</a></p><p><a href="cuestionario.html">Cuestionarios de investigación</a></p></div>
-    <div class="col-sm-4" style="margin: 0 auto;"> <h3> <span></span>AYUDAR</h3><p><a href="mexico_mapa.html">Mapa de Centros de Ayuda</a></p><p><a href="mexico_mapa.html">Recursos a Distancia</a></p><p><a>Compartir testimonio</a></p></div>  
-  </div><div style="text-align: right;width: 90%;margin: 0 auto;"><p style="font-size: 1.5em;">Universidad Iberoamericana 2018</p></div>
-   
-    </footer>        
-    </div>
-  <!-- SCRIPT DE MENU DESPLEGABLE -->
- 
-<script> 
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-</script> 
-
-      <script>
-        $(function () {
-          var map = new GMaps({
-          el: "#map",
-          lat: 22.4878769,
-          lng: -105.1994265,
-          zoom: 4.55, 
-          zoomControl : true,
-          zoomControlOpt: {
-            style : "MEDIUM",
-            position: "TOP_LEFT"
-          },
-          panControl : true,
-          streetViewControl : false,
-          mapTypeControl: false,
-          overviewMapControl: false
-        });
-        map.addMarker({
-        lat: 20.6739383,
-        lng: -103.405454,
-        title: 'Jalisco',
-        infoWindow: {
-          content: '<strong>JALISCO</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
-        }
-      });
-        map.addMarker({
-        lat: 21.0152526,
-        lng: -101.2865662,
-        title: 'Guanajuato',
-        infoWindow: {
-          content: '<strong>GUANAJUATO</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
-        }
-      });
-        map.addMarker({
-        lat: 19.320931,
-        lng: -99.1353936,
-        title: 'CDMx',
-        infoWindow: {
-          content: '<strong>CDMX</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
-        }
-      });
-        map.addMarker({
-        lat: 28.6070771,
-        lng: -106.2047053,
-        title: 'Chihuahua',
-        infoWindow: {
-          content: '<strong>CHIHUAHUA</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
-        }
-      });
-        map.addMarker({
-        lat: 17.9926802,
-        lng: -93.0931999,
-        title: 'Tabasco',
-        infoWindow: {
-          content: '<strong>TABASCO</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
-        }
-      });
-        map.addMarker({
-        lat: 19.0509656,
-        lng: -98.1791949,
-        title: 'Puebla',
-        infoWindow: {
-          content: '<strong>PUEBLA</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
-        }
-      });
-        map.addMarker({
-        lat: 18.7324794,
-        lng: -99.6240323,
-        title: 'Morelos',
-        infoWindow: {
-          content: '<strong>MORELOS</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
-        }
-      });
-        map.addMarker({
-        lat: 20.6122835,
-        lng: -100.4802581,
-        title: 'Queretaro',
-        infoWindow: {
-          content: '<strong>QUERETARO</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
-        }
-      });
-        map.addMarker({
-        lat: 20.0547463,
-        lng: -99.376223,
-        title: 'Hidalgo',
-        infoWindow: {
-          content: '<strong>HIDALGO</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
-        }
-      });
-        map.addMarker({
-        lat: 19.3255709,
-        lng: -99.7012544,
-        title: 'Edo. Mexico',
-        infoWindow: {
-          content: '<strong>EDO.MEX</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
-        }
-      });
-        map.addMarker({
-        lat: 25.6490376,
-        lng: -100.4431835,
-        title: 'Nuevo Leon',
-        infoWindow: {
-          content: '<strong>NUEVO LEON</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
-        }
-      });
-        map.addMarker({
-        lat: 18.8820886,
-        lng: -103.7636274,
-        title: 'Colima',
-        infoWindow: {
-          content: '<strong>COLIMA</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
-        }
-      });
-        map.addMarker({
-        lat: 22.1129779,
-        lng: -101.0961572,
-        title: 'San Luis Potosi',
-        infoWindow: {
-          content: '<strong>SAN LUIS POTOSI</strong><br/>Estadísticas de Violencia de Género en el Estado:<br/>• <a href="#" target="_blank">Descargar pdf</a>'
-        }
-      });
-        map.addMarker({
-        lat: 16.7461501,
-        lng: -93.1996107,
-        title: 'Chiapas',
-        infoWindow: {
-          content: '<strong>CHIAPAS</strong><br/>Centros de Apoyo:<br/>• <strong>Centro Ayuda a Jóvenes</strong> <br/><em>Dirección: Calle 2, Col. Mirasol”.</em>'
-        }
-      });
-        var styles = [
-            {
-              stylers: [
-                { },
-     
-              ]
-            }, {
-                featureType: "road",
-                elementType: "geometry",
-                stylers: [
-                    { lightness: 100 },
-                    { visibility: "simplified" }
-              ]
-            }, {
-                featureType: "road",
-                elementType: "labels",
-                stylers: [
-                    { visibility: "off" }
-              ]
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
             }
-        ];
-        
-        map.addStyle({
-            styledMapName:"Styled Map",
-            styles: styles,
-            mapTypeId: "map_style"  
-        });
-        
-        map.setStyle("map_style");
-      });
+        }
     </script>
-    
 </body>
 </html>
